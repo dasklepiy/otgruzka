@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<Subsystem uuid="d63216af-14a4-4ab8-a0c6-6a5df9b13abd">
+		<Properties>
+			<Name>Разработчик</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разработчик</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ЖурналИзмененийДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ПрефиксыОбъектовДляШтрихкодов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ПОИСК_ДОКУМЕНТОВ_ДЕЛЬФИ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ExternalDataSource.TRANSRAS.Table.dbo_City</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ExternalDataSource.TRANSRAS.Table.dbo_DISTAN</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ExternalDataSource.TRANSRAS.Table.dbo_FILIAL1</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ExternalDataSource.TRANSRAS.Table.dbo_INVOICE</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ExternalDataSource.TRANSRAS.Table.dbo_INV_POLET</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ExternalDataSource.TRANSRAS.Table.dbo_ORG</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ExternalDataSource.TRANSRAS.Table.dbo_REP</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ExternalDataSource.TRANSRAS.Table.dbo_ROUTE</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ExternalDataSource.TRANSRAS.Table.dbo_ROUTELN</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ExternalDataSource.TRANSRAS.Table.dbo_ROUTEORG</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ExternalDataSource.SRVGLOB.Table.dbo_INVOICE</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.НастройкиПрограммы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.НастройкиПрограммы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗагрузкаРеестров_Отладка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗонаОтгрузки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FilterCriterion.ДокументыПоПоставщикам</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.АРМРаботникОхраны_2_ПогрузкаВФуры</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.КонсольЗапросов_82</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.АРМСтаршийВодитель_Старый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FilterCriterion.СсылкиНаДокБЯС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.СообщенияПользователям</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.РегламентныеЗадания</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗапуститьВнешнююОбработку</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ExternalDataSource.NFS_OPT.Table.dbo_INVOICE</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ExternalDataSource.NFS_APT.Table.dbo_INVOICE</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.АктивныеПользователи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ИсторияШКпоНомеруСФиДате</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.РаботаСКартами</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.Карта</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗонаОтгрузкиТаксист</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ВазвратТары</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.АктУтеряТары</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтгрузкаВывоз</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ВыгрузкаСчетФактурВФайл</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.Мапикс</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ДвиженияДокументовПоОтгрузке</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

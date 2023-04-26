@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.9">
+	<Item id="e96d22cb-6776-4f0b-b79d-b47279cdae0a">
+		<Name>Водитель</Name>
+		<Code>000000001</Code>
+		<Description>Водитель</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="50d8cf12-14b8-4914-b70f-1359c6a8b7bd">
+		<Name>РаботникОхраны</Name>
+		<Code>000000002</Code>
+		<Description>Работник охраны</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="a2e43503-9112-4a47-b803-c96847e869b1">
+		<Name>Таксист</Name>
+		<Code>000000004</Code>
+		<Description>Таксист</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="3046f67e-97ee-4316-a8ac-a83b5470f110">
+		<Name>Филиал</Name>
+		<Code>000000003</Code>
+		<Description>Филиал</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<Subsystem uuid="166b054d-afdc-4858-878e-2e0ead1cb614">
+		<Properties>
+			<Name>Администратор</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Администратор</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.АРМДиспетчерСклад</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Пользователи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Должности</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Автомобили</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Контрагенты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ФизическиеЛица</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.НастройкиТорговогоОборудования</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.МестаХранения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Подразделения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">SessionParameter.ТекущийПользователь</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ПолныеПрава</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.СтруктураПодчиненности</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ОтчиститьАвтоРезервыПользователя</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.УстановитьСканерШтрихкодов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.НастроитьСканерШтрихКодов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.РучнойВводШК</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.СтруктураПодчиненности</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.ДрайверСканераШтрихкодов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.КомпонентаПечатиШтрихкодовWindows32</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.КомпонентаПечатиШтрихкодовWindows64</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.КомпонентаПечатиШтрихкодовLinux32</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.КомпонентаПечатиШтрихкодовLinux64</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.МакетСканыСертификатов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ШтрхкодыПользователей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ОбщаяКартинка1</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ОбщаяКартинка2</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ОбщаяКартинка3</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОстаткиНаСкладах</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ДвиженияПоМестамОтгрузки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ЖурналИзмененийДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОборотПоМестамОтгрузки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.АРМРаботникОхраны_2</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ДвиженияДокументовПоОтгрузке_2</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ПоискСчетФактуры</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.СчетФактуры_Город_ЗаПериод</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.АРМПриемВозвратныхСчетФактурДИСПЕТЧЕРОМ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.НастройкиПрограммы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.АРМПриемВозвратныхСчетФактурСТАРШИМВОДИТЕЛЕМ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.Реестр</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗонаОтгрузки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.АРМРаботникОхраны_2_ПогрузкаВФуры</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.АРМВодитель</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.АРМСтаршийВодитель_2</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.АРМРаботникОхраны_ПриемПоПутевомуЛисту</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.СчетФактуры_Область_ЗаПериод</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.СозданиеБЯСвручную</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ПОИСК_ДОКУМЕНТОВ_ДЕЛЬФИ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ПоискРеестров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчетПоОтгрузкам</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ВыгрузкаСчетФактур_В_ФАЙЛ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ИсторияШКпоНомеруСФиДате</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗонаОтгрузкиТаксист</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ОтчетПоОтгрузке</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ЗонаОтгрузки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтгрузкаВывоз</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects>
+			<Subsystem>Документы</Subsystem>
+			<Subsystem>СправочнаяИнформация</Subsystem>
+		</ChildObjects>
+	</Subsystem>
+</MetaDataObject>

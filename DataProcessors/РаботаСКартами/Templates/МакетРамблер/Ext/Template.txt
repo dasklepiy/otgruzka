@@ -1,0 +1,234 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta charset="UTF-8">
+<style type="text/css">
+  html { height: 100% }
+  body { height: 100%; margin: 0px; padding: 0px }
+  #myMap { height: 100% }
+</style>
+<script type="text/javascript"
+    src="http://api.maps.rambler.ru/js/">
+</script>
+<script type="text/javascript">
+	var latlng;
+	var myMap;
+	var noclick = false;
+	var index = 1;
+	var markers = [];
+	var marker;
+	var PointArray = [];
+	var polygons = [];
+	var balloonStyle;
+	var clusterer;
+	
+	function initialize() {
+	    myMap = new RMap("myMap", {
+		    //устанавливаем текущий, минимальный и максимальный уровни масштабирования — свойства объекта map передаются непосредственно
+		    center: {
+		    	lat: 55.75,
+		    	lon: 37.62},
+		    zoom: 12});
+	    var myCursor = myMap.cursorer.addCursor("url(\"" + RMap.apiURL + "cursors/crosshair.cur\")", "default", 0, "crosshair");
+	    myCursor.show();
+	    // задаём внешний вид балуна
+        balloonStyle = {
+            arrowAngle: -30,
+            arrowLength: 20,
+            arrowWidth: 20,
+            backgroundColor: "#ADD8E6",
+            backgroundOpacity: 0.50
+		};
+	    marker = myMap.geometry.create("marker");
+	    myMap.event.add('click', function(e) {
+	    if (noclick) {
+	    	noclick = false;
+	    }else{
+			e.relative(this);
+			var c = this.makeCoord(e);
+			document.getElementById('CoordX').value = c.lat();
+			document.getElementById('CoordY').value = c.lon();
+			
+			var qcoord = {
+        	lat: c.lat(),
+		    lon: c.lon()
+	    	};
+			//создаём  маркер и балун и используем полученные данные для его наполнения
+			marker.hideBalloon();
+			marker = myMap.geometry.create("marker", {
+				coord: qcoord,
+				underBalloon: false 
+			}, true);
+			marker.addBalloon({
+				style: balloonStyle,
+			    content: {
+			        name: "Точка"+index,
+			        address: "Точка"+index
+			        },
+			    template: "<h5>${name}</h5><p><address style=\"font-size:9pt;\">${address}</address></p>",
+			    closeButton: true
+			    },
+			    true
+			);
+	    	index++;
+		}	
+		});
+		
+		myMap.event.add('drag end', function(e) {
+			noclick = true;			
+			document.getElementById('CoordX').value = "0";
+			document.getElementById('CoordY').value = "0";
+		});
+	}
+	
+	function calcRoute(options){
+		var points = [];
+		var waypts = [];
+		if(options.length > 0) {
+			for(var i = 0, l = options.length; i < l; i++) {
+				var qcoord = {
+	        	lat: options[i][0],
+			    lon: options[i][1]
+	    	};	
+				points[i] = qcoord;
+			} 
+		}	
+		myMap.widgets.Routing.get(points);
+	} 
+	
+	function Reset(){
+		myMap.geometry.remove("all");
+		myMap.widgets.Routing.clearRoute()
+		index = 1;
+		polygons = [];
+		PointArray = [];
+	}
+	
+	function FindAdres(Adres){
+		Reset();
+		myMap.search(Adres, function (err, data, transport) {
+	   		var qres = data.res[0].matches[0];
+	    	var qcoord = {
+	        	lat: qres.y,
+	        	lon: qres.x,
+	        	zoom: qres.zoom - 2
+	    	};
+	    	//создаём  маркер и балун и используем полученные данные для его наполнения
+			marker.hideBalloon();
+			marker = myMap.geometry.create("marker", {
+				coord: qcoord,
+				underBalloon: false}, true);
+			marker.addBalloon({
+			    content: {
+			        name: qres.addr,
+			        address: qres.addr
+			        },
+			    template: "<h5>${name}</h5><p><address style=\"font-size:9pt;\">${address}</address></p>",
+			    closeButton: true
+			    },
+			    true
+			);
+	    	
+	    	myMap.setCenter(qcoord);
+	   	});
+	}
+		
+	function ReverseSearchAdres(Latitude, Longitude, Adres){
+		Reset();
+		myMap.moveTo({
+		    lat: Latitude,
+		    lon: Longitude
+		    }
+		);
+		
+		var qcoord = {
+        	lat: Latitude,
+		    lon: Longitude
+    	};
+    	//создаём  маркер и балун и используем полученные данные для его наполнения
+		marker.hideBalloon();
+		marker = myMap.geometry.create("marker", {
+			coord: qcoord,
+			underBalloon: false}, true);
+		marker.addBalloon({
+		    content: {
+		        name: Adres,
+		        address: Adres
+		        },
+		    template: "<h5>${name}</h5><p><address style=\"font-size:9pt;\">${address}</address></p>",
+		    closeButton: true
+		    },
+		    true
+		); 
+	}
+	
+	function addToPointArray(CoordX, CoordY, ID, Text){
+		PointArray.push({lat:CoordX, lon:CoordY});
+	}
+	
+	function drawCluster(){
+		clusterer = myMap.makeCluster(PointArray, {
+					area: "cell", // устанавливаем выделение площади кластера — в виде ячейки
+					//и используем CSS, чтобы изменить внешний вид кластерных меток, заданный по умолчанию
+					clusterMarker: { 
+						"class": '',
+						html: '<div style= "background:#9B2D30; border:1px solid #FFF; color:#FFF; padding:5px ">${quantity}</div>',
+						offsets: {
+							x: -0.5,
+							y: -0.5
+						}
+					}
+		});
+		//myMap.geoObjects.add(clusterer);
+	}	
+	
+	function createPolygon(ArrayPoint, Name, color) {
+		//создаем массив координат вершин многоугольника
+		var paths = [];
+		for(var i = 0, l = ArrayPoint.length; i < l; i++) {
+	  		var temp = ArrayPoint[i]; 
+			paths.push({"lat":temp[0],"lon":temp[1]});
+		};
+		//alert(paths);
+        // Создаём многоугольник для отображения нужного района
+        var myPolygon = myMap.geometry.create("polygon", {
+            points: paths,
+            style: {
+                lineWidth: 1, // отключаем отображение границ
+                lineColor: '#00F',
+                background: color, // устанавливаем нужный цвет многоугольнику
+                backgroundOpacity: 0.6 // изначально район показываем
+            }
+        }, true);
+            
+        //myPolygon.show();
+        polygons.push(myPolygon);
+    }
+	
+    function WebClientClick() {
+    	//очистка перед кликом координат, иначе после клика в упр. формах идет считывание координат
+    	document.getElementById('CoordX').value = "0";
+		document.getElementById('CoordY').value = "0";
+    	
+    	var WebClientOperation = document.getElementById("WebClientOperation").value;
+		//alert(WebClientOperation);
+		switch (WebClientOperation) {
+        	case "0":   // ничего не делаем
+        	   var a = 1; 
+        	default:   // запускаем функцию
+        	    eval(WebClientOperation);
+        }
+        document.getElementById('WebClientOperation').value = "0";
+	}	
+</script>
+</head>
+<body onload="initialize()">
+  <div id="myMap" style="width:100%; height:100%"></div>
+  <input type="hidden" id="CoordX" name="CoordX" value="0"></input>
+  <input type="hidden" id="CoordY" name="CoordY" value="0"></input>
+  <input type="hidden" id="RouteInfo" name="RouteInfo" value=""></input>
+  <input type="hidden" id="WebClientOperation" name="WebClientOperation" value="0"></input>
+  <input type="hidden" id="WebClient" name="WebClient" onclick="WebClientClick();"></input>
+</body>
+</html>

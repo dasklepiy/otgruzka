@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<FilterCriterion uuid="3bc993f3-8ffd-483b-9f85-0aab2830d069">
+		<InternalInfo>
+			<xr:GeneratedType name="FilterCriterionManager.ДокументыПоСотрудникам" category="Manager">
+				<xr:TypeId>0dfbe7c7-9fa3-4e7f-9b0d-a3e039a523ee</xr:TypeId>
+				<xr:ValueId>1f3b578b-56f5-41e3-a71b-ffc694b53a4e</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="FilterCriterionList.ДокументыПоСотрудникам" category="List">
+				<xr:TypeId>0ff35695-ce3e-4093-85ae-8fba9a6c1de2</xr:TypeId>
+				<xr:ValueId>a637db2e-9f20-49bc-97cc-15bafcde0064</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ДокументыПоСотрудникам</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документы по сотрудникам</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ФизическиеЛица</v8:Type>
+			</Type>
+			<UseStandardCommands>true</UseStandardCommands>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПутевойЛист_2.Attribute.Водитель</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПогрузкаТоваровВАвтомобиль.Attribute.Водитель</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПогрузкаТоваровВАвтомобиль.Attribute.РаботникОхраны</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ВъездВыездАвтомобилей.Attribute.РаботникОхраны</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ВъездВыездАвтомобилей.Attribute.Водитель</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ВозвратнаяСчетФактура.Attribute.Водитель</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.Реестр.Attribute.РаботникОхраны</xr:Item>
+			</Content>
+			<DefaultForm/>
+			<AuxiliaryForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects/>
+	</FilterCriterion>
+</MetaDataObject>

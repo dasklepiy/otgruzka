@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<DataProcessor uuid="155f6a7d-a3b1-4c47-8799-a24aa7986a24">
+		<InternalInfo>
+			<xr:GeneratedType name="DataProcessorObject.АРМРаботникОхраны_ПриемПоПутевомуЛисту" category="Object">
+				<xr:TypeId>0954ce34-a1f8-4efa-bf2a-234e16166059</xr:TypeId>
+				<xr:ValueId>9bd60fb2-c67d-467d-98eb-94d640daae7c</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DataProcessorManager.АРМРаботникОхраны_ПриемПоПутевомуЛисту" category="Manager">
+				<xr:TypeId>8675cd58-6760-4e9b-9d96-336c2372c2e3</xr:TypeId>
+				<xr:ValueId>c526de79-a5ad-4b30-9053-37cc7fe1ec5f</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>АРМРаботникОхраны_ПриемПоПутевомуЛисту</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Охрана Пост 2 Прием По ПУТЕВОМУ ЛИСТУ (ГОРОД)</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment>Охрана Пост 2 Прием По ПУТЕВОМУ ЛИСТУ (ГОРОД)</Comment>
+			<UseStandardCommands>true</UseStandardCommands>
+			<DefaultForm>DataProcessor.АРМРаботникОхраны_ПриемПоПутевомуЛисту.Form.Форма</DefaultForm>
+			<AuxiliaryForm/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<ExtendedPresentation>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Охрана Пост 2 Прием По ПУТЕВОМУ ЛИСТУ (ГОРОД)</v8:content>
+				</v8:item>
+			</ExtendedPresentation>
+			<Explanation>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Охрана Пост 2 Прием По ПУТЕВОМУ ЛИСТУ (ГОРОД)</v8:content>
+				</v8:item>
+			</Explanation>
+		</Properties>
+		<ChildObjects>
+			<Form>Форма</Form>
+			<Form>Форма_Старая</Form>
+			<Template>Макет</Template>
+		</ChildObjects>
+	</DataProcessor>
+</MetaDataObject>

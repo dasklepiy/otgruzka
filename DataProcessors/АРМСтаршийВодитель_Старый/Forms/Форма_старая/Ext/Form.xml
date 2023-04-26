@@ -1,0 +1,335 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаСоздатьПутевыеЛисты" id="20">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.СоздатьПутевыеЛисты</CommandName>
+				<ExtendedTooltip name="ФормаСоздатьПутевыеЛистыРасширеннаяПодсказка" id="28"/>
+			</Button>
+			<Button name="ФормаЗагрузитьПутевыеЛисты" id="23">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ЗагрузитьПутевыеЛисты</CommandName>
+				<ExtendedTooltip name="ФормаЗагрузитьПутевыеЛистыРасширеннаяПодсказка" id="29"/>
+			</Button>
+			<Button name="ФормаОтредактироватьПутевыеЛисты" id="24">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ОтредактироватьПутевыеЛисты</CommandName>
+				<ExtendedTooltip name="ФормаОтредактироватьПутевыеЛистыРасширеннаяПодсказка" id="30"/>
+			</Button>
+			<Button name="ФормаПечать" id="25">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.Печать</CommandName>
+				<ExtendedTooltip name="ФормаПечатьРасширеннаяПодсказка" id="31"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Дата" id="21">
+			<DataPath>Дата</DataPath>
+			<ContextMenu name="ДатаКонтекстноеМеню" id="22"/>
+			<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="32"/>
+		</InputField>
+		<Table name="РаспределениеТоваров" id="1">
+			<Footer>true</Footer>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<EnableStartDrag>true</EnableStartDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>РаспределениеТоваров</DataPath>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="РаспределениеТоваровКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="РаспределениеТоваровКоманднаяПанель" id="3"/>
+			<ExtendedTooltip name="РаспределениеТоваровРасширеннаяПодсказка" id="33"/>
+			<SearchStringAddition name="РаспределениеТоваровСтрокаПоиска" id="34">
+				<AdditionSource>
+					<Item>РаспределениеТоваров</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="РаспределениеТоваровСтрокаПоискаКонтекстноеМеню" id="35"/>
+				<ExtendedTooltip name="РаспределениеТоваровСтрокаПоискаРасширеннаяПодсказка" id="36"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="РаспределениеТоваровСостояниеПросмотра" id="37">
+				<AdditionSource>
+					<Item>РаспределениеТоваров</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="РаспределениеТоваровСостояниеПросмотраКонтекстноеМеню" id="38"/>
+				<ExtendedTooltip name="РаспределениеТоваровСостояниеПросмотраРасширеннаяПодсказка" id="39"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="РаспределениеТоваровУправлениеПоиском" id="40">
+				<AdditionSource>
+					<Item>РаспределениеТоваров</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="РаспределениеТоваровУправлениеПоискомКонтекстноеМеню" id="41"/>
+				<ExtendedTooltip name="РаспределениеТоваровУправлениеПоискомРасширеннаяПодсказка" id="42"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="РаспределениеТоваровКонтрагент" id="8">
+					<DataPath>РаспределениеТоваров.Контрагент</DataPath>
+					<ContextMenu name="РаспределениеТоваровКонтрагентКонтекстноеМеню" id="9"/>
+					<ExtendedTooltip name="РаспределениеТоваровКонтрагентРасширеннаяПодсказка" id="43"/>
+				</LabelField>
+				<LabelField name="РаспределениеТоваровНомерМестаОтгрузки" id="10">
+					<DataPath>РаспределениеТоваров.МестоОтгрузки</DataPath>
+					<ContextMenu name="РаспределениеТоваровНомерМестаОтгрузкиКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="РаспределениеТоваровНомерМестаОтгрузкиРасширеннаяПодсказка" id="44"/>
+				</LabelField>
+				<LabelField name="РаспределениеТоваровКоличествоКоробок" id="6">
+					<DataPath>РаспределениеТоваров.КоличествоКоробок</DataPath>
+					<ContextMenu name="РаспределениеТоваровКоличествоКоробокКонтекстноеМеню" id="7"/>
+					<ExtendedTooltip name="РаспределениеТоваровКоличествоКоробокРасширеннаяПодсказка" id="45"/>
+				</LabelField>
+				<LabelField name="РаспределениеТоваровВес" id="4">
+					<DataPath>РаспределениеТоваров.Вес</DataPath>
+					<ContextMenu name="РаспределениеТоваровВесКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="РаспределениеТоваровВесРасширеннаяПодсказка" id="46"/>
+				</LabelField>
+				<LabelField name="РаспределениеТоваровОбъем" id="12">
+					<DataPath>РаспределениеТоваров.Объем</DataPath>
+					<ContextMenu name="РаспределениеТоваровОбъемКонтекстноеМеню" id="13"/>
+					<ExtendedTooltip name="РаспределениеТоваровОбъемРасширеннаяПодсказка" id="47"/>
+				</LabelField>
+				<InputField name="РаспределениеТоваровВодитель" id="16">
+					<DataPath>РаспределениеТоваров.Водитель</DataPath>
+					<ChoiceButton>true</ChoiceButton>
+					<ClearButton>true</ClearButton>
+					<SpinButton>false</SpinButton>
+					<OpenButton>false</OpenButton>
+					<ChoiceListButton>false</ChoiceListButton>
+					<ContextMenu name="РаспределениеТоваровВодительКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="РаспределениеТоваровВодительРасширеннаяПодсказка" id="48"/>
+					<Events>
+						<Event name="OnChange">РаспределениеТоваровВодительПриИзменении</Event>
+						<Event name="StartChoice">РаспределениеТоваровВодительНачалоВыбора</Event>
+					</Events>
+				</InputField>
+				<InputField name="РаспределениеТоваровДокументПрихода" id="18">
+					<DataPath>РаспределениеТоваров.ДокументПрихода</DataPath>
+					<Visible>false</Visible>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="РаспределениеТоваровДокументПриходаКонтекстноеМеню" id="19"/>
+					<ExtendedTooltip name="РаспределениеТоваровДокументПриходаРасширеннаяПодсказка" id="49"/>
+				</InputField>
+				<InputField name="РаспределениеТоваровКомментарий" id="26">
+					<DataPath>РаспределениеТоваров.Комментарий</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="РаспределениеТоваровКомментарийКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="РаспределениеТоваровКомментарийРасширеннаяПодсказка" id="50"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.АРМСтаршийВодитель_Старый</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="РаспределениеТоваров" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Распределение товаров</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Контрагент" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Контрагент</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Контрагенты</v8:Type>
+					</Type>
+				</Column>
+				<Column name="МестоОтгрузки" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Место отгрузки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.МестаХранения</v8:Type>
+					</Type>
+				</Column>
+				<Column name="КоличествоКоробок" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество коробок</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Объем" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Объем</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Вес" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вес</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Водитель" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Водитель</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ФизическиеЛица</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ДокументПрихода" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Документ прихода</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:DocumentRef.БольшаяЯчеистаяСборка</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Комментарий" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Комментарий</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="Дата" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СоздатьПутевыеЛисты" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать путевые листы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать путевые листы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьПутевыеЛисты</Action>
+		</Command>
+		<Command name="ЗагрузитьПутевыеЛисты" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить путевые листы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить путевые листы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьПутевыеЛисты</Action>
+		</Command>
+		<Command name="ОтредактироватьПутевыеЛисты" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отредактировать путевые листы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отредактировать путевые листы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтредактироватьПутевыеЛисты</Action>
+		</Command>
+		<Command name="Печать" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Печать</Action>
+		</Command>
+	</Commands>
+</Form>

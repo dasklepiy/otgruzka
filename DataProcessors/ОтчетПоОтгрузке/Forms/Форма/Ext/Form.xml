@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="ExternalEvent">ВнешнееСобытие</Event>
+	</Events>
+	<ChildItems>
+		<Table name="ОстаткиНаЗоне" id="1">
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Объект.ОстаткиНаЗоне</DataPath>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ОстаткиНаЗонеКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="ОстаткиНаЗонеКоманднаяПанель" id="3"/>
+			<ExtendedTooltip name="ОстаткиНаЗонеРасширеннаяПодсказка" id="4"/>
+			<SearchStringAddition name="ОстаткиНаЗонеСтрокаПоиска" id="29">
+				<AdditionSource>
+					<Item>ОстаткиНаЗоне</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ОстаткиНаЗонеСтрокаПоискаКонтекстноеМеню" id="30"/>
+				<ExtendedTooltip name="ОстаткиНаЗонеСтрокаПоискаРасширеннаяПодсказка" id="31"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ОстаткиНаЗонеСостояниеПросмотра" id="32">
+				<AdditionSource>
+					<Item>ОстаткиНаЗоне</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ОстаткиНаЗонеСостояниеПросмотраКонтекстноеМеню" id="33"/>
+				<ExtendedTooltip name="ОстаткиНаЗонеСостояниеПросмотраРасширеннаяПодсказка" id="34"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ОстаткиНаЗонеУправлениеПоиском" id="35">
+				<AdditionSource>
+					<Item>ОстаткиНаЗоне</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ОстаткиНаЗонеУправлениеПоискомКонтекстноеМеню" id="36"/>
+				<ExtendedTooltip name="ОстаткиНаЗонеУправлениеПоискомРасширеннаяПодсказка" id="37"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ОстаткиНаЗонеНомерСтроки" id="5">
+					<DataPath>Объект.ОстаткиНаЗоне.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ОстаткиНаЗонеНомерСтрокиКонтекстноеМеню" id="6"/>
+					<ExtendedTooltip name="ОстаткиНаЗонеНомерСтрокиРасширеннаяПодсказка" id="7"/>
+				</LabelField>
+				<InputField name="ОстаткиНаЗонеКлиент" id="8">
+					<DataPath>Объект.ОстаткиНаЗоне.Клиент</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ОстаткиНаЗонеКлиентКонтекстноеМеню" id="9"/>
+					<ExtendedTooltip name="ОстаткиНаЗонеКлиентРасширеннаяПодсказка" id="10"/>
+				</InputField>
+				<InputField name="ОстаткиНаЗонеВозврат" id="11">
+					<DataPath>Объект.ОстаткиНаЗоне.Возврат</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ОстаткиНаЗонеВозвратКонтекстноеМеню" id="12"/>
+					<ExtendedTooltip name="ОстаткиНаЗонеВозвратРасширеннаяПодсказка" id="13"/>
+				</InputField>
+				<InputField name="ОстаткиНаЗонеФактуры" id="14">
+					<DataPath>Объект.ОстаткиНаЗоне.Фактуры</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ОстаткиНаЗонеФактурыКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="ОстаткиНаЗонеФактурыРасширеннаяПодсказка" id="16"/>
+				</InputField>
+				<InputField name="ОстаткиНаЗонеКолМест" id="17">
+					<DataPath>Объект.ОстаткиНаЗоне.КолМест</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ОстаткиНаЗонеКолМестКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="ОстаткиНаЗонеКолМестРасширеннаяПодсказка" id="19"/>
+				</InputField>
+				<InputField name="ОстаткиНаЗонеДатаРазмещения" id="20">
+					<DataPath>Объект.ОстаткиНаЗоне.ДатаРазмещения</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ОстаткиНаЗонеДатаРазмещенияКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="ОстаткиНаЗонеДатаРазмещенияРасширеннаяПодсказка" id="22"/>
+				</InputField>
+				<InputField name="ОстаткиНаЗонеОрган" id="23">
+					<DataPath>Объект.ОстаткиНаЗоне.Орган</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ОстаткиНаЗонеОрганКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="ОстаткиНаЗонеОрганРасширеннаяПодсказка" id="25"/>
+				</InputField>
+				<InputField name="ОстаткиНаЗонеМестоНаЗоне" id="26">
+					<DataPath>Объект.ОстаткиНаЗоне.МестоНаЗоне</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ОстаткиНаЗонеМестоНаЗонеКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ОстаткиНаЗонеМестоНаЗонеРасширеннаяПодсказка" id="28"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ОтчетПоОтгрузке</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+</Form>

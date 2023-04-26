@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<ExternalDataSource uuid="591b1f65-e9a7-4ba7-b157-7f166583ee2e">
+		<InternalInfo>
+			<xr:GeneratedType name="ExternalDataSourceManager.TRANSRAS" category="Manager">
+				<xr:TypeId>51dc94dd-a5aa-4420-aef0-2f46f778b1a1</xr:TypeId>
+				<xr:ValueId>b7552aaf-e9f7-4947-a70b-c811d7697f85</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ExternalDataSourceTablesManager.TRANSRAS" category="TablesManager">
+				<xr:TypeId>c3096879-57c5-40cb-ae74-441b1d0507c4</xr:TypeId>
+				<xr:ValueId>688d2f71-548f-4e9c-946e-0d4cf89f87bc</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ExternalDataSourceCubesManager.TRANSRAS" category="CubesManager">
+				<xr:TypeId>2f01ce7c-bbcc-4684-bb0a-44d8ad2590ac</xr:TypeId>
+				<xr:ValueId>ad5dde14-714c-488a-943a-eea59243b710</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>TRANSRAS</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>TRANSRAS</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment>db-TRANSRAS server-SRVGLOB</Comment>
+			<DataLockControlMode>Automatic</DataLockControlMode>
+		</Properties>
+		<ChildObjects>
+			<Table>dbo_City</Table>
+			<Table>dbo_DISTAN</Table>
+			<Table>dbo_FILIAL1</Table>
+			<Table>dbo_INVOICE</Table>
+			<Table>dbo_INV_POLET</Table>
+			<Table>dbo_ORG</Table>
+			<Table>dbo_REP</Table>
+			<Table>dbo_ROUTE</Table>
+			<Table>dbo_ROUTELN</Table>
+			<Table>dbo_ROUTEORG</Table>
+		</ChildObjects>
+	</ExternalDataSource>
+</MetaDataObject>

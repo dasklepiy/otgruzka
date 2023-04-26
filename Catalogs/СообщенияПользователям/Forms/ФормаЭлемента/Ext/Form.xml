@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="27">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="41"/>
+			<ChildItems>
+				<InputField name="Код" id="1">
+					<DataPath>Объект.Code</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="42"/>
+				</InputField>
+				<InputField name="Наименование" id="3">
+					<DataPath>Объект.Description</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="4"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="43"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="ИсточникСообщения" id="32">
+			<DataPath>Объект.ИсточникСообщения</DataPath>
+			<ContextMenu name="ИсточникСообщенияКонтекстноеМеню" id="33"/>
+			<ExtendedTooltip name="ИсточникСообщенияРасширеннаяПодсказка" id="44"/>
+		</InputField>
+		<UsualGroup name="Группа3" id="31">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="45"/>
+			<ChildItems>
+				<CheckBoxField name="Активность" id="25">
+					<DataPath>Объект.Активность</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="АктивностьКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="АктивностьРасширеннаяПодсказка" id="46"/>
+				</CheckBoxField>
+				<InputField name="Кому" id="29">
+					<DataPath>Объект.Кому</DataPath>
+					<ContextMenu name="КомуКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="КомуРасширеннаяПодсказка" id="47"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="ВидСообщения" id="34">
+			<DataPath>Объект.ВидСообщения</DataPath>
+			<ListChoiceMode>true</ListChoiceMode>
+			<ChoiceList>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation/>
+						<Value xsi:type="xs:string">Предупреждение</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation/>
+						<Value xsi:type="xs:string">Сообщение</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation/>
+						<Value xsi:type="xs:string">ИнтерактивнаяФорма</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation/>
+						<Value xsi:type="xs:string">ЭлектроннаяПочта</Value>
+					</xr:Value>
+				</xr:Item>
+			</ChoiceList>
+			<ContextMenu name="ВидСообщенияКонтекстноеМеню" id="35"/>
+			<ExtendedTooltip name="ВидСообщенияРасширеннаяПодсказка" id="48"/>
+		</InputField>
+		<InputField name="ТекстСообщения" id="5">
+			<DataPath>Объект.ТекстСообщения</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<Height>4</Height>
+			<MultiLine>true</MultiLine>
+			<ContextMenu name="ТекстСообщенияКонтекстноеМеню" id="6"/>
+			<ExtendedTooltip name="ТекстСообщенияРасширеннаяПодсказка" id="49"/>
+		</InputField>
+		<UsualGroup name="Группа2" id="28">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="50"/>
+			<ChildItems>
+				<InputField name="ДатаНачала" id="7">
+					<DataPath>Объект.ДатаНачала</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДатаНачалаКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="ДатаНачалаРасширеннаяПодсказка" id="51"/>
+				</InputField>
+				<InputField name="ДатаОкончания" id="9">
+					<DataPath>Объект.ДатаОкончания</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДатаОкончанияКонтекстноеМеню" id="10"/>
+					<ExtendedTooltip name="ДатаОкончанияРасширеннаяПодсказка" id="52"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="ДатаПоследнейОтправки" id="11">
+			<DataPath>Объект.ДатаПоследнейОтправки</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ДатаПоследнейОтправкиКонтекстноеМеню" id="12"/>
+			<ExtendedTooltip name="ДатаПоследнейОтправкиРасширеннаяПодсказка" id="53"/>
+		</InputField>
+		<InputField name="ИнтервалОтправки" id="13">
+			<DataPath>Объект.ИнтервалОтправки</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ИнтервалОтправкиКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ИнтервалОтправкиРасширеннаяПодсказка" id="54"/>
+		</InputField>
+		<InputField name="КоличествоПовторов" id="15">
+			<DataPath>Объект.КоличествоПовторов</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КоличествоПовторовКонтекстноеМеню" id="16"/>
+			<ExtendedTooltip name="КоличествоПовторовРасширеннаяПодсказка" id="55"/>
+		</InputField>
+		<InputField name="КоличествоПосланныхСообщений" id="17">
+			<DataPath>Объект.КоличествоПосланныхСообщений</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КоличествоПосланныхСообщенийКонтекстноеМеню" id="18"/>
+			<ExtendedTooltip name="КоличествоПосланныхСообщенийРасширеннаяПодсказка" id="56"/>
+		</InputField>
+		<InputField name="Комментарий" id="21">
+			<DataPath>Объект.Комментарий</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="22"/>
+			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="57"/>
+		</InputField>
+		<InputField name="СистемныйКомментарий" id="23">
+			<DataPath>Объект.СистемныйКомментарий</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="СистемныйКомментарийКонтекстноеМеню" id="24"/>
+			<ExtendedTooltip name="СистемныйКомментарийРасширеннаяПодсказка" id="58"/>
+		</InputField>
+		<UsualGroup name="Группа4" id="40">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Используется если Вид сообщения - ЭлектроннаяПочта</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Horizontal</Group>
+			<Representation>StrongSeparation</Representation>
+			<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="59"/>
+			<ChildItems>
+				<InputField name="ЭлектроннаяПочта" id="36">
+					<DataPath>Объект.ЭлектроннаяПочта</DataPath>
+					<Width>20</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="ЭлектроннаяПочтаКонтекстноеМеню" id="37"/>
+					<ExtendedTooltip name="ЭлектроннаяПочтаРасширеннаяПодсказка" id="60"/>
+				</InputField>
+				<InputField name="SMTPServer" id="38">
+					<DataPath>Объект.SMTPServer</DataPath>
+					<Width>15</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="SMTPServerКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="SMTPServerРасширеннаяПодсказка" id="61"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.СообщенияПользователям</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

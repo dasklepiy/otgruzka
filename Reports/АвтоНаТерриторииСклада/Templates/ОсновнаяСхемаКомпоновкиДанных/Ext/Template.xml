@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>АвтоЖетон</dataPath>
+			<field>АвтоЖетон</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДокументВъездаВыезда</dataPath>
+			<field>ДокументВъездаВыезда</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДокументВъездаВыездаЖетон</dataPath>
+			<field>ДокументВъездаВыездаЖетон</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДокументВъездаВыездаКому</dataPath>
+			<field>ДокументВъездаВыездаКому</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДокументВъездаВыездаМаркаАвтомобиля</dataPath>
+			<field>ДокументВъездаВыездаМаркаАвтомобиля</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДокументВъездаВыездаНомерАвтомобиля</dataPath>
+			<field>ДокументВъездаВыездаНомерАвтомобиля</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДокументВъездаВыездаПостОхраны</dataPath>
+			<field>ДокументВъездаВыездаПостОхраны</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЗначениеОстаток</dataPath>
+			<field>ЗначениеОстаток</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДокументВъездаВыездаДатаВремяВъезда</dataPath>
+			<field>ДокументВъездаВыездаДатаВремяВъезда</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДокументВъездаВыездаЦельВизита</dataPath>
+			<field>ДокументВъездаВыездаЦельВизита</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	АвтоНаТерриторииОстатки.ДокументВъездаВыезда.МаркаАвтомобиля,
+	АвтоНаТерриторииОстатки.ДокументВъездаВыезда.НомерАвтомобиля,
+	АвтоНаТерриторииОстатки.ДокументВъездаВыезда.Кому,
+	АвтоНаТерриторииОстатки.ДокументВъездаВыезда.Жетон,
+	АвтоНаТерриторииОстатки.ДокументВъездаВыезда.ПостОхраны,
+	АвтоНаТерриторииОстатки.ЗначениеОстаток,
+	АвтоНаТерриторииОстатки.ДокументВъездаВыезда.ДатаВремяВъезда,
+	АвтоНаТерриторииОстатки.ДокументВъездаВыезда.ЦельВизита
+ИЗ
+	РегистрНакопления.АвтоНаТерритории.Остатки(, ) КАК АвтоНаТерриторииОстатки</query>
+	</dataSet>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДокументВъездаВыездаПостОхраны</dcsset:field>
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПостОхраны</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДокументВъездаВыездаЖетон</dcsset:field>
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Жетон</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДокументВъездаВыездаДатаВремяВъезда</dcsset:field>
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ВремяВъезда</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДокументВъездаВыездаМаркаАвтомобиля</dcsset:field>
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>МаркаАвто</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДокументВъездаВыездаНомерАвтомобиля</dcsset:field>
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>НомерАвто</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДокументВъездаВыездаКому</dcsset:field>
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Кому</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДокументВъездаВыездаЦельВизита</dcsset:field>
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЦельВизита</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:userSettingID>29629fdc-1f80-4b03-a85f-7658f60eddcd</dcsset:userSettingID>
+			</dcsset:filter>
+			<dcsset:order>
+				<dcsset:userSettingID>e809f9ff-badd-45fe-942e-34d409b10a63</dcsset:userSettingID>
+			</dcsset:order>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+			<dcsset:itemsUserSettingID>769ad47d-0da2-4133-9212-4c37afe2c882</dcsset:itemsUserSettingID>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

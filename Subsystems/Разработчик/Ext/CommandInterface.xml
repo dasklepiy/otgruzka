@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<CommandsVisibility>
+		<Command name="ExternalDataSource.TRANSRAS.Table.dbo_ROUTEORG.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="ExternalDataSource.TRANSRAS.Table.dbo_ROUTELN.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="ExternalDataSource.TRANSRAS.Table.dbo_ROUTE.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="ExternalDataSource.TRANSRAS.Table.dbo_REP.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="ExternalDataSource.TRANSRAS.Table.dbo_ORG.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="ExternalDataSource.TRANSRAS.Table.dbo_INVOICE.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="ExternalDataSource.TRANSRAS.Table.dbo_INV_POLET.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="ExternalDataSource.TRANSRAS.Table.dbo_FILIAL1.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="ExternalDataSource.TRANSRAS.Table.dbo_DISTAN.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="ExternalDataSource.TRANSRAS.Table.dbo_City.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+	<CommandsPlacement>
+		<Command name="ExternalDataSource.TRANSRAS.Table.dbo_ROUTEORG.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.TRANSRAS</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="ExternalDataSource.TRANSRAS.Table.dbo_ROUTELN.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.TRANSRAS</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="ExternalDataSource.TRANSRAS.Table.dbo_ROUTE.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.TRANSRAS</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="ExternalDataSource.TRANSRAS.Table.dbo_REP.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.TRANSRAS</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="ExternalDataSource.TRANSRAS.Table.dbo_ORG.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.TRANSRAS</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="ExternalDataSource.TRANSRAS.Table.dbo_INVOICE.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.TRANSRAS</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="ExternalDataSource.TRANSRAS.Table.dbo_INV_POLET.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.TRANSRAS</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="ExternalDataSource.TRANSRAS.Table.dbo_FILIAL1.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.TRANSRAS</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="ExternalDataSource.TRANSRAS.Table.dbo_DISTAN.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.TRANSRAS</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="ExternalDataSource.TRANSRAS.Table.dbo_City.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.TRANSRAS</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+	</CommandsPlacement>
+	<CommandsOrder>
+		<Command name="InformationRegister.ЖурналИзмененийДокументов.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Catalog.ПрефиксыОбъектовДляШтрихкодов.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Catalog.РегламентныеЗадания.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Catalog.СообщенияПользователям.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="ExternalDataSource.SRVGLOB.Table.dbo_INVOICE.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="ExternalDataSource.NFS_APT.Table.dbo_INVOICE.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="ExternalDataSource.NFS_OPT.Table.dbo_INVOICE.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="ExternalDataSource.TRANSRAS.Table.dbo_ROUTEORG.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.TRANSRAS</CommandGroup>
+		</Command>
+		<Command name="ExternalDataSource.TRANSRAS.Table.dbo_ROUTELN.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.TRANSRAS</CommandGroup>
+		</Command>
+		<Command name="ExternalDataSource.TRANSRAS.Table.dbo_ROUTE.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.TRANSRAS</CommandGroup>
+		</Command>
+		<Command name="ExternalDataSource.TRANSRAS.Table.dbo_REP.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.TRANSRAS</CommandGroup>
+		</Command>
+		<Command name="ExternalDataSource.TRANSRAS.Table.dbo_ORG.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.TRANSRAS</CommandGroup>
+		</Command>
+		<Command name="ExternalDataSource.TRANSRAS.Table.dbo_INVOICE.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.TRANSRAS</CommandGroup>
+		</Command>
+		<Command name="ExternalDataSource.TRANSRAS.Table.dbo_INV_POLET.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.TRANSRAS</CommandGroup>
+		</Command>
+		<Command name="ExternalDataSource.TRANSRAS.Table.dbo_FILIAL1.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.TRANSRAS</CommandGroup>
+		</Command>
+		<Command name="ExternalDataSource.TRANSRAS.Table.dbo_DISTAN.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.TRANSRAS</CommandGroup>
+		</Command>
+		<Command name="ExternalDataSource.TRANSRAS.Table.dbo_City.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.TRANSRAS</CommandGroup>
+		</Command>
+	</CommandsOrder>
+	<GroupsOrder>
+		<Group>NavigationPanelOrdinary</Group>
+		<Group>CommandGroup.TRANSRAS</Group>
+	</GroupsOrder>
+</CommandInterface>

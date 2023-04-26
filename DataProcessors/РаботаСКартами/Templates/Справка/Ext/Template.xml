@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<document xmlns="http://v8.1c.ru/8.2/data/spreadsheet" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<languageSettings>
+		<currentLanguage>ru</currentLanguage>
+		<defaultLanguage>ru</defaultLanguage>
+		<languageInfo>
+			<id>ru</id>
+			<code>Русский</code>
+			<description>Русский</description>
+		</languageInfo>
+	</languageSettings>
+	<columns>
+		<size>1</size>
+		<columnsItem>
+			<index>0</index>
+			<column>
+				<formatIndex>1</formatIndex>
+			</column>
+		</columnsItem>
+	</columns>
+	<rowsItem>
+		<index>0</index>
+		<row>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>&lt;HTML&gt;&lt;BODY&gt;
+&lt;h1&gt;&lt;font color="#ff0000"&gt;&lt;a href="http://api.yandex.ru/maps/doc/intro/concepts/intro.xml" target="_blank"&gt;Яндекс карты&lt;/a&gt;&lt;/font&gt;&lt;/h1&gt;&lt;span style="font-family: 'Times New Roman'; font-size: medium; font-weight: normal;"&gt;Основные возможности обработки:&lt;/span&gt;
+&lt;ul style="font-family: 'Times New Roman'; font-size: medium;"&gt;
+&lt;li&gt;&lt;b&gt;Инициализация&lt;/b&gt; Яндекс-карт&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Поиск адреса на карте&lt;/b&gt;&lt;span style="font-weight: normal;"&gt; по текстовому представлению - нужно ввести адреса в поле а нажать кнопку поиска или Enter&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Использование http-геокодера&lt;/b&gt;&lt;span style="font-weight: normal;"&gt; для поиска адерсов, соответствующих введеному наименованию - по введенному адресу в таблицу адресов попадут адреса, возвращенныее геокодером&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Обратный поиск адреса&lt;/b&gt;&lt;span style="font-weight: normal;"&gt; по геокоординатам - щелчок по адресу в таблице адресов поставит метку на карте по указанным геокоординатам&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Взаимодействие с картой&lt;/b&gt;&lt;span style="font-weight: normal;"&gt; - установка маркера на карте щелчком и прием в 1С геокоординат маркера&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Действия&lt;/b&gt;&lt;span style="font-weight: normal;"&gt; - некоторые возможности сервисов&lt;/span&gt;&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;Построить маршрут&lt;/b&gt;&lt;span style="font-weight: normal;"&gt; по указанным меткам - маршрут построится по отмеченным меткам на карте. Используется кнопка построения маршрута&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Создать кластер&lt;/b&gt;&lt;span style="font-weight: normal;"&gt; - при уменшьшении масштаба карты рядом стоящие метки будут группироваться в кластеры&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Построение полигона&lt;/b&gt;&lt;span style="font-weight: normal;"&gt; - рисует по установленным точкам полигон на карте и заполняет его призвольным цветом&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/ul&gt;
+&lt;/BODY&gt;&lt;/HTML&gt;</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>1</index>
+		<row>
+			<c>
+				<c>
+					<f>2</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>&lt;HTML&gt;&lt;BODY&gt;
+&lt;h1&gt;&lt;font color="#ff0000"&gt;&lt;a href="https://developers.google.com/maps/documentation/javascript/tutorial" target="_blank"&gt;Google карты&lt;/a&gt;&lt;/font&gt;&lt;/h1&gt;&lt;span style="font-family: 'Times New Roman'; font-size: medium; font-weight: normal;"&gt;Основные возможности обработки:&lt;/span&gt;
+&lt;ul style="font-family: 'Times New Roman'; font-size: medium;"&gt;
+&lt;li&gt;&lt;b&gt;Инициализация&lt;/b&gt; Google-карт&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Поиск адреса на карте&lt;/b&gt;&lt;span style="font-weight: normal;"&gt; по текстовому представлению - нужно ввести адреса в поле а нажать кнопку поиска или Enter&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Использование http-геокодера&lt;/b&gt;&lt;span style="font-weight: normal;"&gt; для поиска адерсов, соответствующих введеному наименованию - по введенному адресу в таблицу адресов попадут адреса, возвращенныее геокодером&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Обратный поиск адреса&lt;/b&gt;&lt;span style="font-weight: normal;"&gt; по геокоординатам - щелчок по адресу в таблице адресов поставит метку на карте по указанным геокоординатам&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Взаимодействие с картой&lt;/b&gt;&lt;span style="font-weight: normal;"&gt; - установка маркера на карте щелчком и прием в 1С геокоординат маркера&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Действия&lt;/b&gt;&lt;span style="font-weight: normal;"&gt; - некоторые возможности сервисов&lt;/span&gt;&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;Построить маршрут&lt;/b&gt;&lt;span style="font-weight: normal;"&gt; по указанным меткам - маршрут построится по отмеченным меткам на карте. Используется кнопка построения маршрута&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Создать кластер&lt;/b&gt;&lt;span style="font-weight: normal;"&gt; - при уменшьшении масштаба карты рядом стоящие метки будут группироваться в кластеры&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Построение полигона&lt;/b&gt;&lt;span style="font-weight: normal;"&gt; - рисует по установленным точкам полигон на карте и заполняет его призвольным цветом&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/ul&gt;
+&lt;/BODY&gt;&lt;/HTML&gt;</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>2</index>
+		<row>
+			<c>
+				<c>
+					<f>2</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>&lt;HTML&gt;&lt;BODY&gt;
+&lt;h1&gt;&lt;font color="#ff0000"&gt;&lt;a href="http://maps.rambler.ru/api/docs" target="_blank"&gt;Рамблер карты&lt;/a&gt;&lt;/font&gt;&lt;/h1&gt;&lt;span style="font-family: 'Times New Roman'; font-size: medium; font-weight: normal;"&gt;Основные возможности обработки:&lt;/span&gt;
+&lt;ul style="font-family: 'Times New Roman'; font-size: medium;"&gt;
+&lt;li&gt;&lt;b&gt;Инициализация&lt;/b&gt; Рамблер-карт&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Поиск адреса на карте&lt;/b&gt;&lt;span style="font-weight: normal;"&gt; по текстовому представлению - нужно ввести адреса в поле а нажать кнопку поиска или Enter&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Использование http-геокодера&lt;/b&gt;&lt;span style="font-weight: normal;"&gt; для поиска адерсов, соответствующих введеному наименованию - по введенному адресу в таблицу адресов попадут адреса, возвращенныее геокодером&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Обратный поиск адреса&lt;/b&gt;&lt;span style="font-weight: normal;"&gt; по геокоординатам - щелчок по адресу в таблице адресов поставит метку на карте по указанным геокоординатам&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Взаимодействие с картой&lt;/b&gt;&lt;span style="font-weight: normal;"&gt; - установка маркера на карте щелчком и прием в 1С геокоординат маркера&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Действия&lt;/b&gt;&lt;span style="font-weight: normal;"&gt; - некоторые возможности сервисов&lt;/span&gt;&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;Построить маршрут&lt;/b&gt;&lt;span style="font-weight: normal;"&gt; по указанным меткам - маршрут построится по отмеченным меткам на карте. Используется кнопка построения маршрута&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Создать кластер&lt;/b&gt;&lt;span style="font-weight: normal;"&gt; - при уменшьшении масштаба карты рядом стоящие метки будут группироваться в кластеры&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Построение полигона&lt;/b&gt;&lt;span style="font-weight: normal;"&gt; - рисует по установленным точкам полигон на карте и заполняет его призвольным цветом&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/ul&gt;
+&lt;/BODY&gt;&lt;/HTML&gt;</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>3</index>
+		<row>
+			<c>
+				<c>
+					<f>2</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>&lt;HTML&gt;&lt;BODY&gt;
+&lt;h1&gt;&lt;font color="#ff0000"&gt;&lt;a href="http://api.2gis.ru/doc/" target="_blank"&gt;2ГИС карты&lt;/a&gt;&lt;/font&gt;&lt;/h1&gt;&lt;span style="font-family: 'Times New Roman'; font-size: medium; font-weight: normal;"&gt;Основные возможности обработки:&lt;/span&gt;
+&lt;ul&gt;
+&lt;li style="font-family: 'Times New Roman'; font-size: medium;"&gt;&lt;b&gt;Инициализация&lt;/b&gt; 2ГИС-карт&lt;/li&gt;
+&lt;li style="font-family: 'Times New Roman'; font-size: medium;"&gt;&lt;b&gt;Поиск адреса на карте&lt;/b&gt;&lt;span style="font-weight: normal;"&gt; по текстовому представлению - нужно ввести адреса в поле а нажать кнопку поиска или Enter&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;b style="font-family: 'Times New Roman'; font-size: medium;"&gt;Использование http-геокодера&lt;/b&gt;&lt;span style="font-family: 'Times New Roman'; font-size: medium; font-weight: normal;"&gt; - для этого нужен API-&lt;/span&gt;&lt;font face="Times New Roman" size="3"&gt;ключ. У меня нет&lt;/font&gt;&lt;/li&gt;
+&lt;li style="font-family: 'Times New Roman'; font-size: medium;"&gt;&lt;b&gt;Обратный поиск адреса&lt;/b&gt;&lt;span style="font-weight: normal;"&gt; по геокоординатам - функция для отображения есть, но т.к. нет геокодера, то и ничего в таблицу адресов не попадает&lt;/span&gt;&lt;/li&gt;
+&lt;li style="font-family: 'Times New Roman'; font-size: medium;"&gt;&lt;b&gt;Взаимодействие с картой&lt;/b&gt;&lt;span style="font-weight: normal;"&gt; - установка маркера на карте двойным щелчком и прием в 1С геокоординат маркера&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/BODY&gt;&lt;/HTML&gt;</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<templateMode>true</templateMode>
+	<defaultFormatIndex>3</defaultFormatIndex>
+	<height>4</height>
+	<vgRows>4</vgRows>
+	<namedItem xsi:type="NamedItemCells">
+		<name>Справка2ГИС</name>
+		<area>
+			<type>Rectangle</type>
+			<beginRow>3</beginRow>
+			<endRow>3</endRow>
+			<beginColumn>0</beginColumn>
+			<endColumn>0</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>СправкаГугл</name>
+		<area>
+			<type>Rectangle</type>
+			<beginRow>1</beginRow>
+			<endRow>1</endRow>
+			<beginColumn>0</beginColumn>
+			<endColumn>0</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>СправкаРамблер</name>
+		<area>
+			<type>Rectangle</type>
+			<beginRow>2</beginRow>
+			<endRow>2</endRow>
+			<beginColumn>0</beginColumn>
+			<endColumn>0</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>СправкаЯндекс</name>
+		<area>
+			<type>Rectangle</type>
+			<beginRow>0</beginRow>
+			<endRow>0</endRow>
+			<beginColumn>0</beginColumn>
+			<endColumn>0</endColumn>
+		</area>
+	</namedItem>
+	<format>
+		<width>1631</width>
+	</format>
+	<format>
+		<width>618</width>
+	</format>
+	<format>
+		<width>72</width>
+	</format>
+</document>

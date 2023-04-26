@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="СЧ" id="1">
+			<DataPath>Запись.СЧ</DataPath>
+			<ContextMenu name="СЧКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="СЧРасширеннаяПодсказка" id="13"/>
+		</InputField>
+		<InputField name="ДВ" id="3">
+			<DataPath>Запись.ДВ</DataPath>
+			<ContextMenu name="ДВКонтекстноеМеню" id="4"/>
+			<ExtendedTooltip name="ДВРасширеннаяПодсказка" id="14"/>
+		</InputField>
+		<InputField name="Действие" id="5">
+			<DataPath>Запись.Действие</DataPath>
+			<ContextMenu name="ДействиеКонтекстноеМеню" id="6"/>
+			<ExtendedTooltip name="ДействиеРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<InputField name="СсылкаНаОбъект" id="7">
+			<DataPath>Запись.СсылкаНаОбъект</DataPath>
+			<ContextMenu name="СсылкаНаОбъектКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="СсылкаНаОбъектРасширеннаяПодсказка" id="16"/>
+		</InputField>
+		<InputField name="Пользователь" id="9">
+			<DataPath>Запись.Пользователь</DataPath>
+			<ContextMenu name="ПользовательКонтекстноеМеню" id="10"/>
+			<ExtendedTooltip name="ПользовательРасширеннаяПодсказка" id="17"/>
+		</InputField>
+		<InputField name="Комментарий" id="11">
+			<DataPath>Запись.Комментарий</DataPath>
+			<Height>5</Height>
+			<MultiLine>true</MultiLine>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="12"/>
+			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="18"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.ЖурналИзмененийДокументов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

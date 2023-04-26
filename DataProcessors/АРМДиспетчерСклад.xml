@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<DataProcessor uuid="88463b84-0d76-43b3-9215-fea3e0c370b6">
+		<InternalInfo>
+			<xr:GeneratedType name="DataProcessorObject.АРМДиспетчерСклад" category="Object">
+				<xr:TypeId>5ac805b7-f6a5-43ce-8915-28fa94c3f623</xr:TypeId>
+				<xr:ValueId>682b8ce6-cbd9-47e3-95fa-15ff9db4acac</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DataProcessorManager.АРМДиспетчерСклад" category="Manager">
+				<xr:TypeId>42c6092a-cf99-43bf-b2e9-da6f8cd6ef65</xr:TypeId>
+				<xr:ValueId>5c61e389-e6d1-40e8-b9ee-de40afac407d</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>АРМДиспетчерСклад</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>АРМ Диспетчера склада</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment>АРМ Диспетчера склада</Comment>
+			<UseStandardCommands>true</UseStandardCommands>
+			<DefaultForm>DataProcessor.АРМДиспетчерСклад.Form.ФормаДиспетчера</DefaultForm>
+			<AuxiliaryForm/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<ExtendedPresentation>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>АРМ Диспетчера склада</v8:content>
+				</v8:item>
+			</ExtendedPresentation>
+			<Explanation>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>АРМ Диспетчера склада</v8:content>
+				</v8:item>
+			</Explanation>
+		</Properties>
+		<ChildObjects>
+			<Form>ФормаДиспетчера</Form>
+			<Form>ФормаДиспетчера_1</Form>
+			<Form>ФормаДиспетчера_2</Form>
+		</ChildObjects>
+	</DataProcessor>
+</MetaDataObject>

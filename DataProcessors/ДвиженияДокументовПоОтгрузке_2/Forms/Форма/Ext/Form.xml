@@ -1,0 +1,1041 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<Pages name="Группа1" id="1">
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="151"/>
+			<ChildItems>
+				<Page name="Группа2" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Док. Не распределенные</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="152"/>
+					<ChildItems>
+						<Table name="СписокДокДляОтгрузки" id="3">
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>СписокДокДляОтгрузки</DataPath>
+							<RowPictureDataPath>СписокДокДляОтгрузки.DefaultPicture</RowPictureDataPath>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<ContextMenu name="СписокДокДляОтгрузкиКонтекстноеМеню" id="4"/>
+							<AutoCommandBar name="СписокДокДляОтгрузкиКоманднаяПанель" id="5">
+								<ChildItems>
+									<Button name="СписокДокДляОтгрузкиОбновить" id="88">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Item.СписокДокДляОтгрузки.StandardCommand.Refresh</CommandName>
+										<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="СписокДокДляОтгрузкиОбновитьРасширеннаяПодсказка" id="153"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="СписокДокДляОтгрузкиРасширеннаяПодсказка" id="154"/>
+							<SearchStringAddition name="СписокДокДляОтгрузкиСтрокаПоиска" id="155">
+								<AdditionSource>
+									<Item>СписокДокДляОтгрузки</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокДокДляОтгрузкиСтрокаПоискаКонтекстноеМеню" id="156"/>
+								<ExtendedTooltip name="СписокДокДляОтгрузкиСтрокаПоискаРасширеннаяПодсказка" id="157"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СписокДокДляОтгрузкиСостояниеПросмотра" id="158">
+								<AdditionSource>
+									<Item>СписокДокДляОтгрузки</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокДокДляОтгрузкиСостояниеПросмотраКонтекстноеМеню" id="159"/>
+								<ExtendedTooltip name="СписокДокДляОтгрузкиСостояниеПросмотраРасширеннаяПодсказка" id="160"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СписокДокДляОтгрузкиУправлениеПоиском" id="161">
+								<AdditionSource>
+									<Item>СписокДокДляОтгрузки</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокДокДляОтгрузкиУправлениеПоискомКонтекстноеМеню" id="162"/>
+								<ExtendedTooltip name="СписокДокДляОтгрузкиУправлениеПоискомРасширеннаяПодсказка" id="163"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="СписокДокДляОтгрузкиДата" id="6">
+									<DataPath>СписокДокДляОтгрузки.Date</DataPath>
+									<ContextMenu name="СписокДокДляОтгрузкиДатаКонтекстноеМеню" id="7"/>
+									<ExtendedTooltip name="СписокДокДляОтгрузкиДатаРасширеннаяПодсказка" id="164"/>
+								</LabelField>
+								<LabelField name="СписокДокДляОтгрузкиНомер" id="8">
+									<DataPath>СписокДокДляОтгрузки.Number</DataPath>
+									<ContextMenu name="СписокДокДляОтгрузкиНомерКонтекстноеМеню" id="9"/>
+									<ExtendedTooltip name="СписокДокДляОтгрузкиНомерРасширеннаяПодсказка" id="165"/>
+								</LabelField>
+								<LabelField name="СписокДокДляОтгрузкиНомераСФ" id="14">
+									<DataPath>СписокДокДляОтгрузки.НомераСФ</DataPath>
+									<ContextMenu name="СписокДокДляОтгрузкиНомераСФКонтекстноеМеню" id="15"/>
+									<ExtendedTooltip name="СписокДокДляОтгрузкиНомераСФРасширеннаяПодсказка" id="166"/>
+								</LabelField>
+								<LabelField name="СписокДокДляОтгрузкиПолучатель" id="16">
+									<DataPath>СписокДокДляОтгрузки.Получатель</DataPath>
+									<ContextMenu name="СписокДокДляОтгрузкиПолучательКонтекстноеМеню" id="17"/>
+									<ExtendedTooltip name="СписокДокДляОтгрузкиПолучательРасширеннаяПодсказка" id="167"/>
+								</LabelField>
+								<LabelField name="СписокДокДляОтгрузкиКоробки" id="12">
+									<DataPath>СписокДокДляОтгрузки.Коробки</DataPath>
+									<ContextMenu name="СписокДокДляОтгрузкиКоробкиКонтекстноеМеню" id="13"/>
+									<ExtendedTooltip name="СписокДокДляОтгрузкиКоробкиРасширеннаяПодсказка" id="168"/>
+								</LabelField>
+								<LabelField name="СписокДокДляОтгрузкиСписокМестХранений" id="18">
+									<DataPath>СписокДокДляОтгрузки.СписокМестХранений</DataPath>
+									<ContextMenu name="СписокДокДляОтгрузкиСписокМестХраненийКонтекстноеМеню" id="19"/>
+									<ExtendedTooltip name="СписокДокДляОтгрузкиСписокМестХраненийРасширеннаяПодсказка" id="169"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="Группа3" id="20">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Док. В Зоне отгрузки</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="170"/>
+					<ChildItems>
+						<Table name="СписокДокВЗонеОтгрузки" id="21">
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>СписокДокВЗонеОтгрузки</DataPath>
+							<RowPictureDataPath>СписокДокВЗонеОтгрузки.DefaultPicture</RowPictureDataPath>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<ContextMenu name="СписокДокВЗонеОтгрузкиКонтекстноеМеню" id="22"/>
+							<AutoCommandBar name="СписокДокВЗонеОтгрузкиКоманднаяПанель" id="23">
+								<ChildItems>
+									<Button name="СписокДокВЗонеОтгрузкиОбновить" id="89">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Item.СписокДокВЗонеОтгрузки.StandardCommand.Refresh</CommandName>
+										<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="СписокДокВЗонеОтгрузкиОбновитьРасширеннаяПодсказка" id="171"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="СписокДокВЗонеОтгрузкиРасширеннаяПодсказка" id="172"/>
+							<SearchStringAddition name="СписокДокВЗонеОтгрузкиСтрокаПоиска" id="173">
+								<AdditionSource>
+									<Item>СписокДокВЗонеОтгрузки</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокДокВЗонеОтгрузкиСтрокаПоискаКонтекстноеМеню" id="174"/>
+								<ExtendedTooltip name="СписокДокВЗонеОтгрузкиСтрокаПоискаРасширеннаяПодсказка" id="175"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СписокДокВЗонеОтгрузкиСостояниеПросмотра" id="176">
+								<AdditionSource>
+									<Item>СписокДокВЗонеОтгрузки</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокДокВЗонеОтгрузкиСостояниеПросмотраКонтекстноеМеню" id="177"/>
+								<ExtendedTooltip name="СписокДокВЗонеОтгрузкиСостояниеПросмотраРасширеннаяПодсказка" id="178"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СписокДокВЗонеОтгрузкиУправлениеПоиском" id="179">
+								<AdditionSource>
+									<Item>СписокДокВЗонеОтгрузки</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокДокВЗонеОтгрузкиУправлениеПоискомКонтекстноеМеню" id="180"/>
+								<ExtendedTooltip name="СписокДокВЗонеОтгрузкиУправлениеПоискомРасширеннаяПодсказка" id="181"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="СписокДокВЗонеОтгрузкиДата" id="24">
+									<DataPath>~СписокДокВЗонеОтгрузки.Date</DataPath>
+									<ContextMenu name="СписокДокВЗонеОтгрузкиДатаКонтекстноеМеню" id="25"/>
+									<ExtendedTooltip name="СписокДокВЗонеОтгрузкиДатаРасширеннаяПодсказка" id="182"/>
+								</LabelField>
+								<LabelField name="СписокДокВЗонеОтгрузкиНомер" id="26">
+									<DataPath>~СписокДокВЗонеОтгрузки.Number</DataPath>
+									<ContextMenu name="СписокДокВЗонеОтгрузкиНомерКонтекстноеМеню" id="27"/>
+									<ExtendedTooltip name="СписокДокВЗонеОтгрузкиНомерРасширеннаяПодсказка" id="183"/>
+								</LabelField>
+								<LabelField name="СписокДокВЗонеОтгрузкиКоробки" id="30">
+									<DataPath>~СписокДокВЗонеОтгрузки.Коробки</DataPath>
+									<ContextMenu name="СписокДокВЗонеОтгрузкиКоробкиКонтекстноеМеню" id="31"/>
+									<ExtendedTooltip name="СписокДокВЗонеОтгрузкиКоробкиРасширеннаяПодсказка" id="184"/>
+								</LabelField>
+								<LabelField name="СписокДокВЗонеОтгрузкиНомерМестаОтгрузки" id="94">
+									<DataPath>~СписокДокВЗонеОтгрузки.НомерМестаОтгрузки</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Место отгрузки</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СписокДокВЗонеОтгрузкиНомерМестаОтгрузкиКонтекстноеМеню" id="95"/>
+									<ExtendedTooltip name="СписокДокВЗонеОтгрузкиНомерМестаОтгрузкиРасширеннаяПодсказка" id="185"/>
+								</LabelField>
+								<LabelField name="СписокДокВЗонеОтгрузкиНомераСФ" id="32">
+									<DataPath>~СписокДокВЗонеОтгрузки.НомераСФ</DataPath>
+									<ContextMenu name="СписокДокВЗонеОтгрузкиНомераСФКонтекстноеМеню" id="33"/>
+									<ExtendedTooltip name="СписокДокВЗонеОтгрузкиНомераСФРасширеннаяПодсказка" id="186"/>
+								</LabelField>
+								<LabelField name="СписокДокВЗонеОтгрузкиПолучатель" id="34">
+									<DataPath>~СписокДокВЗонеОтгрузки.Получатель</DataPath>
+									<ContextMenu name="СписокДокВЗонеОтгрузкиПолучательКонтекстноеМеню" id="35"/>
+									<ExtendedTooltip name="СписокДокВЗонеОтгрузкиПолучательРасширеннаяПодсказка" id="187"/>
+								</LabelField>
+								<LabelField name="СписокДокВЗонеОтгрузкиСписокМестХранений" id="36">
+									<DataPath>~СписокДокВЗонеОтгрузки.СписокМестХранений</DataPath>
+									<ContextMenu name="СписокДокВЗонеОтгрузкиСписокМестХраненийКонтекстноеМеню" id="37"/>
+									<ExtendedTooltip name="СписокДокВЗонеОтгрузкиСписокМестХраненийРасширеннаяПодсказка" id="188"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="Группа4" id="38">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Док. ПутевыеЛисты</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="189"/>
+					<ChildItems>
+						<Table name="СписокДокВПутевыхЛистах" id="39">
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>СписокДокВПутевыхЛистах</DataPath>
+							<RowPictureDataPath>СписокДокВПутевыхЛистах.DefaultPicture</RowPictureDataPath>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<ContextMenu name="СписокДокВПутевыхЛистахКонтекстноеМеню" id="40"/>
+							<AutoCommandBar name="СписокДокВПутевыхЛистахКоманднаяПанель" id="41">
+								<ChildItems>
+									<Button name="СписокДокВПутевыхЛистахОбновить" id="90">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Item.СписокДокВПутевыхЛистах.StandardCommand.Refresh</CommandName>
+										<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="СписокДокВПутевыхЛистахОбновитьРасширеннаяПодсказка" id="190"/>
+									</Button>
+									<Button name="СписокДокВПутевыхЛистахУдалитьПутевыеЛисты" id="93">
+										<Type>CommandBarButton</Type>
+										<Enabled>false</Enabled>
+										<CommandName>Form.Command.УдалитьПутевыеЛисты</CommandName>
+										<ExtendedTooltip name="СписокДокВПутевыхЛистахУдалитьПутевыеЛистыРасширеннаяПодсказка" id="191"/>
+									</Button>
+									<Button name="СписокДокВПутевыхЛистахПечатьВыделенныхБЯС" id="98">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ПечатьВыделенныхБЯС</CommandName>
+										<ExtendedTooltip name="СписокДокВПутевыхЛистахПечатьВыделенныхБЯСРасширеннаяПодсказка" id="192"/>
+									</Button>
+									<Button name="СписокДокВПутевыхЛистахСоздатьПриемТовараВодителем" id="99">
+										<Type>CommandBarButton</Type>
+										<Enabled>false</Enabled>
+										<CommandName>Form.Command.СоздатьПриемТовараВодителем</CommandName>
+										<ExtendedTooltip name="СписокДокВПутевыхЛистахСоздатьПриемТовараВодителемРасширеннаяПодсказка" id="193"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="СписокДокВПутевыхЛистахРасширеннаяПодсказка" id="194"/>
+							<SearchStringAddition name="СписокДокВПутевыхЛистахСтрокаПоиска" id="195">
+								<AdditionSource>
+									<Item>СписокДокВПутевыхЛистах</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокДокВПутевыхЛистахСтрокаПоискаКонтекстноеМеню" id="196"/>
+								<ExtendedTooltip name="СписокДокВПутевыхЛистахСтрокаПоискаРасширеннаяПодсказка" id="197"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СписокДокВПутевыхЛистахСостояниеПросмотра" id="198">
+								<AdditionSource>
+									<Item>СписокДокВПутевыхЛистах</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокДокВПутевыхЛистахСостояниеПросмотраКонтекстноеМеню" id="199"/>
+								<ExtendedTooltip name="СписокДокВПутевыхЛистахСостояниеПросмотраРасширеннаяПодсказка" id="200"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СписокДокВПутевыхЛистахУправлениеПоиском" id="201">
+								<AdditionSource>
+									<Item>СписокДокВПутевыхЛистах</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокДокВПутевыхЛистахУправлениеПоискомКонтекстноеМеню" id="202"/>
+								<ExtendedTooltip name="СписокДокВПутевыхЛистахУправлениеПоискомРасширеннаяПодсказка" id="203"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">СписокДокВПутевыхЛистахВыбор</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="СписокДокВПутевыхЛистахПутевойЛист" id="122">
+									<DataPath>~СписокДокВПутевыхЛистах.ПутевойЛист</DataPath>
+									<ContextMenu name="СписокДокВПутевыхЛистахПутевойЛистКонтекстноеМеню" id="123"/>
+									<ExtendedTooltip name="СписокДокВПутевыхЛистахПутевойЛистРасширеннаяПодсказка" id="204"/>
+								</LabelField>
+								<LabelField name="СписокДокВПутевыхЛистахВодитель" id="112">
+									<DataPath>~СписокДокВПутевыхЛистах.Водитель</DataPath>
+									<ContextMenu name="СписокДокВПутевыхЛистахВодительКонтекстноеМеню" id="113"/>
+									<ExtendedTooltip name="СписокДокВПутевыхЛистахВодительРасширеннаяПодсказка" id="205"/>
+								</LabelField>
+								<LabelField name="СписокДокВПутевыхЛистахКонтрагент" id="118">
+									<DataPath>~СписокДокВПутевыхЛистах.Контрагент</DataPath>
+									<ContextMenu name="СписокДокВПутевыхЛистахКонтрагентКонтекстноеМеню" id="119"/>
+									<ExtendedTooltip name="СписокДокВПутевыхЛистахКонтрагентРасширеннаяПодсказка" id="206"/>
+								</LabelField>
+								<LabelField name="СписокДокВПутевыхЛистахМестоОтгрузки" id="120">
+									<DataPath>~СписокДокВПутевыхЛистах.МестоОтгрузки</DataPath>
+									<ContextMenu name="СписокДокВПутевыхЛистахМестоОтгрузкиКонтекстноеМеню" id="121"/>
+									<ExtendedTooltip name="СписокДокВПутевыхЛистахМестоОтгрузкиРасширеннаяПодсказка" id="207"/>
+								</LabelField>
+								<LabelField name="СписокДокВПутевыхЛистахКоличествоКоробокОстаток" id="116">
+									<DataPath>~СписокДокВПутевыхЛистах.КоличествоКоробокBalance</DataPath>
+									<ContextMenu name="СписокДокВПутевыхЛистахКоличествоКоробокОстатокКонтекстноеМеню" id="117"/>
+									<ExtendedTooltip name="СписокДокВПутевыхЛистахКоличествоКоробокОстатокРасширеннаяПодсказка" id="208"/>
+								</LabelField>
+								<LabelField name="СписокДокВПутевыхЛистахДокументПрихода" id="114">
+									<DataPath>~СписокДокВПутевыхЛистах.ДокументПрихода</DataPath>
+									<ContextMenu name="СписокДокВПутевыхЛистахДокументПриходаКонтекстноеМеню" id="115"/>
+									<ExtendedTooltip name="СписокДокВПутевыхЛистахДокументПриходаРасширеннаяПодсказка" id="209"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="Группа5" id="58">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Товар у Водителей</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="210"/>
+					<ChildItems>
+						<Pages name="Группа7" id="124">
+							<ExtendedTooltip name="Группа7РасширеннаяПодсказка" id="211"/>
+							<ChildItems>
+								<Page name="Группа9" id="126">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Остаток у Водителей</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="Группа9РасширеннаяПодсказка" id="212"/>
+									<ChildItems>
+										<UsualGroup name="Группа10" id="148">
+											<Group>Horizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа10РасширеннаяПодсказка" id="213"/>
+											<ChildItems>
+												<Button name="СоздатьПогрузкаВАвто" id="145">
+													<Type>UsualButton</Type>
+													<CommandName>Form.Command.СоздатьПогрузкаВАвто</CommandName>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Создать Документы ПогрузкаВАвтомобиль</v8:content>
+														</v8:item>
+													</Title>
+													<ExtendedTooltip name="СоздатьПогрузкаВАвтоРасширеннаяПодсказка" id="214"/>
+												</Button>
+												<InputField name="РаботникОхраны" id="146">
+													<DataPath>РаботникОхраны</DataPath>
+													<ChoiceParameters>
+														<app:item name="Отбор.ЭтоГруппа">
+															<app:value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation/>
+																<Value xsi:type="xs:boolean">false</Value>
+															</app:value>
+														</app:item>
+														<app:item name="Отбор.Должность">
+															<app:value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation/>
+																<Value xsi:type="xr:DesignTimeRef">Catalog.Должности.РаботникОхраны</Value>
+															</app:value>
+														</app:item>
+													</ChoiceParameters>
+													<ContextMenu name="РаботникОхраныКонтекстноеМеню" id="147"/>
+													<ExtendedTooltip name="РаботникОхраныРасширеннаяПодсказка" id="215"/>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
+										<Table name="СписокДокУВодителяРЕГИСТР" id="127">
+											<UseAlternationRowColor>true</UseAlternationRowColor>
+											<EnableStartDrag>true</EnableStartDrag>
+											<FileDragMode>AsFile</FileDragMode>
+											<DataPath>СписокДокУВодителяРЕГИСТР</DataPath>
+											<RowPictureDataPath>СписокДокУВодителяРЕГИСТР.DefaultPicture</RowPictureDataPath>
+											<SearchStringLocation>None</SearchStringLocation>
+											<ViewStatusLocation>None</ViewStatusLocation>
+											<SearchControlLocation>None</SearchControlLocation>
+											<AutoRefresh>false</AutoRefresh>
+											<AutoRefreshPeriod>60</AutoRefreshPeriod>
+											<Period>
+												<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+												<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+												<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+											</Period>
+											<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+											<RestoreCurrentRow>false</RestoreCurrentRow>
+											<TopLevelParent xsi:nil="true"/>
+											<ShowRoot>true</ShowRoot>
+											<AllowRootChoice>false</AllowRootChoice>
+											<UpdateOnDataChange>Auto</UpdateOnDataChange>
+											<ContextMenu name="СписокДокУВодителяРЕГИСТРКонтекстноеМеню" id="128"/>
+											<AutoCommandBar name="СписокДокУВодителяРЕГИСТРКоманднаяПанель" id="129">
+												<ChildItems>
+													<Button name="СписокДокУВодителяРЕГИСТРОбновить" id="140">
+														<Type>CommandBarButton</Type>
+														<CommandName>Form.Item.СписокДокУВодителяРЕГИСТР.StandardCommand.Refresh</CommandName>
+														<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+														<ExtendedTooltip name="СписокДокУВодителяРЕГИСТРОбновитьРасширеннаяПодсказка" id="216"/>
+													</Button>
+												</ChildItems>
+											</AutoCommandBar>
+											<ExtendedTooltip name="СписокДокУВодителяРЕГИСТРРасширеннаяПодсказка" id="217"/>
+											<SearchStringAddition name="СписокДокУВодителяРЕГИСТРСтрокаПоиска" id="218">
+												<AdditionSource>
+													<Item>СписокДокУВодителяРЕГИСТР</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="СписокДокУВодителяРЕГИСТРСтрокаПоискаКонтекстноеМеню" id="219"/>
+												<ExtendedTooltip name="СписокДокУВодителяРЕГИСТРСтрокаПоискаРасширеннаяПодсказка" id="220"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="СписокДокУВодителяРЕГИСТРСостояниеПросмотра" id="221">
+												<AdditionSource>
+													<Item>СписокДокУВодителяРЕГИСТР</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="СписокДокУВодителяРЕГИСТРСостояниеПросмотраКонтекстноеМеню" id="222"/>
+												<ExtendedTooltip name="СписокДокУВодителяРЕГИСТРСостояниеПросмотраРасширеннаяПодсказка" id="223"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="СписокДокУВодителяРЕГИСТРУправлениеПоиском" id="224">
+												<AdditionSource>
+													<Item>СписокДокУВодителяРЕГИСТР</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="СписокДокУВодителяРЕГИСТРУправлениеПоискомКонтекстноеМеню" id="225"/>
+												<ExtendedTooltip name="СписокДокУВодителяРЕГИСТРУправлениеПоискомРасширеннаяПодсказка" id="226"/>
+											</SearchControlAddition>
+											<ChildItems>
+												<LabelField name="СписокДокУВодителяРЕГИСТРВодитель" id="130">
+													<DataPath>~СписокДокУВодителяРЕГИСТР.Водитель</DataPath>
+													<ContextMenu name="СписокДокУВодителяРЕГИСТРВодительКонтекстноеМеню" id="131"/>
+													<ExtendedTooltip name="СписокДокУВодителяРЕГИСТРВодительРасширеннаяПодсказка" id="227"/>
+												</LabelField>
+												<LabelField name="СписокДокУВодителяРЕГИСТРДокументПрихода" id="132">
+													<DataPath>~СписокДокУВодителяРЕГИСТР.ДокументПрихода</DataPath>
+													<ContextMenu name="СписокДокУВодителяРЕГИСТРДокументПриходаКонтекстноеМеню" id="133"/>
+													<ExtendedTooltip name="СписокДокУВодителяРЕГИСТРДокументПриходаРасширеннаяПодсказка" id="228"/>
+												</LabelField>
+												<LabelField name="СписокДокУВодителяРЕГИСТРДокументПриходаПутевойЛист" id="149">
+													<DataPath>~СписокДокУВодителяРЕГИСТР.ДокументПрихода.ПутевойЛист</DataPath>
+													<ContextMenu name="СписокДокУВодителяРЕГИСТРДокументПриходаПутевойЛистКонтекстноеМеню" id="150"/>
+													<ExtendedTooltip name="СписокДокУВодителяРЕГИСТРДокументПриходаПутевойЛистРасширеннаяПодсказка" id="229"/>
+												</LabelField>
+												<LabelField name="СписокДокУВодителяРЕГИСТРКоличествоКоробокОстаток" id="134">
+													<DataPath>~СписокДокУВодителяРЕГИСТР.КоличествоКоробокBalance</DataPath>
+													<ContextMenu name="СписокДокУВодителяРЕГИСТРКоличествоКоробокОстатокКонтекстноеМеню" id="135"/>
+													<ExtendedTooltip name="СписокДокУВодителяРЕГИСТРКоличествоКоробокОстатокРасширеннаяПодсказка" id="230"/>
+												</LabelField>
+												<LabelField name="СписокДокУВодителяРЕГИСТРКонтрагент" id="136">
+													<DataPath>~СписокДокУВодителяРЕГИСТР.Контрагент</DataPath>
+													<ContextMenu name="СписокДокУВодителяРЕГИСТРКонтрагентКонтекстноеМеню" id="137"/>
+													<ExtendedTooltip name="СписокДокУВодителяРЕГИСТРКонтрагентРасширеннаяПодсказка" id="231"/>
+												</LabelField>
+												<LabelField name="СписокДокУВодителяРЕГИСТРМестоОтгрузки" id="138">
+													<DataPath>~СписокДокУВодителяРЕГИСТР.МестоОтгрузки</DataPath>
+													<ContextMenu name="СписокДокУВодителяРЕГИСТРМестоОтгрузкиКонтекстноеМеню" id="139"/>
+													<ExtendedTooltip name="СписокДокУВодителяРЕГИСТРМестоОтгрузкиРасширеннаяПодсказка" id="232"/>
+												</LabelField>
+											</ChildItems>
+										</Table>
+									</ChildItems>
+								</Page>
+								<Page name="Группа8" id="125">
+									<Enabled>false</Enabled>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Документы</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="Группа8РасширеннаяПодсказка" id="233"/>
+									<ChildItems>
+										<Table name="СписокДокУВодителя" id="59">
+											<UseAlternationRowColor>true</UseAlternationRowColor>
+											<EnableStartDrag>true</EnableStartDrag>
+											<FileDragMode>AsFile</FileDragMode>
+											<DataPath>СписокДокУВодителя</DataPath>
+											<RowPictureDataPath>СписокДокУВодителя.DefaultPicture</RowPictureDataPath>
+											<SearchStringLocation>None</SearchStringLocation>
+											<ViewStatusLocation>None</ViewStatusLocation>
+											<SearchControlLocation>None</SearchControlLocation>
+											<AutoRefresh>false</AutoRefresh>
+											<AutoRefreshPeriod>60</AutoRefreshPeriod>
+											<Period>
+												<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+												<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+												<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+											</Period>
+											<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+											<RestoreCurrentRow>false</RestoreCurrentRow>
+											<TopLevelParent xsi:nil="true"/>
+											<ShowRoot>true</ShowRoot>
+											<AllowRootChoice>false</AllowRootChoice>
+											<UpdateOnDataChange>Auto</UpdateOnDataChange>
+											<ContextMenu name="СписокДокУВодителяКонтекстноеМеню" id="60"/>
+											<AutoCommandBar name="СписокДокУВодителяКоманднаяПанель" id="61">
+												<ChildItems>
+													<Button name="СписокДокУВодителяОбновить" id="91">
+														<Type>CommandBarButton</Type>
+														<CommandName>Form.Item.СписокДокУВодителя.StandardCommand.Refresh</CommandName>
+														<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+														<ExtendedTooltip name="СписокДокУВодителяОбновитьРасширеннаяПодсказка" id="234"/>
+													</Button>
+												</ChildItems>
+											</AutoCommandBar>
+											<ExtendedTooltip name="СписокДокУВодителяРасширеннаяПодсказка" id="235"/>
+											<SearchStringAddition name="СписокДокУВодителяСтрокаПоиска" id="236">
+												<AdditionSource>
+													<Item>СписокДокУВодителя</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="СписокДокУВодителяСтрокаПоискаКонтекстноеМеню" id="237"/>
+												<ExtendedTooltip name="СписокДокУВодителяСтрокаПоискаРасширеннаяПодсказка" id="238"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="СписокДокУВодителяСостояниеПросмотра" id="239">
+												<AdditionSource>
+													<Item>СписокДокУВодителя</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="СписокДокУВодителяСостояниеПросмотраКонтекстноеМеню" id="240"/>
+												<ExtendedTooltip name="СписокДокУВодителяСостояниеПросмотраРасширеннаяПодсказка" id="241"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="СписокДокУВодителяУправлениеПоиском" id="242">
+												<AdditionSource>
+													<Item>СписокДокУВодителя</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="СписокДокУВодителяУправлениеПоискомКонтекстноеМеню" id="243"/>
+												<ExtendedTooltip name="СписокДокУВодителяУправлениеПоискомРасширеннаяПодсказка" id="244"/>
+											</SearchControlAddition>
+											<Events>
+												<Event name="Selection">СписокДокУВодителяВыбор</Event>
+											</Events>
+											<ChildItems>
+												<LabelField name="СписокДокУВодителяДата" id="100">
+													<DataPath>~СписокДокУВодителя.Date</DataPath>
+													<ContextMenu name="СписокДокУВодителяДатаКонтекстноеМеню" id="101"/>
+													<ExtendedTooltip name="СписокДокУВодителяДатаРасширеннаяПодсказка" id="245"/>
+												</LabelField>
+												<LabelField name="СписокДокУВодителяНомер" id="102">
+													<DataPath>~СписокДокУВодителя.Number</DataPath>
+													<ContextMenu name="СписокДокУВодителяНомерКонтекстноеМеню" id="103"/>
+													<ExtendedTooltip name="СписокДокУВодителяНомерРасширеннаяПодсказка" id="246"/>
+												</LabelField>
+												<LabelField name="СписокДокУВодителяВодитель" id="104">
+													<DataPath>~СписокДокУВодителя.Водитель</DataPath>
+													<ContextMenu name="СписокДокУВодителяВодительКонтекстноеМеню" id="105"/>
+													<ExtendedTooltip name="СписокДокУВодителяВодительРасширеннаяПодсказка" id="247"/>
+												</LabelField>
+												<LabelField name="СписокДокУВодителяНомераСФ" id="110">
+													<DataPath>~СписокДокУВодителя.НомераСФ</DataPath>
+													<ContextMenu name="СписокДокУВодителяНомераСФКонтекстноеМеню" id="111"/>
+													<ExtendedTooltip name="СписокДокУВодителяНомераСФРасширеннаяПодсказка" id="248"/>
+												</LabelField>
+												<LabelField name="СписокДокУВодителяДокБЯС" id="106">
+													<DataPath>~СписокДокУВодителя.ДокБЯС</DataPath>
+													<ContextMenu name="СписокДокУВодителяДокБЯСКонтекстноеМеню" id="107"/>
+													<ExtendedTooltip name="СписокДокУВодителяДокБЯСРасширеннаяПодсказка" id="249"/>
+												</LabelField>
+												<LabelField name="СписокДокУВодителяПутевойЛист" id="108">
+													<DataPath>~СписокДокУВодителя.ПутевойЛист</DataPath>
+													<ContextMenu name="СписокДокУВодителяПутевойЛистКонтекстноеМеню" id="109"/>
+													<ExtendedTooltip name="СписокДокУВодителяПутевойЛистРасширеннаяПодсказка" id="250"/>
+												</LabelField>
+											</ChildItems>
+										</Table>
+									</ChildItems>
+								</Page>
+							</ChildItems>
+						</Pages>
+					</ChildItems>
+				</Page>
+				<Page name="Группа6" id="72">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Док. Погрузка в Авто</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="251"/>
+					<ChildItems>
+						<Table name="СписокДокПогрузкаВАвто" id="73">
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>СписокДокПогрузкаВАвто</DataPath>
+							<RowPictureDataPath>СписокДокПогрузкаВАвто.DefaultPicture</RowPictureDataPath>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<ContextMenu name="СписокДокПогрузкаВАвтоКонтекстноеМеню" id="74"/>
+							<AutoCommandBar name="СписокДокПогрузкаВАвтоКоманднаяПанель" id="75">
+								<ChildItems>
+									<Button name="СписокДокПогрузкаВАвтоОбновить" id="92">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Item.СписокДокПогрузкаВАвто.StandardCommand.Refresh</CommandName>
+										<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="СписокДокПогрузкаВАвтоОбновитьРасширеннаяПодсказка" id="252"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="СписокДокПогрузкаВАвтоРасширеннаяПодсказка" id="253"/>
+							<SearchStringAddition name="СписокДокПогрузкаВАвтоСтрокаПоиска" id="254">
+								<AdditionSource>
+									<Item>СписокДокПогрузкаВАвто</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокДокПогрузкаВАвтоСтрокаПоискаКонтекстноеМеню" id="255"/>
+								<ExtendedTooltip name="СписокДокПогрузкаВАвтоСтрокаПоискаРасширеннаяПодсказка" id="256"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СписокДокПогрузкаВАвтоСостояниеПросмотра" id="257">
+								<AdditionSource>
+									<Item>СписокДокПогрузкаВАвто</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокДокПогрузкаВАвтоСостояниеПросмотраКонтекстноеМеню" id="258"/>
+								<ExtendedTooltip name="СписокДокПогрузкаВАвтоСостояниеПросмотраРасширеннаяПодсказка" id="259"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СписокДокПогрузкаВАвтоУправлениеПоиском" id="260">
+								<AdditionSource>
+									<Item>СписокДокПогрузкаВАвто</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокДокПогрузкаВАвтоУправлениеПоискомКонтекстноеМеню" id="261"/>
+								<ExtendedTooltip name="СписокДокПогрузкаВАвтоУправлениеПоискомРасширеннаяПодсказка" id="262"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">СписокДокПогрузкаВАвтоВыбор</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="СписокДокПогрузкаВАвтоДокументПрихода" id="82">
+									<DataPath>~СписокДокПогрузкаВАвто.ДокументПрихода</DataPath>
+									<ContextMenu name="СписокДокПогрузкаВАвтоДокументПриходаКонтекстноеМеню" id="83"/>
+									<ExtendedTooltip name="СписокДокПогрузкаВАвтоДокументПриходаРасширеннаяПодсказка" id="263"/>
+								</LabelField>
+								<LabelField name="СписокДокПогрузкаВАвтоВодитель" id="80">
+									<DataPath>~СписокДокПогрузкаВАвто.Водитель</DataPath>
+									<ContextMenu name="СписокДокПогрузкаВАвтоВодительКонтекстноеМеню" id="81"/>
+									<ExtendedTooltip name="СписокДокПогрузкаВАвтоВодительРасширеннаяПодсказка" id="264"/>
+								</LabelField>
+								<LabelField name="СписокДокПогрузкаВАвтоДокументПриходаРаботникОхраны" id="143">
+									<DataPath>~СписокДокПогрузкаВАвто.ДокументПрихода.РаботникОхраны</DataPath>
+									<ContextMenu name="СписокДокПогрузкаВАвтоДокументПриходаРаботникОхраныКонтекстноеМеню" id="144"/>
+									<ExtendedTooltip name="СписокДокПогрузкаВАвтоДокументПриходаРаботникОхраныРасширеннаяПодсказка" id="265"/>
+								</LabelField>
+								<LabelField name="СписокДокПогрузкаВАвтоКоличествоКоробокОстаток" id="84">
+									<DataPath>~СписокДокПогрузкаВАвто.КоличествоКоробокBalance</DataPath>
+									<ContextMenu name="СписокДокПогрузкаВАвтоКоличествоКоробокОстатокКонтекстноеМеню" id="85"/>
+									<ExtendedTooltip name="СписокДокПогрузкаВАвтоКоличествоКоробокОстатокРасширеннаяПодсказка" id="266"/>
+								</LabelField>
+								<LabelField name="СписокДокПогрузкаВАвтоДокументПриходаПутевойЛист" id="141">
+									<DataPath>~СписокДокПогрузкаВАвто.ДокументПрихода.ПутевойЛист</DataPath>
+									<ContextMenu name="СписокДокПогрузкаВАвтоДокументПриходаПутевойЛистКонтекстноеМеню" id="142"/>
+									<ExtendedTooltip name="СписокДокПогрузкаВАвтоДокументПриходаПутевойЛистРасширеннаяПодсказка" id="267"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ДвиженияДокументовПоОтгрузке_2</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="СписокДокДляОтгрузки" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список док для отгрузки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	БольшаяЯчеистаяСборка.Дата,
+	БольшаяЯчеистаяСборка.Номер,
+	БольшаяЯчеистаяСборка.Получатель,
+	БольшаяЯчеистаяСборка.НомераСФ,
+	БольшаяЯчеистаяСборка.Коробки,
+	БольшаяЯчеистаяСборка.КоличествоКоробокПриПроверке,
+	БольшаяЯчеистаяСборка.СписокМестХранений
+ИЗ
+	Документ.БольшаяЯчеистаяСборка КАК БольшаяЯчеистаяСборка
+ГДЕ
+	БольшаяЯчеистаяСборка.Коробки = 0</QueryText>
+				<MainTable>Document.БольшаяЯчеистаяСборка</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="СписокДокВЗонеОтгрузки" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список док в зоне отгрузки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	БольшаяЯчеистаяСборка.Дата,
+	БольшаяЯчеистаяСборка.Номер,
+	БольшаяЯчеистаяСборка.Получатель,
+	БольшаяЯчеистаяСборка.НомераСФ,
+	БольшаяЯчеистаяСборка.Коробки,
+	БольшаяЯчеистаяСборка.КоличествоКоробокПриПроверке,
+	БольшаяЯчеистаяСборка.СписокМестХранений,
+	ТоварыНаСкладахОстатки.НомерМестаОтгрузки
+ИЗ
+	РегистрНакопления.ТоварыНаСкладах.Остатки КАК ТоварыНаСкладахОстатки
+		ЛЕВОЕ СОЕДИНЕНИЕ Документ.БольшаяЯчеистаяСборка КАК БольшаяЯчеистаяСборка
+		ПО ТоварыНаСкладахОстатки.ДокументПрихода = БольшаяЯчеистаяСборка.Ссылка
+ГДЕ
+	БольшаяЯчеистаяСборка.Коробки &gt; 0</QueryText>
+				<MainTable>Document.БольшаяЯчеистаяСборка</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="СписокДокВПутевыхЛистах" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список док в путевых листах</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	ПутевыеЛистыОстатки.Водитель,
+	ПутевыеЛистыОстатки.МестоОтгрузки,
+	ПутевыеЛистыОстатки.Контрагент,
+	ПутевыеЛистыОстатки.ДокументПрихода,
+	ПутевыеЛистыОстатки.ПутевойЛист,
+	ПутевыеЛистыОстатки.ВесОстаток,
+	ПутевыеЛистыОстатки.КоличествоКоробокОстаток,
+	ПутевыеЛистыОстатки.ОбъемОстаток
+ИЗ
+	РегистрНакопления.ПутевыеЛисты.Остатки КАК ПутевыеЛистыОстатки</QueryText>
+				<MainTable>3:d9544788-78a6-41fa-9ba7-12dc4488c5c8</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="СписокДокУВодителя" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список док у водителя</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>1:2c036c39-d8fc-493f-9cc9-cef7fe6ea6a7</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="СписокДокПогрузкаВАвто" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список док погрузка в авто</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	ТоварыВАвтомобиляхОстатки.Водитель,
+	ТоварыВАвтомобиляхОстатки.Автомобиль,
+	ТоварыВАвтомобиляхОстатки.ДокументПрихода,
+	ТоварыВАвтомобиляхОстатки.КоличествоКоробокОстаток,
+	ТоварыВАвтомобиляхОстатки.ВесОстаток,
+	ТоварыВАвтомобиляхОстатки.ОбъемОстаток
+ИЗ
+	РегистрНакопления.ТоварыВАвтомобилях.Остатки КАК ТоварыВАвтомобиляхОстатки</QueryText>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="СписокДокУВодителяРЕГИСТР" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список док у водителя РЕГИСТР</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	ТоварыУВодителейОстатки.Водитель,
+	ТоварыУВодителейОстатки.ДокументПрихода,
+	ТоварыУВодителейОстатки.МестоОтгрузки,
+	ТоварыУВодителейОстатки.Контрагент,
+	ТоварыУВодителейОстатки.КоличествоКоробокОстаток
+ИЗ
+	РегистрНакопления.ТоварыУВодителей.Остатки КАК ТоварыУВодителейОстатки</QueryText>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>ДокументПрихода.ПутевойЛист</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="РаботникОхраны" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Работник охраны</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ФизическиеЛица</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="УдалитьПутевыеЛисты" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить путевые листы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить путевые листы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УдалитьПутевыеЛисты</Action>
+		</Command>
+		<Command name="ПечатьВыделенныхБЯС" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать выделенных БЯС</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать выделенных БЯС</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПечатьВыделенныхБЯС</Action>
+		</Command>
+		<Command name="СоздатьПриемТовараВодителем" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать прием товара водителем</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать прием товара водителем</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьПриемТовараВодителем</Action>
+		</Command>
+		<Command name="СоздатьПогрузкаВАвто" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать погрузка в авто</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать погрузка в авто</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьПогрузкаВАвто</Action>
+		</Command>
+	</Commands>
+</Form>

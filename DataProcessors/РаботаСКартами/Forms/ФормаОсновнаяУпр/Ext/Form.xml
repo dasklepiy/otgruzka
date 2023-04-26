@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Работа с каратми 1С: 4 в 1</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<ChildItems>
+		<UsualGroup name="ГруппаЯндекс" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа яндекс</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа яндекс</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаЯндексExtendedTooltip" id="24"/>
+			<ChildItems>
+				<PictureDecoration name="Яндекс" id="2">
+					<Width>15</Width>
+					<Height>2</Height>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Яндекс</v8:content>
+						</v8:item>
+					</Title>
+					<Hyperlink>true</Hyperlink>
+					<PictureSize>Proportionally</PictureSize>
+					<Picture>
+						<xr:Abs>Picture.jpg</xr:Abs>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<FileDragMode>AsFile</FileDragMode>
+					<ContextMenu name="ЯндексКонтекстноеМеню" id="3"/>
+					<ExtendedTooltip name="ЯндексExtendedTooltip" id="25"/>
+					<Events>
+						<Event name="Click">ЯндексНажатие</Event>
+					</Events>
+				</PictureDecoration>
+				<LabelDecoration name="ЛицензионноеСоглашениеЯндекс" id="4">
+					<Width>35</Width>
+					<Height>2</Height>
+					<Font ref="sys:DefaultGUIFont" height="16" kind="WindowsFont"/>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Лицензионное соглашение</v8:content>
+						</v8:item>
+					</Title>
+					<Hyperlink>true</Hyperlink>
+					<VerticalAlign>Center</VerticalAlign>
+					<ContextMenu name="ЛицензионноеСоглашениеЯндексКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ЛицензионноеСоглашениеЯндексExtendedTooltip" id="26"/>
+					<Events>
+						<Event name="Click">ЛицензионноеСоглашениеЯндексНажатие</Event>
+					</Events>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаГугл" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа гугл</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа гугл</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаГуглExtendedTooltip" id="27"/>
+			<ChildItems>
+				<PictureDecoration name="Гугл" id="7">
+					<Width>15</Width>
+					<Height>2</Height>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Гугл</v8:content>
+						</v8:item>
+					</Title>
+					<Hyperlink>true</Hyperlink>
+					<PictureSize>Proportionally</PictureSize>
+					<Picture>
+						<xr:Abs>Picture.jpg</xr:Abs>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<FileDragMode>AsFile</FileDragMode>
+					<ContextMenu name="ГуглКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="ГуглExtendedTooltip" id="28"/>
+					<Events>
+						<Event name="Click">ГуглНажатие</Event>
+					</Events>
+				</PictureDecoration>
+				<LabelDecoration name="ЛицензионноеСоглашениеГугл" id="9">
+					<Width>35</Width>
+					<Height>2</Height>
+					<Font ref="sys:DefaultGUIFont" height="16" kind="WindowsFont"/>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Лицензионное соглашение</v8:content>
+						</v8:item>
+					</Title>
+					<Hyperlink>true</Hyperlink>
+					<ContextMenu name="ЛицензионноеСоглашениеГуглКонтекстноеМеню" id="10"/>
+					<ExtendedTooltip name="ЛицензионноеСоглашениеГуглExtendedTooltip" id="29"/>
+					<Events>
+						<Event name="Click">ЛицензионноеСоглашениеГуглНажатие</Event>
+					</Events>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаРамблер" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа рамблер</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа рамблер</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаРамблерExtendedTooltip" id="30"/>
+			<ChildItems>
+				<PictureDecoration name="Рамблер" id="17">
+					<Width>15</Width>
+					<Height>2</Height>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Рамблер</v8:content>
+						</v8:item>
+					</Title>
+					<Hyperlink>true</Hyperlink>
+					<PictureSize>Proportionally</PictureSize>
+					<Picture>
+						<xr:Abs>Picture.jpg</xr:Abs>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<FileDragMode>AsFile</FileDragMode>
+					<ContextMenu name="РамблерКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="РамблерExtendedTooltip" id="31"/>
+					<Events>
+						<Event name="Click">РамблерНажатие</Event>
+					</Events>
+				</PictureDecoration>
+				<LabelDecoration name="ЛицензионноеСоглашениеРамблер" id="19">
+					<Width>35</Width>
+					<Height>2</Height>
+					<Font ref="sys:DefaultGUIFont" height="16" kind="WindowsFont"/>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Лицензионное соглашение</v8:content>
+						</v8:item>
+					</Title>
+					<Hyperlink>true</Hyperlink>
+					<ContextMenu name="ЛицензионноеСоглашениеРамблерКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="ЛицензионноеСоглашениеРамблерExtendedTooltip" id="32"/>
+					<Events>
+						<Event name="Click">ЛицензионноеСоглашениеРамблерНажатие</Event>
+					</Events>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="РамкаНадписи" id="23">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рамка надписи</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рамка надписи</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>StrongSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="РамкаНадписиExtendedTooltip" id="33"/>
+			<ChildItems>
+				<LabelDecoration name="НадписьИнфо" id="21">
+					<Width>50</Width>
+					<Height>13</Height>
+					<HorizontalStretch>false</HorizontalStretch>
+					<VerticalStretch>true</VerticalStretch>
+					<TextColor>#FF0000</TextColor>
+					<Font ref="sys:DefaultGUIFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Внимание! Обработка предназначена только для демонстрирования возможностей интеграции картографических сервисов с 1С. 
+Распространяется как есть. 
+Автор не несет ответственность за действия пользователей обработки, которые не будут удовлетворять лицензионные соглашения этих сервисов.</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="НадписьИнфоКонтекстноеМеню" id="22"/>
+					<ExtendedTooltip name="НадписьИнфоExtendedTooltip" id="34"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.РаботаСКартами</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+</Form>

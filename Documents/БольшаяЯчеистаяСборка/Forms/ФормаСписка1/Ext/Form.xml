@@ -1,0 +1,415 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаОбновитьШКсДЕЛЬФИ" id="40">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ОбновитьШКсДЕЛЬФИ</CommandName>
+				<ExtendedTooltip name="ФормаОбновитьШКсДЕЛЬФИExtendedTooltip" id="49"/>
+			</Button>
+			<Button name="ФормаРазобратьКомплект" id="32">
+				<Type>CommandBarButton</Type>
+				<Representation>PictureAndText</Representation>
+				<CommandName>Form.Command.РазобратьКомплект</CommandName>
+				<Picture>
+					<xr:Ref>StdPicture.Constant</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+				</Picture>
+				<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+				<ExtendedTooltip name="ФормаРазобратьКомплектExtendedTooltip" id="50"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="ExternalEvent">ВнешнееСобытие</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="37">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1ExtendedTooltip" id="51"/>
+			<ChildItems>
+				<InputField name="СчетФ" id="35">
+					<DataPath>СчетФ</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Поиск по СчетФ</v8:content>
+						</v8:item>
+					</Title>
+					<Width>12</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="СчетФКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="СчетФExtendedTooltip" id="52"/>
+					<Events>
+						<Event name="OnChange">СчетФПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ШК" id="33">
+					<DataPath>ШК</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Поиск по ШК</v8:content>
+						</v8:item>
+					</Title>
+					<Width>12</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="ШККонтекстноеМеню" id="34"/>
+					<ExtendedTooltip name="ШКExtendedTooltip" id="53"/>
+					<Events>
+						<Event name="OnChange">ШКПриИзменении</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="Список" id="1">
+			<Representation>List</Representation>
+			<CommandBarLocation>None</CommandBarLocation>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<InitialTreeView>ExpandTopLevel</InitialTreeView>
+			<EnableStartDrag>true</EnableStartDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Список</DataPath>
+			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<ContextMenu name="СписокКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="3"/>
+			<ExtendedTooltip name="СписокExtendedTooltip" id="54"/>
+			<SearchStringAddition name="СписокСтрокаПоиска" id="77">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="78"/>
+				<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="79"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокСостояниеПросмотра" id="80">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="81"/>
+				<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="82"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокУправлениеПоиском" id="83">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="84"/>
+				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="85"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<CheckBoxField name="Самовывоз" id="45">
+					<DataPath>Список.Самовывоз</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>С</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Самовывоз</v8:content>
+						</v8:item>
+					</ToolTip>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="СамовывозКонтекстноеМеню" id="46"/>
+					<ExtendedTooltip name="СамовывозExtendedTooltip" id="55"/>
+				</CheckBoxField>
+				<CheckBoxField name="СформированВручную" id="47">
+					<DataPath>Список.СформированВручную</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Р</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сформирован вручную</v8:content>
+						</v8:item>
+					</ToolTip>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="СформированВручнуюКонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="СформированВручнуюExtendedTooltip" id="56"/>
+				</CheckBoxField>
+				<LabelField name="Дата" id="4">
+					<DataPath>Список.Date</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<Width>5</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ДатаExtendedTooltip" id="57"/>
+				</LabelField>
+				<LabelField name="Номер" id="6">
+					<DataPath>Список.Number</DataPath>
+					<Width>5</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="НомерКонтекстноеМеню" id="7"/>
+					<ExtendedTooltip name="НомерExtendedTooltip" id="58"/>
+				</LabelField>
+				<LabelField name="НомераСФ" id="8">
+					<DataPath>Список.НомераСФ</DataPath>
+					<Width>5</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="НомераСФКонтекстноеМеню" id="9"/>
+					<ExtendedTooltip name="НомераСФExtendedTooltip" id="59"/>
+				</LabelField>
+				<LabelField name="Направление" id="74">
+					<DataPath>Список.Направление</DataPath>
+					<ContextMenu name="НаправлениеКонтекстноеМеню" id="75"/>
+					<ExtendedTooltip name="НаправлениеРасширеннаяПодсказка" id="76"/>
+				</LabelField>
+				<InputField name="НачалоОтгрузки" id="10">
+					<DataPath>Список.НачалоОтгрузки</DataPath>
+					<Width>5</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="НачалоОтгрузкиКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="НачалоОтгрузкиExtendedTooltip" id="60"/>
+				</InputField>
+				<LabelField name="КонецОтгрузки" id="18">
+					<DataPath>Список.КонецОтгрузки</DataPath>
+					<Width>5</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="КонецОтгрузкиКонтекстноеМеню" id="19"/>
+					<ExtendedTooltip name="КонецОтгрузкиExtendedTooltip" id="61"/>
+				</LabelField>
+				<LabelField name="СписокМестХранений" id="16">
+					<DataPath>Список.СписокМестХранений</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>МестаХр.</v8:content>
+						</v8:item>
+					</Title>
+					<Width>5</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="СписокМестХраненийКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="СписокМестХраненийExtendedTooltip" id="62"/>
+				</LabelField>
+				<LabelField name="Коробки" id="14">
+					<DataPath>Список.Коробки</DataPath>
+					<Width>5</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="КоробкиКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="КоробкиExtendedTooltip" id="63"/>
+				</LabelField>
+				<LabelField name="ОбщийВес" id="41">
+					<DataPath>Список.ОбщийВес</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Общ.Вес</v8:content>
+						</v8:item>
+					</Title>
+					<Width>5</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="ОбщийВесКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="ОбщийВесExtendedTooltip" id="64"/>
+				</LabelField>
+				<LabelField name="ОбщийОбъем" id="43">
+					<DataPath>Список.ОбщийОбъем</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Общ.Объем</v8:content>
+						</v8:item>
+					</Title>
+					<Width>5</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="ОбщийОбъемКонтекстноеМеню" id="44"/>
+					<ExtendedTooltip name="ОбщийОбъемExtendedTooltip" id="65"/>
+				</LabelField>
+				<LabelField name="Получатель" id="20">
+					<DataPath>Список.Получатель</DataPath>
+					<Width>5</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="ПолучательКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="ПолучательExtendedTooltip" id="66"/>
+				</LabelField>
+				<LabelField name="Комментарий" id="26">
+					<DataPath>Список.Комментарий</DataPath>
+					<Width>5</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="КомментарийКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="КомментарийExtendedTooltip" id="67"/>
+				</LabelField>
+				<LabelField name="ПутевойЛист" id="24">
+					<DataPath>Список.ПутевойЛист</DataPath>
+					<Width>5</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="ПутевойЛистКонтекстноеМеню" id="25"/>
+					<ExtendedTooltip name="ПутевойЛистExtendedTooltip" id="68"/>
+				</LabelField>
+				<LabelField name="Реестр" id="22">
+					<DataPath>Список.Реестр</DataPath>
+					<Width>5</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="РеестрКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="РеестрExtendedTooltip" id="69"/>
+				</LabelField>
+				<LabelField name="ДВСоздания" id="12">
+					<DataPath>Список.ДВСоздания</DataPath>
+					<Width>5</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="ДВСозданияКонтекстноеМеню" id="13"/>
+					<ExtendedTooltip name="ДВСозданияExtendedTooltip" id="70"/>
+				</LabelField>
+				<CheckBoxField name="НеПоказыватьВСписке" id="28">
+					<DataPath>Список.НеПоказыватьВСписке</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>НеВСписке</v8:content>
+						</v8:item>
+					</Title>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="НеПоказыватьВСпискеКонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="НеПоказыватьВСпискеExtendedTooltip" id="71"/>
+				</CheckBoxField>
+				<CheckBoxField name="Списан" id="30">
+					<DataPath>Список.Списан</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="СписанКонтекстноеМеню" id="31"/>
+					<ExtendedTooltip name="СписанExtendedTooltip" id="72"/>
+				</CheckBoxField>
+				<LabelField name="Отладка" id="38">
+					<DataPath>Список.Отладка</DataPath>
+					<Width>5</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="ОтладкаКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="ОтладкаExtendedTooltip" id="73"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="1">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<UseAlways>
+				<Field>Список.Ref</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>Document.БольшаяЯчеистаяСборка</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>ДВСоздания</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ШК" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ШК</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>13</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СчетФ" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Счет Ф</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>12</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="РазобратьКомплект" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разобрать комплект</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разобрать комплект</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>РазобратьКомплект</Action>
+		</Command>
+		<Command name="ОбновитьШКсДЕЛЬФИ" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить ШК с ДЕЛЬФИ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить ш кс ДЕЛЬФИ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьШКсДЕЛЬФИ</Action>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="Организация">
+			<Type>
+				<v8:Type>cfg:CatalogRef.Подразделения</v8:Type>
+			</Type>
+			<KeyParameter>true</KeyParameter>
+		</Parameter>
+	</Parameters>
+</Form>

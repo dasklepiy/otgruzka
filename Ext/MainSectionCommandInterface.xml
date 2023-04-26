@@ -1,0 +1,489 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<CommandsVisibility>
+		<Command name="Document.АктПриемаПередачиТМЦ.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.БольшаяЯчеистаяСборка.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Администрирование">false</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+				<xr:Value name="Role.РольСтаршийВодитель">false</xr:Value>
+				<xr:Value name="Role.РольВодитель">false</xr:Value>
+				<xr:Value name="Role.РольПриемщик">false</xr:Value>
+				<xr:Value name="Role.РольОхранаПост2">false</xr:Value>
+				<xr:Value name="Role.Разработчик">false</xr:Value>
+				<xr:Value name="Role.РольОхранаПост1">false</xr:Value>
+				<xr:Value name="Role.РольПриемщикНФС">false</xr:Value>
+				<xr:Value name="Role.Планшет">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Document.ПогрузкаТоваровВАвтомобиль.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.Администрирование">false</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">false</xr:Value>
+				<xr:Value name="Role.РольСтаршийВодитель">false</xr:Value>
+				<xr:Value name="Role.РольВодитель">false</xr:Value>
+				<xr:Value name="Role.РольПриемщик">false</xr:Value>
+				<xr:Value name="Role.Разработчик">false</xr:Value>
+				<xr:Value name="Role.РольОхранаПост2">false</xr:Value>
+				<xr:Value name="Role.РольОхранаПост1">false</xr:Value>
+				<xr:Value name="Role.РольПриемщикНФС">false</xr:Value>
+				<xr:Value name="Role.Планшет">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Report.ЗонаОтгрузки.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ОтчетПоАвто.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ДвиженияПоТерриторииСкладаЧужиеАвто.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ПолныеПрава">false</xr:Value>
+				<xr:Value name="Role.РольСтаршийВодитель">false</xr:Value>
+				<xr:Value name="Role.РольВодитель">false</xr:Value>
+				<xr:Value name="Role.РольПриемщик">false</xr:Value>
+				<xr:Value name="Role.РольОхранаПост2">true</xr:Value>
+				<xr:Value name="Role.Разработчик">true</xr:Value>
+				<xr:Value name="Role.РольОхранаПост1">true</xr:Value>
+				<xr:Value name="Role.РольПриемщикНФС">false</xr:Value>
+				<xr:Value name="Role.РольСтаршийСменыНФС">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Report.ОстаткиНаСкладах.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.РольОхранаПост1">false</xr:Value>
+				<xr:Value name="Role.Разработчик">true</xr:Value>
+				<xr:Value name="Role.РольОхранаПост2">false</xr:Value>
+				<xr:Value name="Role.РольПриемщикНФС">false</xr:Value>
+				<xr:Value name="Role.РольПриемщик">true</xr:Value>
+				<xr:Value name="Role.РольВодитель">false</xr:Value>
+				<xr:Value name="Role.РольСтаршийВодитель">false</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">false</xr:Value>
+				<xr:Value name="Role.РольСтаршийСменыНФС">true</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Report.СчетФактуры_Город_ЗаПериод.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Разработчик">true</xr:Value>
+				<xr:Value name="Role.РольОхранаПост1">false</xr:Value>
+				<xr:Value name="Role.РольОхранаПост2">true</xr:Value>
+				<xr:Value name="Role.РольПриемщик">false</xr:Value>
+				<xr:Value name="Role.РольВодитель">false</xr:Value>
+				<xr:Value name="Role.РольСтаршийВодитель">false</xr:Value>
+				<xr:Value name="Role.Администрирование">false</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">false</xr:Value>
+				<xr:Value name="Role.РольПриемщикНФС">false</xr:Value>
+				<xr:Value name="Role.РольСтаршийСменыНФС">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Report.СчетФактуры_Область_ЗаПериод.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.ПолныеПрава">false</xr:Value>
+				<xr:Value name="Role.РольСтаршийВодитель">false</xr:Value>
+				<xr:Value name="Role.РольВодитель">false</xr:Value>
+				<xr:Value name="Role.РольПриемщик">false</xr:Value>
+				<xr:Value name="Role.РольОхранаПост2">true</xr:Value>
+				<xr:Value name="Role.Разработчик">true</xr:Value>
+				<xr:Value name="Role.РольОхранаПост1">false</xr:Value>
+				<xr:Value name="Role.РольПриемщикНФС">false</xr:Value>
+				<xr:Value name="Role.РольСтаршийСменыНФС">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Report.НЕТНаМастах.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ОтчетПоОгрузкам.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ЗонаОтгрузки.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.ПолныеПрава">false</xr:Value>
+				<xr:Value name="Role.РольОхранаПост1">false</xr:Value>
+				<xr:Value name="Role.РольПриемщикНФС">false</xr:Value>
+				<xr:Value name="Role.РольПриемщик">true</xr:Value>
+				<xr:Value name="Role.РольВодитель">false</xr:Value>
+				<xr:Value name="Role.Разработчик">true</xr:Value>
+				<xr:Value name="Role.РольОхранаПост2">false</xr:Value>
+				<xr:Value name="Role.РольСтаршийСменыНФС">true</xr:Value>
+				<xr:Value name="Role.РольСтаршийВодитель">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ПоискСчетФактуры.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.РольОхранаПост1">false</xr:Value>
+				<xr:Value name="Role.РольОхранаПост2">true</xr:Value>
+				<xr:Value name="Role.РольПриемщик">false</xr:Value>
+				<xr:Value name="Role.РольВодитель">false</xr:Value>
+				<xr:Value name="Role.РольСтаршийВодитель">false</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">false</xr:Value>
+				<xr:Value name="Role.РольПриемщикНФС">false</xr:Value>
+				<xr:Value name="Role.Разработчик">true</xr:Value>
+				<xr:Value name="Role.РольСтаршийСменыНФС">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ПоискРеестров.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Администрирование">false</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">false</xr:Value>
+				<xr:Value name="Role.РольСтаршийВодитель">false</xr:Value>
+				<xr:Value name="Role.РольВодитель">false</xr:Value>
+				<xr:Value name="Role.РольПриемщик">false</xr:Value>
+				<xr:Value name="Role.РольОхранаПост2">true</xr:Value>
+				<xr:Value name="Role.Разработчик">true</xr:Value>
+				<xr:Value name="Role.РольОхранаПост1">false</xr:Value>
+				<xr:Value name="Role.РольПриемщикНФС">false</xr:Value>
+				<xr:Value name="Role.РольСтаршийСменыНФС">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.АРМДиспетчерСклад.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Администрирование">true</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+				<xr:Value name="Role.РольПриемщик">true</xr:Value>
+				<xr:Value name="Role.РольОхранаПост2">false</xr:Value>
+				<xr:Value name="Role.РольОхранаПост1">false</xr:Value>
+				<xr:Value name="Role.РольПриемщикНФС">false</xr:Value>
+				<xr:Value name="Role.РольСтаршийВодитель">false</xr:Value>
+				<xr:Value name="Role.РольВодитель">false</xr:Value>
+				<xr:Value name="Role.Разработчик">true</xr:Value>
+				<xr:Value name="Role.РольСтаршийСменыНФС">true</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.АРМРаботникОхраны_АвтоКомпании.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.РольПриемщик">false</xr:Value>
+				<xr:Value name="Role.РольОхранаПост2">false</xr:Value>
+				<xr:Value name="Role.Разработчик">true</xr:Value>
+				<xr:Value name="Role.РольОхранаПост1">true</xr:Value>
+				<xr:Value name="Role.РольВодитель">false</xr:Value>
+				<xr:Value name="Role.РольСтаршийВодитель">false</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">false</xr:Value>
+				<xr:Value name="Role.РольПриемщикНФС">false</xr:Value>
+				<xr:Value name="Role.РольСтаршийСменыНФС">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.АРМРаботникОхраны_1.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.РольПриемщик">false</xr:Value>
+				<xr:Value name="Role.РольОхранаПост2">false</xr:Value>
+				<xr:Value name="Role.Разработчик">true</xr:Value>
+				<xr:Value name="Role.РольОхранаПост1">true</xr:Value>
+				<xr:Value name="Role.РольВодитель">false</xr:Value>
+				<xr:Value name="Role.РольСтаршийВодитель">false</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">false</xr:Value>
+				<xr:Value name="Role.РольПриемщикНФС">false</xr:Value>
+				<xr:Value name="Role.РольСтаршийСменыНФС">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.АРМПриемВозвратныхСчетФактурДИСПЕТЧЕРОМ.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.ПолныеПрава">false</xr:Value>
+				<xr:Value name="Role.РольСтаршийВодитель">false</xr:Value>
+				<xr:Value name="Role.РольВодитель">false</xr:Value>
+				<xr:Value name="Role.РольПриемщик">false</xr:Value>
+				<xr:Value name="Role.РольОхранаПост2">false</xr:Value>
+				<xr:Value name="Role.РольОхранаПост1">false</xr:Value>
+				<xr:Value name="Role.Разработчик">true</xr:Value>
+				<xr:Value name="Role.РольПриемщикНФС">true</xr:Value>
+				<xr:Value name="Role.РольСтаршийСменыНФС">true</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.АРМПриемВозвратныхСчетФактурСТАРШИМВОДИТЕЛЕМ.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.РольСтаршийВодитель">true</xr:Value>
+				<xr:Value name="Role.РольВодитель">false</xr:Value>
+				<xr:Value name="Role.РольПриемщик">false</xr:Value>
+				<xr:Value name="Role.РольОхранаПост2">false</xr:Value>
+				<xr:Value name="Role.Разработчик">true</xr:Value>
+				<xr:Value name="Role.РольОхранаПост1">false</xr:Value>
+				<xr:Value name="Role.РольПриемщикНФС">false</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">false</xr:Value>
+				<xr:Value name="Role.РольСтаршийСменыНФС">true</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.АРМВодитель.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.ПолныеПрава">false</xr:Value>
+				<xr:Value name="Role.РольСтаршийВодитель">true</xr:Value>
+				<xr:Value name="Role.РольВодитель">true</xr:Value>
+				<xr:Value name="Role.РольПриемщик">false</xr:Value>
+				<xr:Value name="Role.РольОхранаПост2">false</xr:Value>
+				<xr:Value name="Role.Разработчик">true</xr:Value>
+				<xr:Value name="Role.РольОхранаПост1">false</xr:Value>
+				<xr:Value name="Role.РольПриемщикНФС">false</xr:Value>
+				<xr:Value name="Role.РольСтаршийСменыНФС">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.АРМСтаршийВодитель_2.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.ПолныеПрава">false</xr:Value>
+				<xr:Value name="Role.РольСтаршийВодитель">true</xr:Value>
+				<xr:Value name="Role.РольВодитель">false</xr:Value>
+				<xr:Value name="Role.РольПриемщик">false</xr:Value>
+				<xr:Value name="Role.РольОхранаПост2">false</xr:Value>
+				<xr:Value name="Role.Разработчик">true</xr:Value>
+				<xr:Value name="Role.РольОхранаПост1">false</xr:Value>
+				<xr:Value name="Role.РольПриемщикНФС">false</xr:Value>
+				<xr:Value name="Role.РольСтаршийСменыНФС">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.АРМРаботникОхраны_2.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.РольОхранаПост1">false</xr:Value>
+				<xr:Value name="Role.РольОхранаПост2">true</xr:Value>
+				<xr:Value name="Role.РольПриемщик">false</xr:Value>
+				<xr:Value name="Role.РольВодитель">false</xr:Value>
+				<xr:Value name="Role.РольСтаршийВодитель">false</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">false</xr:Value>
+				<xr:Value name="Role.РольПриемщикНФС">false</xr:Value>
+				<xr:Value name="Role.Разработчик">true</xr:Value>
+				<xr:Value name="Role.РольСтаршийСменыНФС">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.АРМРаботникОхраны_ПриемПоПутевомуЛисту.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.ПолныеПрава">false</xr:Value>
+				<xr:Value name="Role.РольСтаршийВодитель">false</xr:Value>
+				<xr:Value name="Role.РольВодитель">false</xr:Value>
+				<xr:Value name="Role.РольПриемщик">false</xr:Value>
+				<xr:Value name="Role.РольОхранаПост2">true</xr:Value>
+				<xr:Value name="Role.Разработчик">true</xr:Value>
+				<xr:Value name="Role.РольОхранаПост1">false</xr:Value>
+				<xr:Value name="Role.РольПриемщикНФС">false</xr:Value>
+				<xr:Value name="Role.РольСтаршийСменыНФС">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.АРМРаботникОхраны_2_ПогрузкаВФуры.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.ПолныеПрава">false</xr:Value>
+				<xr:Value name="Role.РольСтаршийВодитель">false</xr:Value>
+				<xr:Value name="Role.Разработчик">true</xr:Value>
+				<xr:Value name="Role.РольОхранаПост1">false</xr:Value>
+				<xr:Value name="Role.РольПриемщикНФС">false</xr:Value>
+				<xr:Value name="Role.РольОхранаПост2">true</xr:Value>
+				<xr:Value name="Role.РольПриемщик">false</xr:Value>
+				<xr:Value name="Role.РольВодитель">false</xr:Value>
+				<xr:Value name="Role.РольСтаршийСменыНФС">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.СозданиеБЯСвручную.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.ПолныеПрава">false</xr:Value>
+				<xr:Value name="Role.РольСтаршийВодитель">true</xr:Value>
+				<xr:Value name="Role.РольВодитель">false</xr:Value>
+				<xr:Value name="Role.РольПриемщик">true</xr:Value>
+				<xr:Value name="Role.РольОхранаПост2">false</xr:Value>
+				<xr:Value name="Role.Разработчик">true</xr:Value>
+				<xr:Value name="Role.РольОхранаПост1">false</xr:Value>
+				<xr:Value name="Role.РольПриемщикНФС">false</xr:Value>
+				<xr:Value name="Role.РольСтаршийСменыНФС">true</xr:Value>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+	<CommandsPlacement>
+		<Command name="Document.АктПриемаПередачиТМЦ.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="Document.БольшаяЯчеистаяСборка.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="Document.ПогрузкаТоваровВАвтомобиль.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="Report.ЗонаОтгрузки.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="Report.ОтчетПоАвто.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="Report.ДвиженияПоТерриторииСкладаЧужиеАвто.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="Report.ОстаткиНаСкладах.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="Report.СчетФактуры_Город_ЗаПериод.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="Report.СчетФактуры_Область_ЗаПериод.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="Report.НЕТНаМастах.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="Report.ОтчетПоОгрузкам.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="DataProcessor.ЗонаОтгрузки.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="DataProcessor.ПоискСчетФактуры.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="DataProcessor.ПоискРеестров.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="DataProcessor.АРМДиспетчерСклад.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="DataProcessor.АРМРаботникОхраны_АвтоКомпании.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="DataProcessor.АРМРаботникОхраны_1.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="DataProcessor.АРМПриемВозвратныхСчетФактурДИСПЕТЧЕРОМ.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="DataProcessor.АРМПриемВозвратныхСчетФактурСТАРШИМВОДИТЕЛЕМ.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="DataProcessor.АРМВодитель.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="DataProcessor.АРМСтаршийВодитель_2.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="DataProcessor.АРМРаботникОхраны_2.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="DataProcessor.АРМРаботникОхраны_ПриемПоПутевомуЛисту.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="DataProcessor.АРМРаботникОхраны_2_ПогрузкаВФуры.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="DataProcessor.СозданиеБЯСвручную.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+	</CommandsPlacement>
+	<CommandsOrder>
+		<Command name="Report.ЗонаОтгрузки.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчетПоАвто.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.ДвиженияПоТерриторииСкладаЧужиеАвто.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.ОстаткиНаСкладах.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.СчетФактуры_Город_ЗаПериод.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.СчетФактуры_Область_ЗаПериод.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.НЕТНаМастах.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчетПоОгрузкам.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ЗонаОтгрузки.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ПоискСчетФактуры.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ПоискРеестров.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.АРМДиспетчерСклад.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.АРМРаботникОхраны_АвтоКомпании.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.АРМРаботникОхраны_1.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.АРМПриемВозвратныхСчетФактурДИСПЕТЧЕРОМ.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.АРМПриемВозвратныхСчетФактурСТАРШИМВОДИТЕЛЕМ.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.АРМВодитель.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.АРМСтаршийВодитель_2.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.АРМРаботникОхраны_2.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.АРМРаботникОхраны_ПриемПоПутевомуЛисту.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.АРМРаботникОхраны_2_ПогрузкаВФуры.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.СозданиеБЯСвручную.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+	</CommandsOrder>
+	<GroupsOrder>
+		<Group>ActionsPanelReports</Group>
+		<Group>ActionsPanelTools</Group>
+	</GroupsOrder>
+</CommandInterface>

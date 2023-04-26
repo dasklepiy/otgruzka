@@ -1,0 +1,359 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<Button name="Перенос" id="4">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.Перенос</CommandName>
+			<ExtendedTooltip name="ПереносРасширеннаяПодсказка" id="5"/>
+		</Button>
+		<SpreadSheetDocumentField name="ТД" id="1">
+			<DataPath>ТД</DataPath>
+			<ShowGrid>true</ShowGrid>
+			<ShowHeaders>true</ShowHeaders>
+			<Edit>true</Edit>
+			<ContextMenu name="ТДКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ТДРасширеннаяПодсказка" id="3"/>
+		</SpreadSheetDocumentField>
+		<Table name="ТЗ" id="6">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>ТЗ</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТЗКонтекстноеМеню" id="7"/>
+			<AutoCommandBar name="ТЗКоманднаяПанель" id="8"/>
+			<ExtendedTooltip name="ТЗРасширеннаяПодсказка" id="9"/>
+			<SearchStringAddition name="ТЗСтрокаПоиска" id="10">
+				<AdditionSource>
+					<Item>ТЗ</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТЗСтрокаПоискаКонтекстноеМеню" id="11"/>
+				<ExtendedTooltip name="ТЗСтрокаПоискаРасширеннаяПодсказка" id="12"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТЗСостояниеПросмотра" id="13">
+				<AdditionSource>
+					<Item>ТЗ</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТЗСостояниеПросмотраКонтекстноеМеню" id="14"/>
+				<ExtendedTooltip name="ТЗСостояниеПросмотраРасширеннаяПодсказка" id="15"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТЗУправлениеПоиском" id="16">
+				<AdditionSource>
+					<Item>ТЗ</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТЗУправлениеПоискомКонтекстноеМеню" id="17"/>
+				<ExtendedTooltip name="ТЗУправлениеПоискомРасширеннаяПодсказка" id="18"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="ТЗКод" id="19">
+					<DataPath>ТЗ.Код</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТЗКодКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="ТЗКодРасширеннаяПодсказка" id="21"/>
+				</InputField>
+				<InputField name="ТЗНазвание" id="22">
+					<DataPath>ТЗ.Название</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТЗНазваниеКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="ТЗНазваниеРасширеннаяПодсказка" id="24"/>
+				</InputField>
+				<InputField name="ТЗГород" id="25">
+					<DataPath>ТЗ.Город</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТЗГородКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="ТЗГородРасширеннаяПодсказка" id="27"/>
+				</InputField>
+				<InputField name="ТЗРайон" id="28">
+					<DataPath>ТЗ.Район</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТЗРайонКонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="ТЗРайонРасширеннаяПодсказка" id="30"/>
+				</InputField>
+				<InputField name="ТЗТерритория" id="31">
+					<DataPath>ТЗ.Территория</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТЗТерриторияКонтекстноеМеню" id="32"/>
+					<ExtendedTooltip name="ТЗТерриторияРасширеннаяПодсказка" id="33"/>
+				</InputField>
+				<InputField name="ТЗОриентир" id="34">
+					<DataPath>ТЗ.Ориентир</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТЗОриентирКонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="ТЗОриентирРасширеннаяПодсказка" id="36"/>
+				</InputField>
+				<InputField name="ТЗАдрес" id="37">
+					<DataPath>ТЗ.Адрес</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТЗАдресКонтекстноеМеню" id="38"/>
+					<ExtendedTooltip name="ТЗАдресРасширеннаяПодсказка" id="39"/>
+				</InputField>
+				<InputField name="ТЗГруппа" id="40">
+					<DataPath>ТЗ.Группа</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТЗГруппаКонтекстноеМеню" id="41"/>
+					<ExtendedTooltip name="ТЗГруппаРасширеннаяПодсказка" id="42"/>
+				</InputField>
+				<InputField name="ТЗИНН" id="43">
+					<DataPath>ТЗ.ИНН</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТЗИННКонтекстноеМеню" id="44"/>
+					<ExtendedTooltip name="ТЗИННРасширеннаяПодсказка" id="45"/>
+				</InputField>
+				<InputField name="ТЗGPS" id="46">
+					<DataPath>ТЗ.GPS</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТЗGPSКонтекстноеМеню" id="47"/>
+					<ExtendedTooltip name="ТЗGPSРасширеннаяПодсказка" id="48"/>
+				</InputField>
+				<InputField name="ТЗХ" id="49">
+					<DataPath>ТЗ.Х</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТЗХКонтекстноеМеню" id="50"/>
+					<ExtendedTooltip name="ТЗХРасширеннаяПодсказка" id="51"/>
+				</InputField>
+				<InputField name="ТЗУ" id="52">
+					<DataPath>ТЗ.У</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТЗУКонтекстноеМеню" id="53"/>
+					<ExtendedTooltip name="ТЗУРасширеннаяПодсказка" id="54"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ЗагрузкаДанныхИзМапэкс</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ТД" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ТД</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet">mxl:SpreadsheetDocument</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТЗ" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ТЗ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Код" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Код</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Название" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Название</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Город" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Город</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Район" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Район</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Территория" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Территория</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Ориентир" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ориентир</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Адрес" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Адрес</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Группа" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИНН" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ИНН</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="GPS" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>GPS</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Х" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Х</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>7</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="У" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>У</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>7</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Перенос" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перенос</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перенос</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Перенос</Action>
+		</Command>
+	</Commands>
+</Form>

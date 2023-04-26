@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Table name="Список" id="1">
+			<Representation>List</Representation>
+			<CommandBarLocation>None</CommandBarLocation>
+			<DefaultItem>true</DefaultItem>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<InitialTreeView>ExpandTopLevel</InitialTreeView>
+			<EnableStartDrag>true</EnableStartDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Список</DataPath>
+			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<ContextMenu name="СписокКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="3">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокExtendedTooltip" id="34"/>
+			<SearchStringAddition name="СписокСтрокаПоиска" id="49">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="50"/>
+				<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="51"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокСостояниеПросмотра" id="52">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="53"/>
+				<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="54"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокУправлениеПоиском" id="55">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="56"/>
+				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="57"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="Направление" id="46">
+					<DataPath>Список.Направление</DataPath>
+					<ContextMenu name="НаправлениеКонтекстноеМеню" id="47"/>
+					<ExtendedTooltip name="НаправлениеРасширеннаяПодсказка" id="48"/>
+				</LabelField>
+				<LabelField name="Коробки" id="20">
+					<DataPath>Список.Коробки</DataPath>
+					<Width>4</Width>
+					<ContextMenu name="КоробкиКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="КоробкиExtendedTooltip" id="35"/>
+				</LabelField>
+				<CheckBoxField name="Самовывоз" id="32">
+					<DataPath>Список.Самовывоз</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="СамовывозКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="СамовывозExtendedTooltip" id="36"/>
+				</CheckBoxField>
+				<LabelField name="Дата" id="4">
+					<DataPath>Список.Date</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ДатаExtendedTooltip" id="37"/>
+				</LabelField>
+				<LabelField name="Номер" id="6">
+					<DataPath>Список.Number</DataPath>
+					<ContextMenu name="НомерКонтекстноеМеню" id="7"/>
+					<ExtendedTooltip name="НомерExtendedTooltip" id="38"/>
+				</LabelField>
+				<LabelField name="НомераСФ" id="22">
+					<DataPath>Список.НомераСФ</DataPath>
+					<ContextMenu name="НомераСФКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="НомераСФExtendedTooltip" id="39"/>
+				</LabelField>
+				<LabelField name="Получатель" id="18">
+					<DataPath>Список.Получатель</DataPath>
+					<ContextMenu name="ПолучательКонтекстноеМеню" id="19"/>
+					<ExtendedTooltip name="ПолучательExtendedTooltip" id="40"/>
+				</LabelField>
+				<LabelField name="Организация" id="10">
+					<DataPath>Список.Организация</DataPath>
+					<ContextMenu name="ОрганизацияКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="ОрганизацияExtendedTooltip" id="41"/>
+				</LabelField>
+				<LabelField name="Ответственный" id="12">
+					<DataPath>Список.Ответственный</DataPath>
+					<ContextMenu name="ОтветственныйКонтекстноеМеню" id="13"/>
+					<ExtendedTooltip name="ОтветственныйExtendedTooltip" id="42"/>
+				</LabelField>
+				<InputField name="Комментарий" id="24">
+					<DataPath>Список.Комментарий</DataPath>
+					<ContextMenu name="КомментарийКонтекстноеМеню" id="25"/>
+					<ExtendedTooltip name="КомментарийExtendedTooltip" id="43"/>
+				</InputField>
+				<LabelField name="СписокМестХранений" id="28">
+					<DataPath>Список.СписокМестХранений</DataPath>
+					<ContextMenu name="СписокМестХраненийКонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="СписокМестХраненийExtendedTooltip" id="44"/>
+				</LabelField>
+				<LabelField name="ПутевойЛист" id="30">
+					<DataPath>Список.ПутевойЛист</DataPath>
+					<ContextMenu name="ПутевойЛистКонтекстноеМеню" id="31"/>
+					<ExtendedTooltip name="ПутевойЛистExtendedTooltip" id="45"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="1">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	ДокументБольшаяЯчеистаяСборка.Ссылка,
+	ДокументБольшаяЯчеистаяСборка.ВерсияДанных,
+	ДокументБольшаяЯчеистаяСборка.ПометкаУдаления,
+	ДокументБольшаяЯчеистаяСборка.Номер,
+	ДокументБольшаяЯчеистаяСборка.Дата,
+	ДокументБольшаяЯчеистаяСборка.Проведен,
+	ДокументБольшаяЯчеистаяСборка.Организация,
+	ДокументБольшаяЯчеистаяСборка.Ответственный,
+	ДокументБольшаяЯчеистаяСборка.Подразделение,
+	ДокументБольшаяЯчеистаяСборка.РасшивкиРаспечатанны,
+	ДокументБольшаяЯчеистаяСборка.СертификатыРаспечатаны,
+	ДокументБольшаяЯчеистаяСборка.Получатель,
+	ДокументБольшаяЯчеистаяСборка.НомераСФ,
+	ДокументБольшаяЯчеистаяСборка.НачалоОтгрузки,
+	ДокументБольшаяЯчеистаяСборка.КонецОтгрузки,
+	ДокументБольшаяЯчеистаяСборка.Коробки,
+	ДокументБольшаяЯчеистаяСборка.КоличествоКоробокПриПроверке,
+	ДокументБольшаяЯчеистаяСборка.ОбщийВес,
+	ДокументБольшаяЯчеистаяСборка.ОбщийОбъем,
+	ДокументБольшаяЯчеистаяСборка.Комментарий,
+	ДокументБольшаяЯчеистаяСборка.Город,
+	ДокументБольшаяЯчеистаяСборка.СостояниеСборки,
+	ДокументБольшаяЯчеистаяСборка.ДокументыРасхода.(
+		Ссылка,
+		НомерСтроки,
+		Док,
+		СчетФ,
+		ШК,
+		ДокНомер,
+		Проверен,
+		Комментарий
+	),
+	ДокументБольшаяЯчеистаяСборка.МестаОтгрузки.(
+		Ссылка,
+		НомерСтроки,
+		МестоОтгрузки,
+		КоличествоКоробок
+	),
+	ДокументБольшаяЯчеистаяСборка.МоментВремени,
+	ДокументБольшаяЯчеистаяСборка.СписокМестХранений,
+	ДокументБольшаяЯчеистаяСборка.ПутевойЛист,
+	ДокументБольшаяЯчеистаяСборка.Создал,
+	ДокументБольшаяЯчеистаяСборка.Изменил,
+	ДокументБольшаяЯчеистаяСборка.ДВСоздания,
+	ДокументБольшаяЯчеистаяСборка.ДВИзменения,
+	ДокументБольшаяЯчеистаяСборка.СИ,
+	ДокументБольшаяЯчеистаяСборка.Самовывоз,
+	ДокументБольшаяЯчеистаяСборка.Направление
+ИЗ
+	Документ.БольшаяЯчеистаяСборка КАК ДокументБольшаяЯчеистаяСборка
+ГДЕ
+	ДокументБольшаяЯчеистаяСборка.Организация В(&amp;Подразделение)
+	И ДокументБольшаяЯчеистаяСборка.Получатель.ВнутреннийРасход = ЛОЖЬ</QueryText>
+				<MainTable>Document.БольшаяЯчеистаяСборка</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>Список</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Список.СостояниеСборки</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.СостояниеСборки.Коприходовинию</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:DarkSeaGreen</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>Список</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Список.СостояниеСборки</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.СостояниеСборки.КОтгрузке</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:Khaki</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>Список</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Список.СостояниеСборки</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.СостояниеСборки.Отгружен</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:Pink</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Parameters>
+		<Parameter name="Организация">
+			<Type>
+				<v8:Type>cfg:CatalogRef.Подразделения</v8:Type>
+			</Type>
+		</Parameter>
+	</Parameters>
+</Form>

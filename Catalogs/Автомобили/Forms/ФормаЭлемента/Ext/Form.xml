@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Код" id="1">
+			<DataPath>Объект.Code</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КодExtendedTooltip" id="17"/>
+		</InputField>
+		<InputField name="Наименование" id="3">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="4"/>
+			<ExtendedTooltip name="НаименованиеExtendedTooltip" id="18"/>
+		</InputField>
+		<InputField name="МаркаАвтомобиля" id="15">
+			<DataPath>Объект.МаркаАвтомобиля</DataPath>
+			<ContextMenu name="МаркаАвтомобиляКонтекстноеМеню" id="16"/>
+			<ExtendedTooltip name="МаркаАвтомобиляExtendedTooltip" id="19"/>
+		</InputField>
+		<UsualGroup name="Группа1" id="25">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="26"/>
+			<ChildItems>
+				<InputField name="Направление" id="27">
+					<DataPath>Объект.Направление</DataPath>
+					<ContextMenu name="НаправлениеКонтекстноеМеню" id="28"/>
+					<ExtendedTooltip name="НаправлениеРасширеннаяПодсказка" id="29"/>
+				</InputField>
+				<InputField name="ГодВыпуска" id="5">
+					<DataPath>Объект.ГодВыпуска</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ГодВыпускаКонтекстноеМеню" id="6"/>
+					<ExtendedTooltip name="ГодВыпускаExtendedTooltip" id="20"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="СирийныйНомер" id="7">
+			<DataPath>Объект.СерийныйНомер</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="СирийныйНомерКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="СирийныйНомерExtendedTooltip" id="21"/>
+		</InputField>
+		<InputField name="ГосударственныйНомер" id="9">
+			<DataPath>Объект.ГосударственныйНомер</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ГосударственныйНомерКонтекстноеМеню" id="10"/>
+			<ExtendedTooltip name="ГосударственныйНомерExtendedTooltip" id="22"/>
+		</InputField>
+		<InputField name="Цвет" id="11">
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ЦветКонтекстноеМеню" id="12"/>
+			<ExtendedTooltip name="ЦветExtendedTooltip" id="23"/>
+		</InputField>
+		<InputField name="ШтрихКод" id="13">
+			<DataPath>Объект.ШтрихКод</DataPath>
+			<ContextMenu name="ШтрихКодКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ШтрихКодExtendedTooltip" id="24"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.Автомобили</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

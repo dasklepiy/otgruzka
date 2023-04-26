@@ -1,0 +1,501 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Проверка товара охраной</v8:content>
+		</v8:item>
+	</Title>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="ExternalEvent">ВнешнееСобытие</Event>
+		<Event name="ActivationProcessing">ОбработкаАктивизации</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа3" id="37">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="46"/>
+			<ChildItems>
+				<Button name="ФормаСброс" id="23">
+					<Type>UsualButton</Type>
+					<Representation>PictureAndText</Representation>
+					<CommandName>Form.Command.Сброс</CommandName>
+					<Picture>
+						<xr:Ref>StdPicture.Stop</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ExtendedTooltip name="ФормаСбросРасширеннаяПодсказка" id="47"/>
+				</Button>
+				<CheckBoxField name="СбросКромеОхраны" id="35">
+					<DataPath>СбросКромеОхраны</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="СбросКромеОхраныКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="СбросКромеОхраныРасширеннаяПодсказка" id="48"/>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаШтрихКод" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа штрих код</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа штрих код</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаШтрихКодРасширеннаяПодсказка" id="49"/>
+			<ChildItems>
+				<InputField name="ШКОхрана" id="15">
+					<DataPath>ШКОхрана</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ШК Работника охраны</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ШКОхранаКонтекстноеМеню" id="16"/>
+					<ExtendedTooltip name="ШКОхранаРасширеннаяПодсказка" id="50"/>
+					<Events>
+						<Event name="OnChange">ШКОхранаПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="Охранник" id="17">
+					<DataPath>РаботникОхраны</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ContextMenu name="ОхранникКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="ОхранникРасширеннаяПодсказка" id="51"/>
+				</InputField>
+				<InputField name="ШК" id="1">
+					<DataPath>ШК</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ШК Документа</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ШККонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="ШКРасширеннаяПодсказка" id="52"/>
+					<Events>
+						<Event name="OnChange">ШКПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="Водитель" id="12">
+					<DataPath>Водитель</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ContextMenu name="ВодительКонтекстноеМеню" id="13"/>
+					<ExtendedTooltip name="ВодительРасширеннаяПодсказка" id="53"/>
+				</InputField>
+				<InputField name="ШКВодитель" id="10">
+					<DataPath>ШКВодитель</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ШК водителя</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ШКВодительКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="ШКВодительРасширеннаяПодсказка" id="54"/>
+					<Events>
+						<Event name="OnChange">ШКВодительПриИзменении</Event>
+					</Events>
+				</InputField>
+				<UsualGroup name="Группа4" id="45">
+					<Group>Horizontal</Group>
+					<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="55"/>
+					<ChildItems>
+						<InputField name="НовыйВодитель" id="43">
+							<DataPath>НовыйВодитель</DataPath>
+							<ContextMenu name="НовыйВодительКонтекстноеМеню" id="44"/>
+							<ExtendedTooltip name="НовыйВодительРасширеннаяПодсказка" id="56"/>
+						</InputField>
+						<Button name="СменитьВодителя" id="42">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.СменитьВодителя</CommandName>
+							<ExtendedTooltip name="СменитьВодителяРасширеннаяПодсказка" id="57"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+				<InputField name="ШКАвтомобиль" id="19">
+					<DataPath>ШКАвтомобиль</DataPath>
+					<Visible>false</Visible>
+					<ContextMenu name="ШКАвтомобильКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="ШКАвтомобильРасширеннаяПодсказка" id="58"/>
+					<Events>
+						<Event name="OnChange">ШКАвтомобильПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="Автомобиль" id="21">
+					<DataPath>Автомобиль</DataPath>
+					<Visible>false</Visible>
+					<ReadOnly>true</ReadOnly>
+					<ContextMenu name="АвтомобильКонтекстноеМеню" id="22"/>
+					<ExtendedTooltip name="АвтомобильРасширеннаяПодсказка" id="59"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа1" id="24">
+			<Group>Vertical</Group>
+			<Representation>StrongSeparation</Representation>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="60"/>
+			<ChildItems>
+				<InputField name="БЯС" id="25">
+					<DataPath>БЯС</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сборка</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="БЯСКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="БЯСРасширеннаяПодсказка" id="61"/>
+				</InputField>
+				<InputField name="ПутевойЛист" id="27">
+					<DataPath>ПутевойЛист</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ContextMenu name="ПутевойЛистКонтекстноеМеню" id="28"/>
+					<ExtendedTooltip name="ПутевойЛистРасширеннаяПодсказка" id="62"/>
+				</InputField>
+				<InputField name="СчетФ" id="29">
+					<DataPath>СчетФ</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ContextMenu name="СчетФКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="СчетФРасширеннаяПодсказка" id="63"/>
+				</InputField>
+				<UsualGroup name="Группа2" id="34">
+					<Group>Vertical</Group>
+					<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="64"/>
+					<ChildItems>
+						<InputField name="КолКоробокБЯС" id="40">
+							<DataPath>КолКоробокБЯС</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Количество коробок в Сборке</v8:content>
+								</v8:item>
+							</Title>
+							<Width>3</Width>
+							<ContextMenu name="КолКоробокБЯСКонтекстноеМеню" id="41"/>
+							<ExtendedTooltip name="КолКоробокБЯСРасширеннаяПодсказка" id="65"/>
+						</InputField>
+						<InputField name="КолКоробок" id="31">
+							<DataPath>КолКоробок</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Количество вывозимых коробок</v8:content>
+								</v8:item>
+							</Title>
+							<Width>3</Width>
+							<ContextMenu name="КолКоробокКонтекстноеМеню" id="32"/>
+							<ExtendedTooltip name="КолКоробокРасширеннаяПодсказка" id="66"/>
+						</InputField>
+						<InputField name="КолКоробокВАвто" id="38">
+							<DataPath>КолКоробокВАвто</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Количество коробок в Авто</v8:content>
+								</v8:item>
+							</Title>
+							<Width>3</Width>
+							<ContextMenu name="КолКоробокВАвтоКонтекстноеМеню" id="39"/>
+							<ExtendedTooltip name="КолКоробокВАвтоРасширеннаяПодсказка" id="67"/>
+						</InputField>
+						<Button name="Сохранить" id="33">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.Сохранить</CommandName>
+							<ExtendedTooltip name="СохранитьРасширеннаяПодсказка" id="68"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.АРМРаботникОхраны_2</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ШК" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ШК</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>13</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Водитель" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Водитель</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ФизическиеЛица</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ШКВодитель" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ШК</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>13</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ШКОхрана" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ШКОхрана</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>13</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="РаботникОхраны" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Работник охраны</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ФизическиеЛица</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ШКАвтомобиль" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ШК автомобиль</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>13</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Автомобиль" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Автомобиль</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Автомобили</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПутевойЛист" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Путевой лист</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:TypeId>e916bc1f-7162-44fa-8b5e-3b4324bee724</v8:TypeId>
+			</Type>
+		</Attribute>
+		<Attribute name="БЯС" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>БЯС</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DocumentRef.БольшаяЯчеистаяСборка</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СчетФ" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Счет Ф</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КолКоробок" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кол коробок</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>0</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СбросКромеОхраны" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сброс кроме охраны</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="КолКоробокВАвто" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кол коробок в авто</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КолКоробокБЯС" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кол коробок БЯС</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="НовыйВодитель" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Новый водитель</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ФизическиеЛица</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ШКНовыйВодитель" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ШКНовый водитель</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Сброс" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сброс</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сброс</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Сброс</Action>
+		</Command>
+		<Command name="Сохранить" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Сохранить</Action>
+		</Command>
+		<Command name="СменитьВодителя" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сменить водителя</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сменить водителя</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СменитьВодителя</Action>
+		</Command>
+	</Commands>
+</Form>

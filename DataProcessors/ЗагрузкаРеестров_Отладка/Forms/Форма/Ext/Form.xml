@@ -1,0 +1,478 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="38">
+			<Group>Horizontal</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="74"/>
+			<ChildItems>
+				<InputField name="ДатаН" id="36">
+					<DataPath>ДатаН</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Период С </v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ДатаНКонтекстноеМеню" id="37"/>
+					<ExtendedTooltip name="ДатаНРасширеннаяПодсказка" id="75"/>
+				</InputField>
+				<InputField name="ДатаК" id="34">
+					<DataPath>ДатаК</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content> По  </v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ДатаККонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="ДатаКРасширеннаяПодсказка" id="76"/>
+				</InputField>
+				<Button name="ПоказатьСписокРеестров" id="39">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ПоказатьСписокРеестров</CommandName>
+					<ExtendedTooltip name="ПоказатьСписокРеестровРасширеннаяПодсказка" id="77"/>
+				</Button>
+				<Button name="ЗагрузитьВыделенныеРеестры" id="73">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ЗагрузитьВыделенныеРеестры</CommandName>
+					<ExtendedTooltip name="ЗагрузитьВыделенныеРеестрыРасширеннаяПодсказка" id="78"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="СписокРеестров" id="1">
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<EnableStartDrag>true</EnableStartDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>СписокРеестров</DataPath>
+			<RowPictureDataPath>СписокРеестров.DefaultPicture</RowPictureDataPath>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<ContextMenu name="СписокРеестровКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="СписокРеестровКоманднаяПанель" id="3"/>
+			<ExtendedTooltip name="СписокРеестровРасширеннаяПодсказка" id="79"/>
+			<SearchStringAddition name="СписокРеестровСтрокаПоиска" id="80">
+				<AdditionSource>
+					<Item>СписокРеестров</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокРеестровСтрокаПоискаКонтекстноеМеню" id="81"/>
+				<ExtendedTooltip name="СписокРеестровСтрокаПоискаРасширеннаяПодсказка" id="82"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокРеестровСостояниеПросмотра" id="83">
+				<AdditionSource>
+					<Item>СписокРеестров</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокРеестровСостояниеПросмотраКонтекстноеМеню" id="84"/>
+				<ExtendedTooltip name="СписокРеестровСостояниеПросмотраРасширеннаяПодсказка" id="85"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокРеестровУправлениеПоиском" id="86">
+				<AdditionSource>
+					<Item>СписокРеестров</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокРеестровУправлениеПоискомКонтекстноеМеню" id="87"/>
+				<ExtendedTooltip name="СписокРеестровУправлениеПоискомРасширеннаяПодсказка" id="88"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="OnActivateRow">СписокРеестровПриАктивизацииСтроки</Event>
+			</Events>
+			<ChildItems>
+				<LabelField name="СписокРеестровCARMARK" id="4">
+					<DataPath>СписокРеестров.CARMARK</DataPath>
+					<ContextMenu name="СписокРеестровCARMARKКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="СписокРеестровCARMARKРасширеннаяПодсказка" id="89"/>
+				</LabelField>
+				<LabelField name="СписокРеестровCARNOMER" id="6">
+					<DataPath>СписокРеестров.CARNOMER</DataPath>
+					<ContextMenu name="СписокРеестровCARNOMERКонтекстноеМеню" id="7"/>
+					<ExtendedTooltip name="СписокРеестровCARNOMERРасширеннаяПодсказка" id="90"/>
+				</LabelField>
+				<LabelField name="СписокРеестровDATA" id="8">
+					<DataPath>СписокРеестров.DATA</DataPath>
+					<ContextMenu name="СписокРеестровDATAКонтекстноеМеню" id="9"/>
+					<ExtendedTooltip name="СписокРеестровDATAРасширеннаяПодсказка" id="91"/>
+				</LabelField>
+				<LabelField name="СписокРеестровID" id="10">
+					<DataPath>СписокРеестров.ID</DataPath>
+					<ContextMenu name="СписокРеестровIDКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="СписокРеестровIDРасширеннаяПодсказка" id="92"/>
+				</LabelField>
+				<LabelField name="СписокРеестровORG" id="12">
+					<DataPath>СписокРеестров.ORG</DataPath>
+					<ContextMenu name="СписокРеестровORGКонтекстноеМеню" id="13"/>
+					<ExtendedTooltip name="СписокРеестровORGРасширеннаяПодсказка" id="93"/>
+				</LabelField>
+				<LabelField name="СписокРеестровPHONE" id="14">
+					<DataPath>СписокРеестров.PHONE</DataPath>
+					<ContextMenu name="СписокРеестровPHONEКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="СписокРеестровPHONEРасширеннаяПодсказка" id="94"/>
+				</LabelField>
+				<LabelField name="СписокРеестровPRICEP" id="16">
+					<DataPath>СписокРеестров.PRICEP</DataPath>
+					<ContextMenu name="СписокРеестровPRICEPКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="СписокРеестровPRICEPРасширеннаяПодсказка" id="95"/>
+				</LabelField>
+				<LabelField name="СписокРеестровPURPOCE" id="18">
+					<DataPath>СписокРеестров.PURPOCE</DataPath>
+					<ContextMenu name="СписокРеестровPURPOCEКонтекстноеМеню" id="19"/>
+					<ExtendedTooltip name="СписокРеестровPURPOCEРасширеннаяПодсказка" id="96"/>
+				</LabelField>
+				<LabelField name="СписокРеестровСсылка" id="20">
+					<DataPath>СписокРеестров.Ref</DataPath>
+					<ContextMenu name="СписокРеестровСсылкаКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="СписокРеестровСсылкаРасширеннаяПодсказка" id="97"/>
+				</LabelField>
+				<LabelField name="СписокРеестровSUMMA" id="22">
+					<DataPath>СписокРеестров.SUMMA</DataPath>
+					<ContextMenu name="СписокРеестровSUMMAКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="СписокРеестровSUMMAРасширеннаяПодсказка" id="98"/>
+				</LabelField>
+				<LabelField name="СписокРеестровSUMMAN" id="24">
+					<DataPath>СписокРеестров.SUMMAN</DataPath>
+					<ContextMenu name="СписокРеестровSUMMANКонтекстноеМеню" id="25"/>
+					<ExtendedTooltip name="СписокРеестровSUMMANРасширеннаяПодсказка" id="99"/>
+				</LabelField>
+				<LabelField name="СписокРеестровSUMMAP" id="26">
+					<DataPath>СписокРеестров.SUMMAP</DataPath>
+					<ContextMenu name="СписокРеестровSUMMAPКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="СписокРеестровSUMMAPРасширеннаяПодсказка" id="100"/>
+				</LabelField>
+				<LabelField name="СписокРеестровTRANSORG" id="28">
+					<DataPath>СписокРеестров.TRANSORG</DataPath>
+					<ContextMenu name="СписокРеестровTRANSORGКонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="СписокРеестровTRANSORGРасширеннаяПодсказка" id="101"/>
+				</LabelField>
+				<LabelField name="СписокРеестровVODIT" id="30">
+					<DataPath>СписокРеестров.VODIT</DataPath>
+					<ContextMenu name="СписокРеестровVODITКонтекстноеМеню" id="31"/>
+					<ExtendedTooltip name="СписокРеестровVODITРасширеннаяПодсказка" id="102"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+		<Table name="СписокСчетФактур" id="40">
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<EnableStartDrag>true</EnableStartDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>СписокСчетФактур</DataPath>
+			<RowPictureDataPath>СписокСчетФактур.DefaultPicture</RowPictureDataPath>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<ContextMenu name="СписокСчетФактурКонтекстноеМеню" id="41"/>
+			<AutoCommandBar name="СписокСчетФактурКоманднаяПанель" id="42"/>
+			<ExtendedTooltip name="СписокСчетФактурРасширеннаяПодсказка" id="103"/>
+			<SearchStringAddition name="СписокСчетФактурСтрокаПоиска" id="104">
+				<AdditionSource>
+					<Item>СписокСчетФактур</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСчетФактурСтрокаПоискаКонтекстноеМеню" id="105"/>
+				<ExtendedTooltip name="СписокСчетФактурСтрокаПоискаРасширеннаяПодсказка" id="106"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокСчетФактурСостояниеПросмотра" id="107">
+				<AdditionSource>
+					<Item>СписокСчетФактур</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСчетФактурСостояниеПросмотраКонтекстноеМеню" id="108"/>
+				<ExtendedTooltip name="СписокСчетФактурСостояниеПросмотраРасширеннаяПодсказка" id="109"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокСчетФактурУправлениеПоиском" id="110">
+				<AdditionSource>
+					<Item>СписокСчетФактур</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСчетФактурУправлениеПоискомКонтекстноеМеню" id="111"/>
+				<ExtendedTooltip name="СписокСчетФактурУправлениеПоискомРасширеннаяПодсказка" id="112"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="СписокСчетФактурcity" id="43">
+					<DataPath>СписокСчетФактур.city</DataPath>
+					<ContextMenu name="СписокСчетФактурcityКонтекстноеМеню" id="44"/>
+					<ExtendedTooltip name="СписокСчетФактурcityРасширеннаяПодсказка" id="113"/>
+				</LabelField>
+				<LabelField name="СписокСчетФактурclientid" id="45">
+					<DataPath>СписокСчетФактур.clientid</DataPath>
+					<ContextMenu name="СписокСчетФактурclientidКонтекстноеМеню" id="46"/>
+					<ExtendedTooltip name="СписокСчетФактурclientidРасширеннаяПодсказка" id="114"/>
+				</LabelField>
+				<LabelField name="СписокСчетФактурDATA" id="47">
+					<DataPath>СписокСчетФактур.DATA</DataPath>
+					<ContextMenu name="СписокСчетФактурDATAКонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="СписокСчетФактурDATAРасширеннаяПодсказка" id="115"/>
+				</LabelField>
+				<LabelField name="СписокСчетФактурFiial" id="49">
+					<DataPath>СписокСчетФактур.Fiial</DataPath>
+					<ContextMenu name="СписокСчетФактурFiialКонтекстноеМеню" id="50"/>
+					<ExtendedTooltip name="СписокСчетФактурFiialРасширеннаяПодсказка" id="116"/>
+				</LabelField>
+				<LabelField name="СписокСчетФактурID" id="51">
+					<DataPath>СписокСчетФактур.ID</DataPath>
+					<ContextMenu name="СписокСчетФактурIDКонтекстноеМеню" id="52"/>
+					<ExtendedTooltip name="СписокСчетФактурIDРасширеннаяПодсказка" id="117"/>
+				</LabelField>
+				<LabelField name="СписокСчетФактурInvoiceid" id="53">
+					<DataPath>СписокСчетФактур.Invoiceid</DataPath>
+					<ContextMenu name="СписокСчетФактурInvoiceidКонтекстноеМеню" id="54"/>
+					<ExtendedTooltip name="СписокСчетФактурInvoiceidРасширеннаяПодсказка" id="118"/>
+				</LabelField>
+				<LabelField name="СписокСчетФактурMEST" id="55">
+					<DataPath>СписокСчетФактур.MEST</DataPath>
+					<ContextMenu name="СписокСчетФактурMESTКонтекстноеМеню" id="56"/>
+					<ExtendedTooltip name="СписокСчетФактурMESTРасширеннаяПодсказка" id="119"/>
+				</LabelField>
+				<LabelField name="СписокСчетФактурName" id="57">
+					<DataPath>СписокСчетФактур.Name</DataPath>
+					<ContextMenu name="СписокСчетФактурNameКонтекстноеМеню" id="58"/>
+					<ExtendedTooltip name="СписокСчетФактурNameРасширеннаяПодсказка" id="120"/>
+				</LabelField>
+				<LabelField name="СписокСчетФактурNUmber" id="59">
+					<DataPath>СписокСчетФактур.NUmber</DataPath>
+					<ContextMenu name="СписокСчетФактурNUmberКонтекстноеМеню" id="60"/>
+					<ExtendedTooltip name="СписокСчетФактурNUmberРасширеннаяПодсказка" id="121"/>
+				</LabelField>
+				<LabelField name="СписокСчетФактурOBEM" id="61">
+					<DataPath>СписокСчетФактур.OBEM</DataPath>
+					<ContextMenu name="СписокСчетФактурOBEMКонтекстноеМеню" id="62"/>
+					<ExtendedTooltip name="СписокСчетФактурOBEMРасширеннаяПодсказка" id="122"/>
+				</LabelField>
+				<LabelField name="СписокСчетФактурorg" id="63">
+					<DataPath>СписокСчетФактур.org</DataPath>
+					<ContextMenu name="СписокСчетФактурorgКонтекстноеМеню" id="64"/>
+					<ExtendedTooltip name="СписокСчетФактурorgРасширеннаяПодсказка" id="123"/>
+				</LabelField>
+				<LabelField name="СписокСчетФактурPODDON" id="65">
+					<DataPath>СписокСчетФактур.PODDON</DataPath>
+					<ContextMenu name="СписокСчетФактурPODDONКонтекстноеМеню" id="66"/>
+					<ExtendedTooltip name="СписокСчетФактурPODDONРасширеннаяПодсказка" id="124"/>
+				</LabelField>
+				<LabelField name="СписокСчетФактурСсылка" id="67">
+					<DataPath>СписокСчетФактур.Ref</DataPath>
+					<ContextMenu name="СписокСчетФактурСсылкаКонтекстноеМеню" id="68"/>
+					<ExtendedTooltip name="СписокСчетФактурСсылкаРасширеннаяПодсказка" id="125"/>
+				</LabelField>
+				<LabelField name="СписокСчетФактурroute" id="69">
+					<DataPath>СписокСчетФактур.route</DataPath>
+					<ContextMenu name="СписокСчетФактурrouteКонтекстноеМеню" id="70"/>
+					<ExtendedTooltip name="СписокСчетФактурrouteРасширеннаяПодсказка" id="126"/>
+				</LabelField>
+				<LabelField name="СписокСчетФактурSUMMA" id="71">
+					<DataPath>СписокСчетФактур.SUMMA</DataPath>
+					<ContextMenu name="СписокСчетФактурSUMMAКонтекстноеМеню" id="72"/>
+					<ExtendedTooltip name="СписокСчетФактурSUMMAРасширеннаяПодсказка" id="127"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ЗагрузкаРеестров_Отладка</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="СписокРеестров" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список реестров</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<UseAlways>
+				<Field>СписокРеестров.ID</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	dbo_ROUTE.Ссылка,
+	dbo_ROUTE.ID,
+	dbo_ROUTE.DATA,
+	dbo_ROUTE.ORG,
+	dbo_ROUTE.SUMMA,
+	dbo_ROUTE.SUMMAP,
+	dbo_ROUTE.SUMMAN,
+	dbo_ROUTE.CARMARK,
+	dbo_ROUTE.CARNOMER,
+	dbo_ROUTE.PRICEP,
+	dbo_ROUTE.VODIT,
+	dbo_ROUTE.PHONE,
+	dbo_ROUTE.PURPOCE,
+	dbo_ROUTE.TRANSORG,
+	dbo_ROUTE.Представление
+ИЗ
+	ВнешнийИсточникДанных.TRANSRAS.Таблица.dbo_ROUTE КАК dbo_ROUTE
+ГДЕ
+	dbo_ROUTE.DATA &gt;= &amp;ДатаН
+	И dbo_ROUTE.DATA &lt;= &amp;ДатаК</QueryText>
+				<MainTable>ExternalDataSource.TRANSRAS.Table.dbo_ROUTE</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ДатаН" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата Н</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДатаК" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата К</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СписокСчетФактур" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список счет фактур</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	dbo_INVOICE.Ссылка,
+	dbo_INVOICE.ID,
+	dbo_INVOICE.route,
+	dbo_INVOICE.Invoiceid,
+	dbo_INVOICE.city,
+	dbo_INVOICE.org,
+	dbo_INVOICE.NUmber,
+	dbo_INVOICE.clientid,
+	dbo_INVOICE.Name,
+	dbo_INVOICE.Fiial,
+	dbo_INVOICE.DATA,
+	dbo_INVOICE.SUMMA,
+	dbo_INVOICE.OBEM,
+	dbo_INVOICE.MEST,
+	dbo_INVOICE.PODDON,
+	dbo_INVOICE.Представление
+ИЗ
+	ВнешнийИсточникДанных.TRANSRAS.Таблица.dbo_INVOICE КАК dbo_INVOICE
+ГДЕ
+	dbo_INVOICE.route = &amp;Реестр</QueryText>
+				<MainTable>ExternalDataSource.TRANSRAS.Table.dbo_INVOICE</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПоказатьСписокРеестров" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать список реестров</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать список реестров</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПоказатьСписокРеестров</Action>
+		</Command>
+		<Command name="ЗагрузитьВыделенныеРеестры" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить выделенные реестры</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить выделенные реестры</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьВыделенныеРеестры</Action>
+		</Command>
+	</Commands>
+</Form>

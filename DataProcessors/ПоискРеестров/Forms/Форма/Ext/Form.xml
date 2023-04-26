@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<ChildItems>
+		<Table name="Список" id="1">
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<EnableStartDrag>true</EnableStartDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Список</DataPath>
+			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<ContextMenu name="СписокКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="3">
+				<Autofill>false</Autofill>
+				<ChildItems>
+					<Button name="Найти" id="42">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Item.Список.StandardCommand.Find</CommandName>
+						<ExtendedTooltip name="НайтиРасширеннаяПодсказка" id="45"/>
+					</Button>
+					<Button name="ОтменитьПоиск" id="43">
+						<Type>CommandBarButton</Type>
+						<Representation>PictureAndText</Representation>
+						<CommandName>Form.Item.Список.StandardCommand.CancelSearch</CommandName>
+						<ExtendedTooltip name="ОтменитьПоискРасширеннаяПодсказка" id="46"/>
+					</Button>
+					<Button name="СписокОбновить" id="44">
+						<Type>CommandBarButton</Type>
+						<Representation>PictureAndText</Representation>
+						<CommandName>Form.Item.Список.StandardCommand.Refresh</CommandName>
+						<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+						<ExtendedTooltip name="СписокОбновитьРасширеннаяПодсказка" id="47"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="48"/>
+			<SearchStringAddition name="СписокСтрокаПоиска" id="49">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="50"/>
+				<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="51"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокСостояниеПросмотра" id="52">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="53"/>
+				<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="54"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокУправлениеПоиском" id="55">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="56"/>
+				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="57"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="СписокДата" id="4">
+					<DataPath>Список.Date</DataPath>
+					<ContextMenu name="СписокДатаКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="СписокДатаРасширеннаяПодсказка" id="58"/>
+				</LabelField>
+				<LabelField name="СписокНомер" id="6">
+					<DataPath>Список.Number</DataPath>
+					<ContextMenu name="СписокНомерКонтекстноеМеню" id="7"/>
+					<ExtendedTooltip name="СписокНомерРасширеннаяПодсказка" id="59"/>
+				</LabelField>
+				<LabelField name="СписокСумма" id="10">
+					<DataPath>Список.Сумма</DataPath>
+					<ContextMenu name="СписокСуммаКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="СписокСуммаРасширеннаяПодсказка" id="60"/>
+				</LabelField>
+				<LabelField name="СписокМаркаМашины" id="12">
+					<DataPath>Список.МаркаМашины</DataPath>
+					<ContextMenu name="СписокМаркаМашиныКонтекстноеМеню" id="13"/>
+					<ExtendedTooltip name="СписокМаркаМашиныРасширеннаяПодсказка" id="61"/>
+				</LabelField>
+				<LabelField name="СписокНомерМашины" id="14">
+					<DataPath>Список.НомерМашины</DataPath>
+					<ContextMenu name="СписокНомерМашиныКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="СписокНомерМашиныРасширеннаяПодсказка" id="62"/>
+				</LabelField>
+				<LabelField name="СписокПрицеп" id="16">
+					<DataPath>Список.Прицеп</DataPath>
+					<ContextMenu name="СписокПрицепКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="СписокПрицепРасширеннаяПодсказка" id="63"/>
+				</LabelField>
+				<LabelField name="СписокВодитель" id="18">
+					<DataPath>Список.Водитель</DataPath>
+					<ContextMenu name="СписокВодительКонтекстноеМеню" id="19"/>
+					<ExtendedTooltip name="СписокВодительРасширеннаяПодсказка" id="64"/>
+				</LabelField>
+				<LabelField name="СписокТелефон" id="20">
+					<DataPath>Список.Телефон</DataPath>
+					<ContextMenu name="СписокТелефонКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="СписокТелефонРасширеннаяПодсказка" id="65"/>
+				</LabelField>
+				<LabelField name="СписокКомментарий" id="22">
+					<DataPath>Список.Комментарий</DataPath>
+					<ContextMenu name="СписокКомментарийКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="СписокКомментарийРасширеннаяПодсказка" id="66"/>
+				</LabelField>
+				<LabelField name="СписокРаботникОхраны" id="26">
+					<DataPath>Список.РаботникОхраны</DataPath>
+					<ContextMenu name="СписокРаботникОхраныКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="СписокРаботникОхраныРасширеннаяПодсказка" id="67"/>
+				</LabelField>
+				<LabelField name="СписокДатаОтгрузки" id="28">
+					<DataPath>Список.ДатаОтгрузки</DataPath>
+					<ContextMenu name="СписокДатаОтгрузкиКонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="СписокДатаОтгрузкиРасширеннаяПодсказка" id="68"/>
+				</LabelField>
+				<LabelField name="СписокДВСоздания" id="40">
+					<DataPath>Список.ДВСоздания</DataPath>
+					<ContextMenu name="СписокДВСозданияКонтекстноеМеню" id="41"/>
+					<ExtendedTooltip name="СписокДВСозданияРасширеннаяПодсказка" id="69"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ПоискРеестров</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="Список" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>Document.Реестр</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+	</Attributes>
+</Form>

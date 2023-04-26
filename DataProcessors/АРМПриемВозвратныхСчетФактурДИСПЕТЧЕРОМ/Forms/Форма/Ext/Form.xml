@@ -1,0 +1,1280 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Прием Возвратной СФ ДИСПЕТЧЕРОМ</v8:content>
+		</v8:item>
+	</Title>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="ExternalEvent">ВнешнееСобытие</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа6" id="216">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="221"/>
+			<ChildItems>
+				<Button name="ОбновитьВСЕ" id="215">
+					<Type>UsualButton</Type>
+					<Representation>PictureAndText</Representation>
+					<CommandName>Form.Command.ОбновитьВСЕ</CommandName>
+					<Picture>
+						<xr:Ref>StdPicture.Refresh</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ExtendedTooltip name="ОбновитьВСЕРасширеннаяПодсказка" id="222"/>
+				</Button>
+				<InputField name="ШК" id="1">
+					<DataPath>ШК</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ШК Возвратной СчетФактуры</v8:content>
+						</v8:item>
+					</Title>
+					<Width>15</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="ШККонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="ШКРасширеннаяПодсказка" id="223"/>
+					<Events>
+						<Event name="OnChange">ШКПриИзменении</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<CheckBoxField name="АвтоСохранение" id="3">
+			<DataPath>АвтоСохранение</DataPath>
+			<Visible>false</Visible>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="АвтоСохранениеКонтекстноеМеню" id="4"/>
+			<ExtendedTooltip name="АвтоСохранениеРасширеннаяПодсказка" id="224"/>
+		</CheckBoxField>
+		<Pages name="Группа2" id="132">
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="225"/>
+			<ChildItems>
+				<Page name="Группа3" id="133">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Приемка возвратных СФ ДИСПЕТЧЕРОМ</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="226"/>
+					<ChildItems>
+						<UsualGroup name="Группа1" id="87">
+							<Group>Horizontal</Group>
+							<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="227"/>
+							<ChildItems>
+								<Table name="ВозвратныеСФНеРаспечатанные" id="149">
+									<TitleLocation>Top</TitleLocation>
+									<UseAlternationRowColor>true</UseAlternationRowColor>
+									<EnableStartDrag>true</EnableStartDrag>
+									<FileDragMode>AsFile</FileDragMode>
+									<DataPath>ВозвратныеСФНеРаспечатанные</DataPath>
+									<RowPictureDataPath>ВозвратныеСФНеРаспечатанные.DefaultPicture</RowPictureDataPath>
+									<TitleTextColor>#FF0000</TitleTextColor>
+									<SearchStringLocation>None</SearchStringLocation>
+									<ViewStatusLocation>None</ViewStatusLocation>
+									<SearchControlLocation>None</SearchControlLocation>
+									<AutoRefresh>false</AutoRefresh>
+									<AutoRefreshPeriod>60</AutoRefreshPeriod>
+									<Period>
+										<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+										<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+										<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+									</Period>
+									<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+									<RestoreCurrentRow>false</RestoreCurrentRow>
+									<TopLevelParent xsi:nil="true"/>
+									<ShowRoot>true</ShowRoot>
+									<AllowRootChoice>false</AllowRootChoice>
+									<UpdateOnDataChange>Auto</UpdateOnDataChange>
+									<ContextMenu name="ВозвратныеСФНеРаспечатанныеКонтекстноеМеню" id="150"/>
+									<AutoCommandBar name="ВозвратныеСФНеРаспечатанныеКоманднаяПанель" id="151">
+										<Autofill>false</Autofill>
+										<ChildItems>
+											<Button name="ВозвратныеСФНеРаспечатанныеНайти" id="205">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.ВозвратныеСФНеРаспечатанные.StandardCommand.Find</CommandName>
+												<ExtendedTooltip name="ВозвратныеСФНеРаспечатанныеНайтиРасширеннаяПодсказка" id="228"/>
+											</Button>
+											<Button name="ВозвратныеСФНеРаспечатанныеОтменитьПоиск" id="206">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.ВозвратныеСФНеРаспечатанные.StandardCommand.CancelSearch</CommandName>
+												<ExtendedTooltip name="ВозвратныеСФНеРаспечатанныеОтменитьПоискРасширеннаяПодсказка" id="229"/>
+											</Button>
+											<Button name="ВозвратныеСФНеРаспечатанныеОбновить" id="204">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.ВозвратныеСФНеРаспечатанные.StandardCommand.Refresh</CommandName>
+												<ExtendedTooltip name="ВозвратныеСФНеРаспечатанныеОбновитьРасширеннаяПодсказка" id="230"/>
+											</Button>
+											<Button name="ВозвратныеСФНеРаспечатанныеПометитьКакРаспечатанные" id="207">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ПометитьКакРаспечатанные</CommandName>
+												<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+												<ExtendedTooltip name="ВозвратныеСФНеРаспечатанныеПометитьКакРаспечатанныеРасширеннаяПодсказка" id="231"/>
+											</Button>
+										</ChildItems>
+									</AutoCommandBar>
+									<ExtendedTooltip name="ВозвратныеСФНеРаспечатанныеРасширеннаяПодсказка" id="232"/>
+									<SearchStringAddition name="ВозвратныеСФНеРаспечатанныеСтрокаПоиска" id="233">
+										<AdditionSource>
+											<Item>ВозвратныеСФНеРаспечатанные</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ВозвратныеСФНеРаспечатанныеСтрокаПоискаКонтекстноеМеню" id="234"/>
+										<ExtendedTooltip name="ВозвратныеСФНеРаспечатанныеСтрокаПоискаРасширеннаяПодсказка" id="235"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ВозвратныеСФНеРаспечатанныеСостояниеПросмотра" id="236">
+										<AdditionSource>
+											<Item>ВозвратныеСФНеРаспечатанные</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ВозвратныеСФНеРаспечатанныеСостояниеПросмотраКонтекстноеМеню" id="237"/>
+										<ExtendedTooltip name="ВозвратныеСФНеРаспечатанныеСостояниеПросмотраРасширеннаяПодсказка" id="238"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ВозвратныеСФНеРаспечатанныеУправлениеПоиском" id="239">
+										<AdditionSource>
+											<Item>ВозвратныеСФНеРаспечатанные</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ВозвратныеСФНеРаспечатанныеУправлениеПоискомКонтекстноеМеню" id="240"/>
+										<ExtendedTooltip name="ВозвратныеСФНеРаспечатанныеУправлениеПоискомРасширеннаяПодсказка" id="241"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<LabelField name="ВозвратныеСФНеРаспечатанныеДата" id="154">
+											<DataPath>ВозвратныеСФНеРаспечатанные.Date</DataPath>
+											<Width>5</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<Format>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>ДФ=dd.MM.yyyy</v8:content>
+												</v8:item>
+											</Format>
+											<ContextMenu name="ВозвратныеСФНеРаспечатанныеДатаКонтекстноеМеню" id="155"/>
+											<ExtendedTooltip name="ВозвратныеСФНеРаспечатанныеДатаРасширеннаяПодсказка" id="242"/>
+										</LabelField>
+										<LabelField name="ВозвратныеСФНеРаспечатанныеКонтрагент" id="182">
+											<DataPath>ВозвратныеСФНеРаспечатанные.Контрагент</DataPath>
+											<Width>7</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ContextMenu name="ВозвратныеСФНеРаспечатанныеКонтрагентКонтекстноеМеню" id="183"/>
+											<ExtendedTooltip name="ВозвратныеСФНеРаспечатанныеКонтрагентРасширеннаяПодсказка" id="243"/>
+										</LabelField>
+										<LabelField name="ВозвратныеСФНеРаспечатанныеНомерСчетфактуры" id="184">
+											<DataPath>ВозвратныеСФНеРаспечатанные.НомерСчетфактуры</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>№ СФ</v8:content>
+												</v8:item>
+											</Title>
+											<Width>6</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ContextMenu name="ВозвратныеСФНеРаспечатанныеНомерСчетфактурыКонтекстноеМеню" id="185"/>
+											<ExtendedTooltip name="ВозвратныеСФНеРаспечатанныеНомерСчетфактурыРасширеннаяПодсказка" id="244"/>
+										</LabelField>
+										<LabelField name="ВозвратныеСФНеРаспечатанныеШК" id="198">
+											<DataPath>ВозвратныеСФНеРаспечатанные.ШК</DataPath>
+											<Width>10</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ContextMenu name="ВозвратныеСФНеРаспечатанныеШККонтекстноеМеню" id="199"/>
+											<ExtendedTooltip name="ВозвратныеСФНеРаспечатанныеШКРасширеннаяПодсказка" id="245"/>
+										</LabelField>
+										<LabelField name="ВозвратныеСФНеРаспечатанныеКоличествоКоробокОстаток" id="178">
+											<DataPath>~ВозвратныеСФНеРаспечатанные.КоличествоКоробокОстаток</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Кол</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ВозвратныеСФНеРаспечатанныеКоличествоКоробокОстатокКонтекстноеМеню" id="179"/>
+											<ExtendedTooltip name="ВозвратныеСФНеРаспечатанныеКоличествоКоробокОстатокРасширеннаяПодсказка" id="246"/>
+										</LabelField>
+										<LabelField name="ВозвратныеСФНеРаспечатанныеОрганизация" id="186">
+											<DataPath>ВозвратныеСФНеРаспечатанные.Организация</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Орг.</v8:content>
+												</v8:item>
+											</Title>
+											<Width>3</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ContextMenu name="ВозвратныеСФНеРаспечатанныеОрганизацияКонтекстноеМеню" id="187"/>
+											<ExtendedTooltip name="ВозвратныеСФНеРаспечатанныеОрганизацияРасширеннаяПодсказка" id="247"/>
+										</LabelField>
+										<LabelField name="ВозвратныеСФНеРаспечатанныеДокументПрихода" id="174">
+											<DataPath>~ВозвратныеСФНеРаспечатанные.ДокументПрихода</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>ДокБЯС</v8:content>
+												</v8:item>
+											</Title>
+											<Width>3</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ContextMenu name="ВозвратныеСФНеРаспечатанныеДокументПриходаКонтекстноеМеню" id="175"/>
+											<ExtendedTooltip name="ВозвратныеСФНеРаспечатанныеДокументПриходаРасширеннаяПодсказка" id="248"/>
+										</LabelField>
+									</ChildItems>
+								</Table>
+								<Table name="ВозвратныеСФнеПринятыеДиспетчером" id="5">
+									<TitleLocation>Top</TitleLocation>
+									<UseAlternationRowColor>true</UseAlternationRowColor>
+									<InitialListView>End</InitialListView>
+									<EnableStartDrag>true</EnableStartDrag>
+									<FileDragMode>AsFile</FileDragMode>
+									<DataPath>ВозвратныеСФнеПринятыеДиспетчером</DataPath>
+									<RowPictureDataPath>ВозвратныеСФнеПринятыеДиспетчером.DefaultPicture</RowPictureDataPath>
+									<SearchStringLocation>None</SearchStringLocation>
+									<ViewStatusLocation>None</ViewStatusLocation>
+									<SearchControlLocation>None</SearchControlLocation>
+									<AutoRefresh>false</AutoRefresh>
+									<AutoRefreshPeriod>60</AutoRefreshPeriod>
+									<Period>
+										<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+										<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+										<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+									</Period>
+									<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+									<RestoreCurrentRow>false</RestoreCurrentRow>
+									<TopLevelParent xsi:nil="true"/>
+									<ShowRoot>true</ShowRoot>
+									<AllowRootChoice>false</AllowRootChoice>
+									<UpdateOnDataChange>Auto</UpdateOnDataChange>
+									<ContextMenu name="ВозвратныеСФнеПринятыеДиспетчеромКонтекстноеМеню" id="6"/>
+									<AutoCommandBar name="ВозвратныеСФнеПринятыеДиспетчеромКоманднаяПанель" id="7">
+										<Autofill>false</Autofill>
+										<ChildItems>
+											<Button name="ВозвратныеСФнеПринятыеДиспетчеромОбновить" id="88">
+												<Type>CommandBarButton</Type>
+												<Representation>PictureAndText</Representation>
+												<CommandName>Form.Item.ВозвратныеСФнеПринятыеДиспетчером.StandardCommand.Refresh</CommandName>
+												<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+												<ExtendedTooltip name="ВозвратныеСФнеПринятыеДиспетчеромОбновитьРасширеннаяПодсказка" id="249"/>
+											</Button>
+											<Button name="ВозвратныеСФнеПринятыеДиспетчеромНайти" id="137">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.ВозвратныеСФнеПринятыеДиспетчером.StandardCommand.Find</CommandName>
+												<ExtendedTooltip name="ВозвратныеСФнеПринятыеДиспетчеромНайтиРасширеннаяПодсказка" id="250"/>
+											</Button>
+											<Button name="ВозвратныеСФнеПринятыеДиспетчеромОтменитьПоиск" id="138">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.ВозвратныеСФнеПринятыеДиспетчером.StandardCommand.CancelSearch</CommandName>
+												<ExtendedTooltip name="ВозвратныеСФнеПринятыеДиспетчеромОтменитьПоискРасширеннаяПодсказка" id="251"/>
+											</Button>
+											<Button name="ВозвратныеСФнеПринятыеДиспетчеромПринятьСФдиспетчером" id="147">
+												<Type>CommandBarButton</Type>
+												<Representation>PictureAndText</Representation>
+												<CommandName>Form.Command.ПринятьСФдиспетчером</CommandName>
+												<Picture>
+													<xr:Ref>StdPicture.MoveRight</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+												<ExtendedTooltip name="ВозвратныеСФнеПринятыеДиспетчеромПринятьСФдиспетчеромРасширеннаяПодсказка" id="252"/>
+											</Button>
+										</ChildItems>
+									</AutoCommandBar>
+									<ExtendedTooltip name="ВозвратныеСФнеПринятыеДиспетчеромРасширеннаяПодсказка" id="253"/>
+									<SearchStringAddition name="ВозвратныеСФнеПринятыеДиспетчеромСтрокаПоиска" id="254">
+										<AdditionSource>
+											<Item>ВозвратныеСФнеПринятыеДиспетчером</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ВозвратныеСФнеПринятыеДиспетчеромСтрокаПоискаКонтекстноеМеню" id="255"/>
+										<ExtendedTooltip name="ВозвратныеСФнеПринятыеДиспетчеромСтрокаПоискаРасширеннаяПодсказка" id="256"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ВозвратныеСФнеПринятыеДиспетчеромСостояниеПросмотра" id="257">
+										<AdditionSource>
+											<Item>ВозвратныеСФнеПринятыеДиспетчером</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ВозвратныеСФнеПринятыеДиспетчеромСостояниеПросмотраКонтекстноеМеню" id="258"/>
+										<ExtendedTooltip name="ВозвратныеСФнеПринятыеДиспетчеромСостояниеПросмотраРасширеннаяПодсказка" id="259"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ВозвратныеСФнеПринятыеДиспетчеромУправлениеПоиском" id="260">
+										<AdditionSource>
+											<Item>ВозвратныеСФнеПринятыеДиспетчером</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ВозвратныеСФнеПринятыеДиспетчеромУправлениеПоискомКонтекстноеМеню" id="261"/>
+										<ExtendedTooltip name="ВозвратныеСФнеПринятыеДиспетчеромУправлениеПоискомРасширеннаяПодсказка" id="262"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<LabelField name="ВозвратныеСФнеПринятыеДиспетчеромДата" id="8">
+											<DataPath>ВозвратныеСФнеПринятыеДиспетчером.Date</DataPath>
+											<Width>5</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<Format>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>ДФ=dd.MM.yyyy</v8:content>
+												</v8:item>
+											</Format>
+											<ContextMenu name="ВозвратныеСФнеПринятыеДиспетчеромДатаКонтекстноеМеню" id="9"/>
+											<ExtendedTooltip name="ВозвратныеСФнеПринятыеДиспетчеромДатаРасширеннаяПодсказка" id="263"/>
+										</LabelField>
+										<LabelField name="ВозвратныеСФнеПринятыеДиспетчеромНомерСчетфактуры" id="20">
+											<DataPath>ВозвратныеСФнеПринятыеДиспетчером.НомерСчетфактуры</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>СчетФ</v8:content>
+												</v8:item>
+											</Title>
+											<Width>6</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ContextMenu name="ВозвратныеСФнеПринятыеДиспетчеромНомерСчетфактурыКонтекстноеМеню" id="21"/>
+											<ExtendedTooltip name="ВозвратныеСФнеПринятыеДиспетчеромНомерСчетфактурыРасширеннаяПодсказка" id="264"/>
+										</LabelField>
+										<LabelField name="ВозвратныеСФнеПринятыеДиспетчеромКонтрагент" id="16">
+											<DataPath>ВозвратныеСФнеПринятыеДиспетчером.Контрагент</DataPath>
+											<Width>7</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ContextMenu name="ВозвратныеСФнеПринятыеДиспетчеромКонтрагентКонтекстноеМеню" id="17"/>
+											<ExtendedTooltip name="ВозвратныеСФнеПринятыеДиспетчеромКонтрагентРасширеннаяПодсказка" id="265"/>
+										</LabelField>
+										<LabelField name="ВозвратныеСФнеПринятыеДиспетчеромШК" id="22">
+											<DataPath>ВозвратныеСФнеПринятыеДиспетчером.ШК</DataPath>
+											<Width>10</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ContextMenu name="ВозвратныеСФнеПринятыеДиспетчеромШККонтекстноеМеню" id="23"/>
+											<ExtendedTooltip name="ВозвратныеСФнеПринятыеДиспетчеромШКРасширеннаяПодсказка" id="266"/>
+										</LabelField>
+										<LabelField name="ВозвратныеСФнеПринятыеДиспетчеромКомментарий" id="12">
+											<DataPath>ВозвратныеСФнеПринятыеДиспетчером.Комментарий</DataPath>
+											<Width>10</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ContextMenu name="ВозвратныеСФнеПринятыеДиспетчеромКомментарийКонтекстноеМеню" id="13"/>
+											<ExtendedTooltip name="ВозвратныеСФнеПринятыеДиспетчеромКомментарийРасширеннаяПодсказка" id="267"/>
+										</LabelField>
+										<LabelField name="ВозвратныеСФнеПринятыеДиспетчеромНомер" id="10">
+											<DataPath>ВозвратныеСФнеПринятыеДиспетчером.Number</DataPath>
+											<ContextMenu name="ВозвратныеСФнеПринятыеДиспетчеромНомерКонтекстноеМеню" id="11"/>
+											<ExtendedTooltip name="ВозвратныеСФнеПринятыеДиспетчеромНомерРасширеннаяПодсказка" id="268"/>
+										</LabelField>
+										<LabelField name="ВозвратныеСФнеПринятыеДиспетчеромДВСоздания" id="40">
+											<DataPath>ВозвратныеСФнеПринятыеДиспетчером.ДВСоздания</DataPath>
+											<ContextMenu name="ВозвратныеСФнеПринятыеДиспетчеромДВСозданияКонтекстноеМеню" id="41"/>
+											<ExtendedTooltip name="ВозвратныеСФнеПринятыеДиспетчеромДВСозданияРасширеннаяПодсказка" id="269"/>
+										</LabelField>
+										<LabelField name="ВозвратныеСФнеПринятыеДиспетчеромДокументПриходаСписокМестХранений" id="145">
+											<DataPath>~ВозвратныеСФнеПринятыеДиспетчером.ДокументПрихода.СписокМестХранений</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>СписокМест</v8:content>
+												</v8:item>
+											</Title>
+											<Width>5</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ContextMenu name="ВозвратныеСФнеПринятыеДиспетчеромДокументПриходаСписокМестХраненийКонтекстноеМеню" id="146"/>
+											<ExtendedTooltip name="ВозвратныеСФнеПринятыеДиспетчеромДокументПриходаСписокМестХраненийРасширеннаяПодсказка" id="270"/>
+										</LabelField>
+										<LabelField name="ВозвратныеСФнеПринятыеДиспетчеромКоличествоКоробокОстаток" id="143">
+											<DataPath>~ВозвратныеСФнеПринятыеДиспетчером.КоличествоКоробокОстаток</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Кол</v8:content>
+												</v8:item>
+											</Title>
+											<Width>3</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ContextMenu name="ВозвратныеСФнеПринятыеДиспетчеромКоличествоКоробокОстатокКонтекстноеМеню" id="144"/>
+											<ExtendedTooltip name="ВозвратныеСФнеПринятыеДиспетчеромКоличествоКоробокОстатокРасширеннаяПодсказка" id="271"/>
+										</LabelField>
+										<LabelField name="ВозвратныеСФнеПринятыеДиспетчеромДокументПрихода" id="141">
+											<DataPath>~ВозвратныеСФнеПринятыеДиспетчером.ДокументПрихода</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>ДокБЯС</v8:content>
+												</v8:item>
+											</Title>
+											<Width>5</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ContextMenu name="ВозвратныеСФнеПринятыеДиспетчеромДокументПриходаКонтекстноеМеню" id="142"/>
+											<ExtendedTooltip name="ВозвратныеСФнеПринятыеДиспетчеромДокументПриходаРасширеннаяПодсказка" id="272"/>
+										</LabelField>
+									</ChildItems>
+								</Table>
+								<Table name="ВозвратныеСФПринятыеДиспетчером" id="46">
+									<TitleLocation>Top</TitleLocation>
+									<UseAlternationRowColor>true</UseAlternationRowColor>
+									<InitialListView>End</InitialListView>
+									<EnableStartDrag>true</EnableStartDrag>
+									<FileDragMode>AsFile</FileDragMode>
+									<DataPath>ВозвратныеСФПринятыеДиспетчером</DataPath>
+									<RowPictureDataPath>ВозвратныеСФПринятыеДиспетчером.DefaultPicture</RowPictureDataPath>
+									<SearchStringLocation>None</SearchStringLocation>
+									<ViewStatusLocation>None</ViewStatusLocation>
+									<SearchControlLocation>None</SearchControlLocation>
+									<AutoRefresh>false</AutoRefresh>
+									<AutoRefreshPeriod>60</AutoRefreshPeriod>
+									<Period>
+										<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+										<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+										<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+									</Period>
+									<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+									<RestoreCurrentRow>false</RestoreCurrentRow>
+									<TopLevelParent xsi:nil="true"/>
+									<ShowRoot>true</ShowRoot>
+									<AllowRootChoice>false</AllowRootChoice>
+									<UpdateOnDataChange>Auto</UpdateOnDataChange>
+									<ContextMenu name="ВозвратныеСФПринятыеДиспетчеромКонтекстноеМеню" id="47"/>
+									<AutoCommandBar name="ВозвратныеСФПринятыеДиспетчеромКоманднаяПанель" id="48">
+										<Autofill>false</Autofill>
+										<ChildItems>
+											<Button name="ВозвратныеСФПринятыеДиспетчеромОбновить" id="89">
+												<Type>CommandBarButton</Type>
+												<Representation>PictureAndText</Representation>
+												<CommandName>Form.Item.ВозвратныеСФПринятыеДиспетчером.StandardCommand.Refresh</CommandName>
+												<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+												<ExtendedTooltip name="ВозвратныеСФПринятыеДиспетчеромОбновитьРасширеннаяПодсказка" id="273"/>
+											</Button>
+											<Button name="ВозвратныеСФПринятыеДиспетчеромНайти" id="139">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.ВозвратныеСФПринятыеДиспетчером.StandardCommand.Find</CommandName>
+												<ExtendedTooltip name="ВозвратныеСФПринятыеДиспетчеромНайтиРасширеннаяПодсказка" id="274"/>
+											</Button>
+											<Button name="ВозвратныеСФПринятыеДиспетчеромОтменитьПоиск" id="140">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.ВозвратныеСФПринятыеДиспетчером.StandardCommand.CancelSearch</CommandName>
+												<ExtendedTooltip name="ВозвратныеСФПринятыеДиспетчеромОтменитьПоискРасширеннаяПодсказка" id="275"/>
+											</Button>
+											<Button name="ВозвратныеСФПринятыеДиспетчеромОтменитьПриемкуСФдиспетчером" id="148">
+												<Type>CommandBarButton</Type>
+												<Representation>PictureAndText</Representation>
+												<CommandName>Form.Command.ОтменитьПриемкуСФдиспетчером</CommandName>
+												<Picture>
+													<xr:Ref>StdPicture.MoveLeft</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+												<ExtendedTooltip name="ВозвратныеСФПринятыеДиспетчеромОтменитьПриемкуСФдиспетчеромРасширеннаяПодсказка" id="276"/>
+											</Button>
+										</ChildItems>
+									</AutoCommandBar>
+									<ExtendedTooltip name="ВозвратныеСФПринятыеДиспетчеромРасширеннаяПодсказка" id="277"/>
+									<SearchStringAddition name="ВозвратныеСФПринятыеДиспетчеромСтрокаПоиска" id="278">
+										<AdditionSource>
+											<Item>ВозвратныеСФПринятыеДиспетчером</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ВозвратныеСФПринятыеДиспетчеромСтрокаПоискаКонтекстноеМеню" id="279"/>
+										<ExtendedTooltip name="ВозвратныеСФПринятыеДиспетчеромСтрокаПоискаРасширеннаяПодсказка" id="280"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ВозвратныеСФПринятыеДиспетчеромСостояниеПросмотра" id="281">
+										<AdditionSource>
+											<Item>ВозвратныеСФПринятыеДиспетчером</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ВозвратныеСФПринятыеДиспетчеромСостояниеПросмотраКонтекстноеМеню" id="282"/>
+										<ExtendedTooltip name="ВозвратныеСФПринятыеДиспетчеромСостояниеПросмотраРасширеннаяПодсказка" id="283"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ВозвратныеСФПринятыеДиспетчеромУправлениеПоиском" id="284">
+										<AdditionSource>
+											<Item>ВозвратныеСФПринятыеДиспетчером</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ВозвратныеСФПринятыеДиспетчеромУправлениеПоискомКонтекстноеМеню" id="285"/>
+										<ExtendedTooltip name="ВозвратныеСФПринятыеДиспетчеромУправлениеПоискомРасширеннаяПодсказка" id="286"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<LabelField name="ВозвратныеСФПринятыеДиспетчером1Дата" id="49">
+											<DataPath>ВозвратныеСФПринятыеДиспетчером.Date</DataPath>
+											<Width>7</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<Format>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>ДФ=dd.MM.yyyy</v8:content>
+												</v8:item>
+											</Format>
+											<ContextMenu name="ВозвратныеСФПринятыеДиспетчером1ДатаКонтекстноеМеню" id="50"/>
+											<ExtendedTooltip name="ВозвратныеСФПринятыеДиспетчером1ДатаРасширеннаяПодсказка" id="287"/>
+										</LabelField>
+										<LabelField name="ВозвратныеСФПринятыеДиспетчером1Контрагент" id="57">
+											<DataPath>ВозвратныеСФПринятыеДиспетчером.Контрагент</DataPath>
+											<Width>7</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ContextMenu name="ВозвратныеСФПринятыеДиспетчером1КонтрагентКонтекстноеМеню" id="58"/>
+											<ExtendedTooltip name="ВозвратныеСФПринятыеДиспетчером1КонтрагентРасширеннаяПодсказка" id="288"/>
+										</LabelField>
+										<LabelField name="ВозвратныеСФПринятыеДиспетчером1НомерСчетфактуры" id="61">
+											<DataPath>ВозвратныеСФПринятыеДиспетчером.НомерСчетфактуры</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>СчетФ</v8:content>
+												</v8:item>
+											</Title>
+											<Width>6</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ContextMenu name="ВозвратныеСФПринятыеДиспетчером1НомерСчетфактурыКонтекстноеМеню" id="62"/>
+											<ExtendedTooltip name="ВозвратныеСФПринятыеДиспетчером1НомерСчетфактурыРасширеннаяПодсказка" id="289"/>
+										</LabelField>
+										<LabelField name="ВозвратныеСФПринятыеДиспетчером1ШК" id="63">
+											<DataPath>ВозвратныеСФПринятыеДиспетчером.ШК</DataPath>
+											<Width>10</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ContextMenu name="ВозвратныеСФПринятыеДиспетчером1ШККонтекстноеМеню" id="64"/>
+											<ExtendedTooltip name="ВозвратныеСФПринятыеДиспетчером1ШКРасширеннаяПодсказка" id="290"/>
+										</LabelField>
+										<LabelField name="ВозвратныеСФПринятыеДиспетчеромНомерМестаОтгрузки" id="135">
+											<DataPath>~ВозвратныеСФПринятыеДиспетчером.ДокументПрихода.СписокМестХранений</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Места.</v8:content>
+												</v8:item>
+											</Title>
+											<Width>3</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ContextMenu name="ВозвратныеСФПринятыеДиспетчеромНомерМестаОтгрузкиКонтекстноеМеню" id="136"/>
+											<ExtendedTooltip name="ВозвратныеСФПринятыеДиспетчеромНомерМестаОтгрузкиРасширеннаяПодсказка" id="291"/>
+										</LabelField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="Группа4" id="134">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>---</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="292"/>
+					<ChildItems>
+						<Table name="ВозвратныеСФПринятыеСТАРШИМВОДИТЕЛЕМ" id="90">
+							<TitleLocation>Top</TitleLocation>
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>ВозвратныеСФПринятыеСТАРШИМВОДИТЕЛЕМ</DataPath>
+							<RowPictureDataPath>ВозвратныеСФПринятыеСТАРШИМВОДИТЕЛЕМ.DefaultPicture</RowPictureDataPath>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<ContextMenu name="ВозвратныеСФПринятыеСТАРШИМВОДИТЕЛЕМКонтекстноеМеню" id="91"/>
+							<AutoCommandBar name="ВозвратныеСФПринятыеСТАРШИМВОДИТЕЛЕМКоманднаяПанель" id="92">
+								<Autofill>false</Autofill>
+								<ChildItems>
+									<Button name="ВозвратныеСФПринятыеСТАРШИМВОДИТЕЛЕМОбновить" id="131">
+										<Type>CommandBarButton</Type>
+										<Representation>PictureAndText</Representation>
+										<CommandName>Form.Item.ВозвратныеСФПринятыеСТАРШИМВОДИТЕЛЕМ.StandardCommand.Refresh</CommandName>
+										<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="ВозвратныеСФПринятыеСТАРШИМВОДИТЕЛЕМОбновитьРасширеннаяПодсказка" id="293"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ВозвратныеСФПринятыеСТАРШИМВОДИТЕЛЕМРасширеннаяПодсказка" id="294"/>
+							<SearchStringAddition name="ВозвратныеСФПринятыеСТАРШИМВОДИТЕЛЕМСтрокаПоиска" id="295">
+								<AdditionSource>
+									<Item>ВозвратныеСФПринятыеСТАРШИМВОДИТЕЛЕМ</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ВозвратныеСФПринятыеСТАРШИМВОДИТЕЛЕМСтрокаПоискаКонтекстноеМеню" id="296"/>
+								<ExtendedTooltip name="ВозвратныеСФПринятыеСТАРШИМВОДИТЕЛЕМСтрокаПоискаРасширеннаяПодсказка" id="297"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ВозвратныеСФПринятыеСТАРШИМВОДИТЕЛЕМСостояниеПросмотра" id="298">
+								<AdditionSource>
+									<Item>ВозвратныеСФПринятыеСТАРШИМВОДИТЕЛЕМ</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ВозвратныеСФПринятыеСТАРШИМВОДИТЕЛЕМСостояниеПросмотраКонтекстноеМеню" id="299"/>
+								<ExtendedTooltip name="ВозвратныеСФПринятыеСТАРШИМВОДИТЕЛЕМСостояниеПросмотраРасширеннаяПодсказка" id="300"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ВозвратныеСФПринятыеСТАРШИМВОДИТЕЛЕМУправлениеПоиском" id="301">
+								<AdditionSource>
+									<Item>ВозвратныеСФПринятыеСТАРШИМВОДИТЕЛЕМ</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ВозвратныеСФПринятыеСТАРШИМВОДИТЕЛЕМУправлениеПоискомКонтекстноеМеню" id="302"/>
+								<ExtendedTooltip name="ВозвратныеСФПринятыеСТАРШИМВОДИТЕЛЕМУправлениеПоискомРасширеннаяПодсказка" id="303"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ВозвратныеСФПринятыеСТАРШИМВОДИТЕЛЕМДата" id="93">
+									<DataPath>ВозвратныеСФПринятыеСТАРШИМВОДИТЕЛЕМ.Date</DataPath>
+									<Width>10</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<Format>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ДФ=dd.MM.yyyy</v8:content>
+										</v8:item>
+									</Format>
+									<ContextMenu name="ВозвратныеСФПринятыеСТАРШИМВОДИТЕЛЕМДатаКонтекстноеМеню" id="94"/>
+									<ExtendedTooltip name="ВозвратныеСФПринятыеСТАРШИМВОДИТЕЛЕМДатаРасширеннаяПодсказка" id="304"/>
+								</LabelField>
+								<LabelField name="ВозвратныеСФПринятыеСТАРШИМВОДИТЕЛЕМНомерСчетфактуры" id="105">
+									<DataPath>ВозвратныеСФПринятыеСТАРШИМВОДИТЕЛЕМ.НомерСчетфактуры</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>№ СчетФ</v8:content>
+										</v8:item>
+									</Title>
+									<Width>7</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="ВозвратныеСФПринятыеСТАРШИМВОДИТЕЛЕМНомерСчетфактурыКонтекстноеМеню" id="106"/>
+									<ExtendedTooltip name="ВозвратныеСФПринятыеСТАРШИМВОДИТЕЛЕМНомерСчетфактурыРасширеннаяПодсказка" id="305"/>
+								</LabelField>
+								<LabelField name="ВозвратныеСФПринятыеСТАРШИМВОДИТЕЛЕМКонтрагент" id="101">
+									<DataPath>ВозвратныеСФПринятыеСТАРШИМВОДИТЕЛЕМ.Контрагент</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Получатель</v8:content>
+										</v8:item>
+									</Title>
+									<Width>7</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="ВозвратныеСФПринятыеСТАРШИМВОДИТЕЛЕМКонтрагентКонтекстноеМеню" id="102"/>
+									<ExtendedTooltip name="ВозвратныеСФПринятыеСТАРШИМВОДИТЕЛЕМКонтрагентРасширеннаяПодсказка" id="306"/>
+								</LabelField>
+								<LabelField name="ВозвратныеСФПринятыеСТАРШИМВОДИТЕЛЕМКомментарий" id="97">
+									<DataPath>ВозвратныеСФПринятыеСТАРШИМВОДИТЕЛЕМ.Комментарий</DataPath>
+									<Width>10</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="ВозвратныеСФПринятыеСТАРШИМВОДИТЕЛЕМКомментарийКонтекстноеМеню" id="98"/>
+									<ExtendedTooltip name="ВозвратныеСФПринятыеСТАРШИМВОДИТЕЛЕМКомментарийРасширеннаяПодсказка" id="307"/>
+								</LabelField>
+								<LabelField name="ВозвратныеСФПринятыеСТАРШИМВОДИТЕЛЕМШК" id="107">
+									<DataPath>ВозвратныеСФПринятыеСТАРШИМВОДИТЕЛЕМ.ШК</DataPath>
+									<Width>13</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="ВозвратныеСФПринятыеСТАРШИМВОДИТЕЛЕМШККонтекстноеМеню" id="108"/>
+									<ExtendedTooltip name="ВозвратныеСФПринятыеСТАРШИМВОДИТЕЛЕМШКРасширеннаяПодсказка" id="308"/>
+								</LabelField>
+								<LabelField name="ВозвратныеСФПринятыеСТАРШИМВОДИТЕЛЕМДиспетчер" id="113">
+									<DataPath>ВозвратныеСФПринятыеСТАРШИМВОДИТЕЛЕМ.Диспетчер</DataPath>
+									<Width>5</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="ВозвратныеСФПринятыеСТАРШИМВОДИТЕЛЕМДиспетчерКонтекстноеМеню" id="114"/>
+									<ExtendedTooltip name="ВозвратныеСФПринятыеСТАРШИМВОДИТЕЛЕМДиспетчерРасширеннаяПодсказка" id="309"/>
+								</LabelField>
+								<LabelField name="ВозвратныеСФПринятыеСТАРШИМВОДИТЕЛЕМДВПриемаДиспетчером" id="115">
+									<DataPath>ВозвратныеСФПринятыеСТАРШИМВОДИТЕЛЕМ.ДВПриемаДиспетчером</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ДВПриемД</v8:content>
+										</v8:item>
+									</Title>
+									<Width>12</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="ВозвратныеСФПринятыеСТАРШИМВОДИТЕЛЕМДВПриемаДиспетчеромКонтекстноеМеню" id="116"/>
+									<ExtendedTooltip name="ВозвратныеСФПринятыеСТАРШИМВОДИТЕЛЕМДВПриемаДиспетчеромРасширеннаяПодсказка" id="310"/>
+								</LabelField>
+								<LabelField name="ВозвратныеСФПринятыеСТАРШИМВОДИТЕЛЕМСтаршийВодитель" id="117">
+									<DataPath>ВозвратныеСФПринятыеСТАРШИМВОДИТЕЛЕМ.СтаршийВодитель</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>СтВод/Охр</v8:content>
+										</v8:item>
+									</Title>
+									<Width>5</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="ВозвратныеСФПринятыеСТАРШИМВОДИТЕЛЕМСтаршийВодительКонтекстноеМеню" id="118"/>
+									<ExtendedTooltip name="ВозвратныеСФПринятыеСТАРШИМВОДИТЕЛЕМСтаршийВодительРасширеннаяПодсказка" id="311"/>
+								</LabelField>
+								<LabelField name="ВозвратныеСФПринятыеСТАРШИМВОДИТЕЛЕМДВПриемаСтаршимВодителем" id="119">
+									<DataPath>ВозвратныеСФПринятыеСТАРШИМВОДИТЕЛЕМ.ДВПриемаСтаршимВодителем</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ДВПремСтВод.</v8:content>
+										</v8:item>
+									</Title>
+									<Width>12</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="ВозвратныеСФПринятыеСТАРШИМВОДИТЕЛЕМДВПриемаСтаршимВодителемКонтекстноеМеню" id="120"/>
+									<ExtendedTooltip name="ВозвратныеСФПринятыеСТАРШИМВОДИТЕЛЕМДВПриемаСтаршимВодителемРасширеннаяПодсказка" id="312"/>
+								</LabelField>
+								<LabelField name="ВозвратныеСФПринятыеСТАРШИМВОДИТЕЛЕМВодитель" id="219">
+									<DataPath>ВозвратныеСФПринятыеСТАРШИМВОДИТЕЛЕМ.Водитель</DataPath>
+									<ContextMenu name="ВозвратныеСФПринятыеСТАРШИМВОДИТЕЛЕМВодительКонтекстноеМеню" id="220"/>
+									<ExtendedTooltip name="ВозвратныеСФПринятыеСТАРШИМВОДИТЕЛЕМВодительРасширеннаяПодсказка" id="313"/>
+								</LabelField>
+								<LabelField name="ВозвратныеСФПринятыеСТАРШИМВОДИТЕЛЕМДВПриемаВодителем" id="217">
+									<DataPath>ВозвратныеСФПринятыеСТАРШИМВОДИТЕЛЕМ.ДВПриемаВодителем</DataPath>
+									<ContextMenu name="ВозвратныеСФПринятыеСТАРШИМВОДИТЕЛЕМДВПриемаВодителемКонтекстноеМеню" id="218"/>
+									<ExtendedTooltip name="ВозвратныеСФПринятыеСТАРШИМВОДИТЕЛЕМДВПриемаВодителемРасширеннаяПодсказка" id="314"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="Группа5" id="208">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>---</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="315"/>
+					<ChildItems>
+						<Table name="СписокКонтрагентовВЗонеОтгрузки" id="209">
+							<Representation>List</Representation>
+							<TitleLocation>Top</TitleLocation>
+							<Header>false</Header>
+							<HorizontalLines>false</HorizontalLines>
+							<VerticalLines>false</VerticalLines>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>СписокКонтрагентовВЗонеОтгрузки</DataPath>
+							<RowPictureDataPath>СписокКонтрагентовВЗонеОтгрузки.Picture</RowPictureDataPath>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<ContextMenu name="СписокКонтрагентовВЗонеОтгрузкиКонтекстноеМеню" id="210"/>
+							<AutoCommandBar name="СписокКонтрагентовВЗонеОтгрузкиКоманднаяПанель" id="211">
+								<Autofill>false</Autofill>
+								<ChildItems>
+									<Button name="СписокКонтрагентовВЗонеОтгрузкиОбновитьСписокКонтрагентов" id="214">
+										<Type>CommandBarButton</Type>
+										<Representation>PictureAndText</Representation>
+										<CommandName>Form.Command.ОбновитьСписокКонтрагентов</CommandName>
+										<Picture>
+											<xr:Ref>StdPicture.Refresh</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<ExtendedTooltip name="СписокКонтрагентовВЗонеОтгрузкиОбновитьСписокКонтрагентовРасширеннаяПодсказка" id="316"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="СписокКонтрагентовВЗонеОтгрузкиРасширеннаяПодсказка" id="317"/>
+							<SearchStringAddition name="СписокКонтрагентовВЗонеОтгрузкиСтрокаПоиска" id="318">
+								<AdditionSource>
+									<Item>СписокКонтрагентовВЗонеОтгрузки</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокКонтрагентовВЗонеОтгрузкиСтрокаПоискаКонтекстноеМеню" id="319"/>
+								<ExtendedTooltip name="СписокКонтрагентовВЗонеОтгрузкиСтрокаПоискаРасширеннаяПодсказка" id="320"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СписокКонтрагентовВЗонеОтгрузкиСостояниеПросмотра" id="321">
+								<AdditionSource>
+									<Item>СписокКонтрагентовВЗонеОтгрузки</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокКонтрагентовВЗонеОтгрузкиСостояниеПросмотраКонтекстноеМеню" id="322"/>
+								<ExtendedTooltip name="СписокКонтрагентовВЗонеОтгрузкиСостояниеПросмотраРасширеннаяПодсказка" id="323"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СписокКонтрагентовВЗонеОтгрузкиУправлениеПоиском" id="324">
+								<AdditionSource>
+									<Item>СписокКонтрагентовВЗонеОтгрузки</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокКонтрагентовВЗонеОтгрузкиУправлениеПоискомКонтекстноеМеню" id="325"/>
+								<ExtendedTooltip name="СписокКонтрагентовВЗонеОтгрузкиУправлениеПоискомРасширеннаяПодсказка" id="326"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="СписокКонтрагентовВЗонеОтгрузкиЗначение" id="212">
+									<DataPath>СписокКонтрагентовВЗонеОтгрузки.Value</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СписокКонтрагентовВЗонеОтгрузкиЗначениеКонтекстноеМеню" id="213"/>
+									<ExtendedTooltip name="СписокКонтрагентовВЗонеОтгрузкиЗначениеРасширеннаяПодсказка" id="327"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.АРМПриемВозвратныхСчетФактурДИСПЕТЧЕРОМ</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ШК" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ШК</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АвтоСохранение" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Авто сохранение</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВозвратныеСФнеПринятыеДиспетчером" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Возвратные СФ РАСПЕЧАТАННЫЕ </v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<UseAlways>
+				<Field>ВозвратныеСФнеПринятыеДиспетчером.Ref</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	ДокументВозвратнаяСчетФактура.Ссылка,
+	ДокументВозвратнаяСчетФактура.ВерсияДанных,
+	ДокументВозвратнаяСчетФактура.ПометкаУдаления,
+	ДокументВозвратнаяСчетФактура.Номер,
+	ДокументВозвратнаяСчетФактура.Дата,
+	ДокументВозвратнаяСчетФактура.Проведен,
+	ДокументВозвратнаяСчетФактура.Комментарий,
+	ДокументВозвратнаяСчетФактура.Ответственный,
+	ДокументВозвратнаяСчетФактура.Контрагент,
+	ДокументВозвратнаяСчетФактура.ЭтоВоздушка,
+	ДокументВозвратнаяСчетФактура.НомерСчетфактуры,
+	ДокументВозвратнаяСчетФактура.ШК,
+	ДокументВозвратнаяСчетФактура.Отгрузка,
+	ДокументВозвратнаяСчетФактура.Организация,
+	ДокументВозвратнаяСчетФактура.Диспетчер,
+	ДокументВозвратнаяСчетФактура.ДВПриемаДиспетчером,
+	ДокументВозвратнаяСчетФактура.СтаршийВодитель,
+	ДокументВозвратнаяСчетФактура.ДВПриемаСтаршимВодителем,
+	ДокументВозвратнаяСчетФактура.Создал,
+	ДокументВозвратнаяСчетФактура.Изменил,
+	ДокументВозвратнаяСчетФактура.ДВСоздания,
+	ДокументВозвратнаяСчетФактура.ДВИзменения,
+	ДокументВозвратнаяСчетФактура.СИ,
+	ДокументВозвратнаяСчетФактура.МоментВремени
+ИЗ
+	Документ.ВозвратнаяСчетФактура КАК ДокументВозвратнаяСчетФактура
+ГДЕ
+	ДокументВозвратнаяСчетФактура.Распечатано = ИСТИНА</QueryText>
+				<MainTable>Document.ВозвратнаяСчетФактура</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ДВПриемаДиспетчером</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="v8:StandardBeginningDate">
+								<v8:variant xsi:type="v8:StandardBeginningDateVariant">Custom</v8:variant>
+								<v8:date>0001-01-01T00:00:00</v8:date>
+							</dcsset:right>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ДВПриемаСтаршимВодителем</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="v8:StandardBeginningDate">
+								<v8:variant xsi:type="v8:StandardBeginningDateVariant">Custom</v8:variant>
+								<v8:date>0001-01-01T00:00:00</v8:date>
+							</dcsset:right>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ВозвратныеСФПринятыеДиспетчером" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Возвратные СФ для Старшего Водителя</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<UseAlways>
+				<Field>ВозвратныеСФПринятыеДиспетчером.Ref</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	ДокументВозвратнаяСчетФактура.Ссылка,
+	ДокументВозвратнаяСчетФактура.ВерсияДанных,
+	ДокументВозвратнаяСчетФактура.ПометкаУдаления,
+	ДокументВозвратнаяСчетФактура.Номер,
+	ДокументВозвратнаяСчетФактура.Дата,
+	ДокументВозвратнаяСчетФактура.Проведен,
+	ДокументВозвратнаяСчетФактура.Комментарий,
+	ДокументВозвратнаяСчетФактура.Ответственный,
+	ДокументВозвратнаяСчетФактура.Контрагент,
+	ДокументВозвратнаяСчетФактура.ЭтоВоздушка,
+	ДокументВозвратнаяСчетФактура.НомерСчетфактуры,
+	ДокументВозвратнаяСчетФактура.ШК,
+	ДокументВозвратнаяСчетФактура.Отгрузка,
+	ДокументВозвратнаяСчетФактура.Организация,
+	ДокументВозвратнаяСчетФактура.Диспетчер,
+	ДокументВозвратнаяСчетФактура.ДВПриемаДиспетчером,
+	ДокументВозвратнаяСчетФактура.СтаршийВодитель,
+	ДокументВозвратнаяСчетФактура.ДВПриемаСтаршимВодителем,
+	ДокументВозвратнаяСчетФактура.Создал,
+	ДокументВозвратнаяСчетФактура.Изменил,
+	ДокументВозвратнаяСчетФактура.ДВСоздания,
+	ДокументВозвратнаяСчетФактура.ДВИзменения,
+	ДокументВозвратнаяСчетФактура.СИ,
+	ДокументВозвратнаяСчетФактура.МоментВремени,
+	ДокументВозвратнаяСчетФактура.ДВПриемаВодителем,
+	ДокументВозвратнаяСчетФактура.Водитель
+ИЗ
+	Документ.ВозвратнаяСчетФактура КАК ДокументВозвратнаяСчетФактура</QueryText>
+				<MainTable>Document.ВозвратнаяСчетФактура</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ДВПриемаСтаршимВодителем</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="v8:StandardBeginningDate">
+								<v8:variant xsi:type="v8:StandardBeginningDateVariant">Custom</v8:variant>
+								<v8:date>0001-01-01T00:00:00</v8:date>
+							</dcsset:right>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemGroup">
+							<dcsset:groupType>AndGroup</dcsset:groupType>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ДВПриемаВодителем</dcsset:left>
+								<dcsset:comparisonType>Equal</dcsset:comparisonType>
+								<dcsset:right xsi:type="v8:StandardBeginningDate">
+									<v8:variant xsi:type="v8:StandardBeginningDateVariant">Custom</v8:variant>
+									<v8:date>0001-01-01T00:00:00</v8:date>
+								</dcsset:right>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ДВПриемаДиспетчером</dcsset:left>
+								<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+								<dcsset:right xsi:type="v8:StandardBeginningDate">
+									<v8:variant xsi:type="v8:StandardBeginningDateVariant">Custom</v8:variant>
+									<v8:date>0001-01-01T00:00:00</v8:date>
+								</dcsset:right>
+							</dcsset:item>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ВозвратныеСФПринятыеСТАРШИМВОДИТЕЛЕМ" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Возвратные СФ принятые СТАРШИМ ВОДИТЕЛЕМ или ВОДИТЕЛЕМ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>Document.ВозвратнаяСчетФактура</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemGroup">
+							<dcsset:groupType>OrGroup</dcsset:groupType>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ДВПриемаСтаршимВодителем</dcsset:left>
+								<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+								<dcsset:right xsi:type="v8:StandardBeginningDate">
+									<v8:variant xsi:type="v8:StandardBeginningDateVariant">Custom</v8:variant>
+									<v8:date>0001-01-01T00:00:00</v8:date>
+								</dcsset:right>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ДВПриемаВодителем</dcsset:left>
+								<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+								<dcsset:right xsi:type="v8:StandardBeginningDate">
+									<v8:variant xsi:type="v8:StandardBeginningDateVariant">Custom</v8:variant>
+									<v8:date>0001-01-01T00:00:00</v8:date>
+								</dcsset:right>
+							</dcsset:item>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ВозвратныеСФНеРаспечатанные" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Возвратные СФ Не Распечатанные</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<UseAlways>
+				<Field>ВозвратныеСФНеРаспечатанные.Ref</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	ДокументВозвратнаяСчетФактура.Ссылка,
+	ДокументВозвратнаяСчетФактура.ВерсияДанных,
+	ДокументВозвратнаяСчетФактура.ПометкаУдаления,
+	ДокументВозвратнаяСчетФактура.Номер,
+	ДокументВозвратнаяСчетФактура.Дата,
+	ДокументВозвратнаяСчетФактура.Проведен,
+	ДокументВозвратнаяСчетФактура.Комментарий,
+	ДокументВозвратнаяСчетФактура.Ответственный,
+	ДокументВозвратнаяСчетФактура.Контрагент,
+	ДокументВозвратнаяСчетФактура.ЭтоВоздушка,
+	ДокументВозвратнаяСчетФактура.НомерСчетфактуры,
+	ДокументВозвратнаяСчетФактура.ШК,
+	ДокументВозвратнаяСчетФактура.Отгрузка,
+	ДокументВозвратнаяСчетФактура.Организация,
+	ДокументВозвратнаяСчетФактура.Диспетчер,
+	ДокументВозвратнаяСчетФактура.ДВПриемаДиспетчером,
+	ДокументВозвратнаяСчетФактура.СтаршийВодитель,
+	ДокументВозвратнаяСчетФактура.ДВПриемаСтаршимВодителем,
+	ДокументВозвратнаяСчетФактура.Создал,
+	ДокументВозвратнаяСчетФактура.Изменил,
+	ДокументВозвратнаяСчетФактура.ДВСоздания,
+	ДокументВозвратнаяСчетФактура.ДВИзменения,
+	ДокументВозвратнаяСчетФактура.СИ,
+	ДокументВозвратнаяСчетФактура.МоментВремени
+ИЗ
+	Документ.ВозвратнаяСчетФактура КАК ДокументВозвратнаяСчетФактура
+ГДЕ
+	ДокументВозвратнаяСчетФактура.Распечатано = ЛОЖЬ</QueryText>
+				<MainTable>Document.ВозвратнаяСчетФактура</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ДВПриемаДиспетчером</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="v8:StandardBeginningDate">
+								<v8:variant xsi:type="v8:StandardBeginningDateVariant">Custom</v8:variant>
+								<v8:date>0001-01-01T00:00:00</v8:date>
+							</dcsset:right>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="СписокКонтрагентовВЗонеОтгрузки" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список контрагентов в зоне отгрузки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>cfg:CatalogRef.Контрагенты</v8:Type>
+			</Settings>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:use>false</dcsset:use>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ВозвратныеСФПринятыеДиспетчером</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ВозвратныеСФПринятыеДиспетчером.КоличествоКоробокОстаток</dcsset:left>
+						<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#33CCCC</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:use>false</dcsset:use>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ВозвратныеСФнеПринятыеДиспетчером</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ВозвратныеСФнеПринятыеДиспетчером.КоличествоКоробокОстаток</dcsset:left>
+						<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#008080</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="ПринятьСФдиспетчером" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Передать СТАРШЕМУ ВОДИТЕЛЮ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Принять с фдиспетчером</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПринятьСФдиспетчером</Action>
+		</Command>
+		<Command name="ОтменитьПриемкуСФдиспетчером" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отменить приемку СФ диспетчером</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отменить приемку с фдиспетчером</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтменитьПриемкуСФдиспетчером</Action>
+		</Command>
+		<Command name="ПометитьКакРаспечатанные" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пометить как распечатанные</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пометить как распечатанные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПометитьКакРаспечатанные</Action>
+		</Command>
+		<Command name="ОбновитьСписокКонтрагентов" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить список контрагентов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить список контрагентов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьСписокКонтрагентов</Action>
+		</Command>
+		<Command name="ОбновитьВСЕ" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить ВСЕ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить ВСЕ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьВСЕ</Action>
+		</Command>
+	</Commands>
+</Form>

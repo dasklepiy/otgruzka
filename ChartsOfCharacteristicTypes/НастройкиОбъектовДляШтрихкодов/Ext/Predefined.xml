@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="PlanOfCharacteristicKindPredefinedItems" version="2.9">
+	<Item id="5ec0ef08-0f9d-4190-a0f9-4358461a8875">
+		<Name>ВозвратТоваровПоставщику</Name>
+		<Code>V</Code>
+		<Description>ВозвратТоваровПоставщику</Description>
+		<Type>
+			<v8:Type>xs:boolean</v8:Type>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="04674df8-24af-41b7-be04-6bf537bdcba4">
+		<Name>ЗаказПокупателя</Name>
+		<Code>Z</Code>
+		<Description>ЗаказПокупателя</Description>
+		<Type>
+			<v8:Type>xs:boolean</v8:Type>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="549465d2-fa35-414f-8780-03de53ad3d18">
+		<Name>ОтчетКомиссионераОПродажах</Name>
+		<Code>O</Code>
+		<Description>ОтчетКомиссионераОПродажах</Description>
+		<Type>
+			<v8:Type>xs:boolean</v8:Type>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="4f3bf406-a8e3-4b19-917f-497d7d4a2ceb">
+		<Name>ПеремещениеМеждуСкладами</Name>
+		<Code>H</Code>
+		<Description>ПеремещениеМеждуСкладами</Description>
+		<Type>
+			<v8:Type>xs:boolean</v8:Type>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="abece28c-49f8-40f4-9242-48bc66129658">
+		<Name>ПеремещениеМеждуЯчейкамиСклада</Name>
+		<Code>S</Code>
+		<Description>ПеремещениеМеждуЯчейкамиСклада</Description>
+		<Type>
+			<v8:Type>xs:boolean</v8:Type>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="1d824265-ac5a-4619-af9f-aa417ee4e72c">
+		<Name>ПоступлениеТоваровУслуг</Name>
+		<Code>P</Code>
+		<Description>ПоступлениеТоваровУслуг</Description>
+		<Type>
+			<v8:Type>xs:boolean</v8:Type>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="90726346-d8a9-45b4-958d-a2cadff3a3ef">
+		<Name>РеализацияТоваровУслуг</Name>
+		<Code>R</Code>
+		<Description>РеализацияТоваровУслуг</Description>
+		<Type>
+			<v8:Type>xs:boolean</v8:Type>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="feb24798-f215-4dc3-b365-dd3ac0397a78">
+		<Name>СборкаТоваровПоМестамХранения</Name>
+		<Code>Y</Code>
+		<Description>СборкаТоваровПоМестамХранения</Description>
+		<Type>
+			<v8:Type>xs:boolean</v8:Type>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="ExternalEvent">ВнешнееСобытие</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа2" id="104">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="105"/>
+			<ChildItems>
+				<InputField name="МаркаМашины" id="7">
+					<DataPath>Объект.МаркаМашины</DataPath>
+					<TitleLocation>Left</TitleLocation>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="МаркаМашиныКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="МаркаМашиныРасширеннаяПодсказка" id="9"/>
+				</InputField>
+				<InputField name="ГосНомер" id="10">
+					<DataPath>Объект.ГосНомер</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ГосНомерКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="ГосНомерРасширеннаяПодсказка" id="12"/>
+				</InputField>
+				<InputField name="НомерТелефона" id="13">
+					<DataPath>Объект.НомерТелефона</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НомерТелефонаКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="НомерТелефонаРасширеннаяПодсказка" id="15"/>
+				</InputField>
+				<InputField name="ФИОВодителя" id="16">
+					<DataPath>Объект.ФИОВодителя</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ФИОВодителяКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="ФИОВодителяРасширеннаяПодсказка" id="18"/>
+				</InputField>
+				<InputField name="СуммаМашины" id="88">
+					<DataPath>Объект.СуммаМашины</DataPath>
+					<HorizontalStretch>true</HorizontalStretch>
+					<ContextMenu name="СуммаМашиныКонтекстноеМеню" id="89"/>
+					<ExtendedTooltip name="СуммаМашиныРасширеннаяПодсказка" id="90"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ИнформацияОбОтправляемойМашины1" id="62">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Информация об отправляемой машины1</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Информация об отправляемой машины1</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Behavior>Collapsible</Behavior>
+			<Collapsed>true</Collapsed>
+			<Representation>StrongSeparation</Representation>
+			<United>false</United>
+			<ThroughAlign>Use</ThroughAlign>
+			<ExtendedTooltip name="ИнформацияОбОтправляемойМашины1РасширеннаяПодсказка" id="63"/>
+		</UsualGroup>
+		<InputField name="Дата" id="4">
+			<DataPath>Объект.Date</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<UsualGroup name="ИнформацияОМапшруте" id="64">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Информация о мапшруте</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Информация о мапшруте</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Behavior>Collapsible</Behavior>
+			<Representation>NormalSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ИнформацияОМапшрутеРасширеннаяПодсказка" id="65"/>
+			<ChildItems>
+				<InputField name="Номер" id="1">
+					<DataPath>Объект.Number</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<InputField name="ДатаОтправки" id="19">
+					<DataPath>Объект.ДатаОтправки</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДатаОтправкиКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="ДатаОтправкиРасширеннаяПодсказка" id="21"/>
+				</InputField>
+				<InputField name="Направление1" id="66">
+					<DataPath>Объект.Направление1</DataPath>
+					<ContextMenu name="Направление1КонтекстноеМеню" id="67"/>
+					<ExtendedTooltip name="Направление1РасширеннаяПодсказка" id="68"/>
+				</InputField>
+				<UsualGroup name="ВремяМаршрута" id="91">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Время маршрута</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Время маршрута</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Behavior>PopUp</Behavior>
+					<ExtendedTooltip name="ВремяМаршрутаРасширеннаяПодсказка" id="92"/>
+					<ChildItems>
+						<InputField name="ВремяПриезда" id="93">
+							<DataPath>Объект.ВремяПриезда</DataPath>
+							<ContextMenu name="ВремяПриездаКонтекстноеМеню" id="94"/>
+							<ExtendedTooltip name="ВремяПриездаРасширеннаяПодсказка" id="95"/>
+						</InputField>
+						<InputField name="ВремяОтьезда" id="96">
+							<DataPath>Объект.ВремяОтьезда</DataPath>
+							<ContextMenu name="ВремяОтьездаКонтекстноеМеню" id="97"/>
+							<ExtendedTooltip name="ВремяОтьездаРасширеннаяПодсказка" id="98"/>
+						</InputField>
+						<InputField name="ПлановаяВремяОтправки" id="99">
+							<DataPath>Объект.ПлановаяВремяОтправки</DataPath>
+							<ContextMenu name="ПлановаяВремяОтправкиКонтекстноеМеню" id="100"/>
+							<ExtendedTooltip name="ПлановаяВремяОтправкиРасширеннаяПодсказка" id="101"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ШКДокумент" id="72">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ШКДокумент</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ШКДокумент</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ШКДокументРасширеннаяПодсказка" id="73"/>
+			<ChildItems>
+				<InputField name="ШКСчетФактура" id="74">
+					<DataPath>Объект.ШКСчетФактура</DataPath>
+					<Width>13</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="ШКСчетФактураКонтекстноеМеню" id="75"/>
+					<ExtendedTooltip name="ШКСчетФактураРасширеннаяПодсказка" id="76"/>
+					<Events>
+						<Event name="OnChange">ШКСчетФактураПриИзменении</Event>
+						<Event name="EditTextChange">ШКСчетФактураИзменениеТекстаРедактирования</Event>
+					</Events>
+				</InputField>
+				<UsualGroup name="Группа1" id="86">
+					<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="87"/>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="Направление" id="22">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Объект.Направление</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="НаправлениеКонтекстноеМеню" id="23"/>
+			<AutoCommandBar name="НаправлениеКоманднаяПанель" id="24">
+				<ChildItems>
+					<Button name="СортироватьПоГорорду" id="102">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.СортироватьПоГорорду</CommandName>
+						<ExtendedTooltip name="СортироватьПоГорордуРасширеннаяПодсказка" id="103"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="НаправлениеРасширеннаяПодсказка" id="25"/>
+			<SearchStringAddition name="НаправлениеСтрокаПоиска" id="26">
+				<AdditionSource>
+					<Item>Направление</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="НаправлениеСтрокаПоискаКонтекстноеМеню" id="27"/>
+				<ExtendedTooltip name="НаправлениеСтрокаПоискаРасширеннаяПодсказка" id="28"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="НаправлениеСостояниеПросмотра" id="29">
+				<AdditionSource>
+					<Item>Направление</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="НаправлениеСостояниеПросмотраКонтекстноеМеню" id="30"/>
+				<ExtendedTooltip name="НаправлениеСостояниеПросмотраРасширеннаяПодсказка" id="31"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="НаправлениеУправлениеПоиском" id="32">
+				<AdditionSource>
+					<Item>Направление</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="НаправлениеУправлениеПоискомКонтекстноеМеню" id="33"/>
+				<ExtendedTooltip name="НаправлениеУправлениеПоискомРасширеннаяПодсказка" id="34"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="НаправлениеНомерСтроки" id="35">
+					<DataPath>Объект.Направление.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НаправлениеНомерСтрокиКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="НаправлениеНомерСтрокиРасширеннаяПодсказка" id="37"/>
+				</LabelField>
+				<InputField name="НаправлениеГород" id="41">
+					<DataPath>Объект.Направление.Город</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НаправлениеГородКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="НаправлениеГородРасширеннаяПодсказка" id="43"/>
+				</InputField>
+				<InputField name="НаправлениеПолучатель" id="80">
+					<DataPath>Объект.Направление.Получатель</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НаправлениеПолучательКонтекстноеМеню" id="81"/>
+					<ExtendedTooltip name="НаправлениеПолучательРасширеннаяПодсказка" id="82"/>
+				</InputField>
+				<InputField name="НаправлениеНомерСчетФатуры" id="47">
+					<DataPath>Объект.Направление.НомерСчетФатуры</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НаправлениеНомерСчетФатурыКонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="НаправлениеНомерСчетФатурыРасширеннаяПодсказка" id="49"/>
+				</InputField>
+				<InputField name="НаправлениеДатаДок" id="50">
+					<DataPath>Объект.Направление.ДатаДок</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НаправлениеДатаДокКонтекстноеМеню" id="51"/>
+					<ExtendedTooltip name="НаправлениеДатаДокРасширеннаяПодсказка" id="52"/>
+				</InputField>
+				<InputField name="НаправлениеВсегоМест" id="53">
+					<DataPath>Объект.Направление.ВсегоМест</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НаправлениеВсегоМестКонтекстноеМеню" id="54"/>
+					<ExtendedTooltip name="НаправлениеВсегоМестРасширеннаяПодсказка" id="55"/>
+				</InputField>
+				<InputField name="НаправлениеПалета" id="83">
+					<DataPath>Объект.Направление.Палета</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НаправлениеПалетаКонтекстноеМеню" id="84"/>
+					<ExtendedTooltip name="НаправлениеПалетаРасширеннаяПодсказка" id="85"/>
+				</InputField>
+				<InputField name="НаправлениеОбьем" id="56">
+					<DataPath>Объект.Направление.Обьем</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НаправлениеОбьемКонтекстноеМеню" id="57"/>
+					<ExtendedTooltip name="НаправлениеОбьемРасширеннаяПодсказка" id="58"/>
+				</InputField>
+				<InputField name="НаправлениеВес" id="77">
+					<DataPath>Объект.Направление.Вес</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НаправлениеВесКонтекстноеМеню" id="78"/>
+					<ExtendedTooltip name="НаправлениеВесРасширеннаяПодсказка" id="79"/>
+				</InputField>
+				<InputField name="НаправлениеСуммаОтгрузки" id="59">
+					<DataPath>Объект.Направление.СуммаОтгрузки</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НаправлениеСуммаОтгрузкиКонтекстноеМеню" id="60"/>
+					<ExtendedTooltip name="НаправлениеСуммаОтгрузкиРасширеннаяПодсказка" id="61"/>
+				</InputField>
+				<InputField name="НаправлениеОрганизация" id="69">
+					<DataPath>Объект.Направление.Организация</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НаправлениеОрганизацияКонтекстноеМеню" id="70"/>
+					<ExtendedTooltip name="НаправлениеОрганизацияРасширеннаяПодсказка" id="71"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.АктПриемаПередачиТМЦ</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СортироватьПоГорорду" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сортировать по горорду</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сортировать по горорду</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СортироватьПоГорорду</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

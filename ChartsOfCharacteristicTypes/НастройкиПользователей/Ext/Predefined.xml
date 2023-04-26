@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="PlanOfCharacteristicKindPredefinedItems" version="2.9">
+	<Item id="7296c67f-61e1-43b0-a366-902cef622fdb">
+		<Name>ВыводАналогов</Name>
+		<Code>000000004</Code>
+		<Description>Вывод аналогов в номенклатуре</Description>
+		<Type>
+			<v8:Type>xs:boolean</v8:Type>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="c0e4f0f2-7d65-49b7-b36b-cc14464fef82">
+		<Name>ЗапрашиватьПодтверждениеПриЗакрытииПрограммы</Name>
+		<Code>000000009</Code>
+		<Description>Запрашивать подтверждение при закрытии программы</Description>
+		<Type>
+			<v8:Type>xs:boolean</v8:Type>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="ed885041-810e-4c7f-9351-b118bde8df4e">
+		<Name>НастройкаШК</Name>
+		<Code>000000010</Code>
+		<Description>Настройка ШК</Description>
+		<Type>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.НастройкиТорговогоОборудования</v8:Type>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="b10bccf6-2d95-45c3-bfa4-35d55d04af7a">
+		<Name>ОсновнаяВалюта</Name>
+		<Code>000000001</Code>
+		<Description>Основная валюта</Description>
+		<Type>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Пользователи</v8:Type>
+			<v8:Type>xs:boolean</v8:Type>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Подразделения</v8:Type>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.НастройкиТорговогоОборудования</v8:Type>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="ed6495f2-b9a7-4140-a0e1-9281102eeb6c">
+		<Name>ОсновнаяОрганизация</Name>
+		<Code>000000002</Code>
+		<Description>Основная организация</Description>
+		<Type>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Пользователи</v8:Type>
+			<v8:Type>xs:boolean</v8:Type>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Подразделения</v8:Type>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.НастройкиТорговогоОборудования</v8:Type>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="dd891e45-9f36-4421-a96e-c668352d3806">
+		<Name>ОсновнойТипЦен</Name>
+		<Code>000000008</Code>
+		<Description>Основной тип цен</Description>
+		<Type>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Пользователи</v8:Type>
+			<v8:Type>xs:boolean</v8:Type>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Подразделения</v8:Type>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.НастройкиТорговогоОборудования</v8:Type>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="f6be699d-7ef3-42c1-b00b-75ddaf481cc7">
+		<Name>ПодключатьСШК</Name>
+		<Code>000000007</Code>
+		<Description>Подключать СШК</Description>
+		<Type>
+			<v8:Type>xs:boolean</v8:Type>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

@@ -1,0 +1,428 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаСотрудники" id="3">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.Сотрудники</CommandName>
+				<ExtendedTooltip name="ФормаСотрудникиExtendedTooltip" id="53"/>
+			</Button>
+			<Button name="ФормаАвтомобили" id="4">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.Автомобили</CommandName>
+				<ExtendedTooltip name="ФормаАвтомобилиExtendedTooltip" id="54"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="Группа1" id="23">
+			<ExtendedTooltip name="Группа1ExtendedTooltip" id="55"/>
+			<ChildItems>
+				<Page name="Группа4" id="24">
+					<ExtendedTooltip name="Группа4ExtendedTooltip" id="56"/>
+					<ChildItems>
+						<UsualGroup name="Группа2" id="14">
+							<Group>Horizontal</Group>
+							<ExtendedTooltip name="Группа2ExtendedTooltip" id="57"/>
+							<ChildItems>
+								<InputField name="ДатаОстатков" id="21">
+									<DataPath>ДатаОстатков</DataPath>
+									<ChoiceButton>true</ChoiceButton>
+									<ClearButton>true</ClearButton>
+									<SpinButton>true</SpinButton>
+									<ChoiceListButton>false</ChoiceListButton>
+									<ContextMenu name="ДатаОстатковКонтекстноеМеню" id="22"/>
+									<ExtendedTooltip name="ДатаОстатковExtendedTooltip" id="58"/>
+								</InputField>
+								<Button name="СчетФактурыВЗонеОтгрузки" id="19">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.СчетФактурыВЗонеОтгрузки</CommandName>
+									<ExtendedTooltip name="СчетФактурыВЗонеОтгрузкиExtendedTooltip" id="59"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа3" id="18">
+							<Group>Horizontal</Group>
+							<ExtendedTooltip name="Группа3ExtendedTooltip" id="60"/>
+							<ChildItems>
+								<InputField name="Путь" id="16">
+									<DataPath>Путь</DataPath>
+									<ContextMenu name="ПутьКонтекстноеМеню" id="17"/>
+									<ExtendedTooltip name="ПутьExtendedTooltip" id="61"/>
+								</InputField>
+								<Button name="Сохранить" id="15">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.Сохранить</CommandName>
+									<ExtendedTooltip name="СохранитьExtendedTooltip" id="62"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<Button name="ФормаВыгрузкаПоРегламентномуЗаданию" id="20">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ВыгрузкаПоРегламентномуЗаданию</CommandName>
+							<ExtendedTooltip name="ФормаВыгрузкаПоРегламентномуЗаданиюExtendedTooltip" id="63"/>
+						</Button>
+						<TextDocumentField name="ТК" id="1">
+							<DataPath>ТК</DataPath>
+							<ContextMenu name="ТККонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="ТКExtendedTooltip" id="64"/>
+						</TextDocumentField>
+					</ChildItems>
+				</Page>
+				<Page name="Группа5" id="25">
+					<ExtendedTooltip name="Группа5ExtendedTooltip" id="65"/>
+					<ChildItems>
+						<Table name="СписокРасходныхОрдеров" id="26">
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>СписокРасходныхОрдеров</DataPath>
+							<RowPictureDataPath>СписокРасходныхОрдеров.DefaultPicture</RowPictureDataPath>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<ContextMenu name="СписокРасходныхОрдеровКонтекстноеМеню" id="27"/>
+							<AutoCommandBar name="СписокРасходныхОрдеровКоманднаяПанель" id="28"/>
+							<ExtendedTooltip name="СписокРасходныхОрдеровExtendedTooltip" id="66"/>
+							<SearchStringAddition name="СписокРасходныхОрдеровСтрокаПоиска" id="78">
+								<AdditionSource>
+									<Item>СписокРасходныхОрдеров</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокРасходныхОрдеровСтрокаПоискаКонтекстноеМеню" id="79"/>
+								<ExtendedTooltip name="СписокРасходныхОрдеровСтрокаПоискаРасширеннаяПодсказка" id="80"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СписокРасходныхОрдеровСостояниеПросмотра" id="81">
+								<AdditionSource>
+									<Item>СписокРасходныхОрдеров</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокРасходныхОрдеровСостояниеПросмотраКонтекстноеМеню" id="82"/>
+								<ExtendedTooltip name="СписокРасходныхОрдеровСостояниеПросмотраРасширеннаяПодсказка" id="83"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СписокРасходныхОрдеровУправлениеПоиском" id="84">
+								<AdditionSource>
+									<Item>СписокРасходныхОрдеров</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокРасходныхОрдеровУправлениеПоискомКонтекстноеМеню" id="85"/>
+								<ExtendedTooltip name="СписокРасходныхОрдеровУправлениеПоискомРасширеннаяПодсказка" id="86"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">СписокРасходныхОрдеровВыбор</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="СписокРасходныхОрдеровДатаДокБЯС" id="51">
+									<DataPath>СписокРасходныхОрдеров.ДатаДокБЯС</DataPath>
+									<ContextMenu name="СписокРасходныхОрдеровДатаДокБЯСКонтекстноеМеню" id="52"/>
+									<ExtendedTooltip name="СписокРасходныхОрдеровДатаДокБЯСExtendedTooltip" id="67"/>
+								</LabelField>
+								<LabelField name="СписокРасходныхОрдеровНомерДокБЯС" id="49">
+									<DataPath>СписокРасходныхОрдеров.НомерДокБЯС</DataPath>
+									<ContextMenu name="СписокРасходныхОрдеровНомерДокБЯСКонтекстноеМеню" id="50"/>
+									<ExtendedTooltip name="СписокРасходныхОрдеровНомерДокБЯСExtendedTooltip" id="68"/>
+								</LabelField>
+								<LabelField name="СписокРасходныхОрдеровДатаДокумента" id="31">
+									<DataPath>СписокРасходныхОрдеров.ДатаДокумента</DataPath>
+									<ContextMenu name="СписокРасходныхОрдеровДатаДокументаКонтекстноеМеню" id="32"/>
+									<ExtendedTooltip name="СписокРасходныхОрдеровДатаДокументаExtendedTooltip" id="69"/>
+								</LabelField>
+								<LabelField name="СписокРасходныхОрдеровДок" id="33">
+									<DataPath>СписокРасходныхОрдеров.Док</DataPath>
+									<ContextMenu name="СписокРасходныхОрдеровДокКонтекстноеМеню" id="34"/>
+									<ExtendedTooltip name="СписокРасходныхОрдеровДокExtendedTooltip" id="70"/>
+								</LabelField>
+								<LabelField name="СписокРасходныхОрдеровДокНомер" id="35">
+									<DataPath>СписокРасходныхОрдеров.ДокНомер</DataPath>
+									<ContextMenu name="СписокРасходныхОрдеровДокНомерКонтекстноеМеню" id="36"/>
+									<ExtendedTooltip name="СписокРасходныхОрдеровДокНомерExtendedTooltip" id="71"/>
+								</LabelField>
+								<LabelField name="СписокРасходныхОрдеровСчетФ" id="45">
+									<DataPath>СписокРасходныхОрдеров.СчетФ</DataPath>
+									<ContextMenu name="СписокРасходныхОрдеровСчетФКонтекстноеМеню" id="46"/>
+									<ExtendedTooltip name="СписокРасходныхОрдеровСчетФExtendedTooltip" id="72"/>
+								</LabelField>
+								<LabelField name="СписокРасходныхОрдеровКоличество" id="37">
+									<DataPath>СписокРасходныхОрдеров.Количество</DataPath>
+									<ContextMenu name="СписокРасходныхОрдеровКоличествоКонтекстноеМеню" id="38"/>
+									<ExtendedTooltip name="СписокРасходныхОрдеровКоличествоExtendedTooltip" id="73"/>
+								</LabelField>
+								<LabelField name="СписокРасходныхОрдеровКолПозиций" id="39">
+									<DataPath>СписокРасходныхОрдеров.КолПозиций</DataPath>
+									<ContextMenu name="СписокРасходныхОрдеровКолПозицийКонтекстноеМеню" id="40"/>
+									<ExtendedTooltip name="СписокРасходныхОрдеровКолПозицийExtendedTooltip" id="74"/>
+								</LabelField>
+								<LabelField name="СписокРасходныхОрдеровКомментарий" id="41">
+									<DataPath>СписокРасходныхОрдеров.Комментарий</DataPath>
+									<ContextMenu name="СписокРасходныхОрдеровКомментарийКонтекстноеМеню" id="42"/>
+									<ExtendedTooltip name="СписокРасходныхОрдеровКомментарийExtendedTooltip" id="75"/>
+								</LabelField>
+								<LabelField name="СписокРасходныхОрдеровСумма" id="43">
+									<DataPath>СписокРасходныхОрдеров.Сумма</DataPath>
+									<ContextMenu name="СписокРасходныхОрдеровСуммаКонтекстноеМеню" id="44"/>
+									<ExtendedTooltip name="СписокРасходныхОрдеровСуммаExtendedTooltip" id="76"/>
+								</LabelField>
+								<LabelField name="СписокРасходныхОрдеровШК" id="47">
+									<DataPath>СписокРасходныхОрдеров.ШК</DataPath>
+									<ContextMenu name="СписокРасходныхОрдеровШККонтекстноеМеню" id="48"/>
+									<ExtendedTooltip name="СписокРасходныхОрдеровШКExtendedTooltip" id="77"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ВыгрузкаСчетФактур_В_ФАЙЛ</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ТК" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ТК</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/txtedt">d5p1:TextDocument</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ДатаН" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата Н</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>DateTime</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДатаК" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата К</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>DateTime</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Путь" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Путь</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ДатаОстатков" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата остатков</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>DateTime</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СписокРасходныхОрдеров" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список расходных ордеров</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<UseAlways>
+				<Field>СписокРасходныхОрдеров.ДатаДокБЯС</Field>
+				<Field>СписокРасходныхОрдеров.НомерДокБЯС</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	БольшаяЯчеистаяСборкаДокументыРасхода.Док,
+	БольшаяЯчеистаяСборкаДокументыРасхода.СчетФ,
+	БольшаяЯчеистаяСборкаДокументыРасхода.ШК,
+	БольшаяЯчеистаяСборкаДокументыРасхода.ДокНомер,
+	БольшаяЯчеистаяСборкаДокументыРасхода.Комментарий,
+	БольшаяЯчеистаяСборкаДокументыРасхода.ДатаДокумента,
+	БольшаяЯчеистаяСборкаДокументыРасхода.Количество,
+	БольшаяЯчеистаяСборкаДокументыРасхода.Сумма,
+	БольшаяЯчеистаяСборкаДокументыРасхода.КолПозиций,
+	БольшаяЯчеистаяСборкаДокументыРасхода.Ссылка.Номер КАК НомерДокБЯС,
+	БольшаяЯчеистаяСборкаДокументыРасхода.Ссылка.Дата КАК ДатаДокБЯС
+ИЗ
+	Документ.БольшаяЯчеистаяСборка.ДокументыРасхода КАК БольшаяЯчеистаяСборкаДокументыРасхода</QueryText>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Сотрудники" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сотрудники</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сотрудники</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Сотрудники</Action>
+		</Command>
+		<Command name="Автомобили" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Автомобили</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Автомобили</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Автомобили</Action>
+		</Command>
+		<Command name="РасходникиЗаПериод" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расходники за период</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расходники за период</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>РасходникиЗаПериод</Action>
+		</Command>
+		<Command name="Сохранить" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Сохранить</Action>
+		</Command>
+		<Command name="Обзор" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обзор</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обзор</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Обзор</Action>
+		</Command>
+		<Command name="Команда1" id="3"/>
+		<Command name="СчетФактурыВЗонеОтгрузки" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Счет фактуры в зоне отгрузки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Счет фактуры в зоне отгрузки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СчетФактурыВЗонеОтгрузки</Action>
+		</Command>
+		<Command name="ВыгрузкаПоРегламентномуЗаданию" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузка по регламентному заданию</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузка по регламентному заданию</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыгрузкаПоРегламентномуЗаданию</Action>
+		</Command>
+	</Commands>
+</Form>

@@ -1,0 +1,1557 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="Группа2" id="36">
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="198"/>
+			<ChildItems>
+				<Page name="Группа3" id="37">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Зона Отгрузки</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="199"/>
+					<ChildItems>
+						<CommandBar name="Группа4" id="38">
+							<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="200"/>
+							<ChildItems>
+								<Button name="ФормаСоздатьПутевыеЛисты" id="20">
+									<Type>CommandBarButton</Type>
+									<DefaultButton>true</DefaultButton>
+									<CommandName>Form.Command.СоздатьПутевыеЛисты</CommandName>
+									<ExtendedTooltip name="ФормаСоздатьПутевыеЛистыРасширеннаяПодсказка" id="201"/>
+								</Button>
+								<Button name="ФормаЗагрузитьПутевыеЛисты" id="23">
+									<Type>CommandBarButton</Type>
+									<Visible>false</Visible>
+									<Enabled>false</Enabled>
+									<CommandName>Form.Command.ЗагрузитьПутевыеЛисты</CommandName>
+									<ExtendedTooltip name="ФормаЗагрузитьПутевыеЛистыРасширеннаяПодсказка" id="202"/>
+								</Button>
+								<Button name="ФормаОтредактироватьПутевыеЛисты" id="24">
+									<Type>CommandBarButton</Type>
+									<Visible>false</Visible>
+									<Enabled>false</Enabled>
+									<CommandName>Form.Command.ОтредактироватьПутевыеЛисты</CommandName>
+									<ExtendedTooltip name="ФормаОтредактироватьПутевыеЛистыРасширеннаяПодсказка" id="203"/>
+								</Button>
+								<Button name="ФормаПечать" id="25">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.Печать</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Печать Путевых Листов</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ФормаПечатьРасширеннаяПодсказка" id="204"/>
+								</Button>
+							</ChildItems>
+						</CommandBar>
+						<UsualGroup name="Группа1" id="29">
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="205"/>
+							<ChildItems>
+								<InputField name="Дата" id="21">
+									<DataPath>Дата</DataPath>
+									<ContextMenu name="ДатаКонтекстноеМеню" id="22"/>
+									<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="206"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа7" id="100">
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа7РасширеннаяПодсказка" id="207"/>
+							<ChildItems>
+								<Pages name="Группа11" id="168">
+									<ExtendedTooltip name="Группа11РасширеннаяПодсказка" id="208"/>
+									<ChildItems>
+										<Page name="Группа12" id="169">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Основная Зона Отгрузки</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="Группа12РасширеннаяПодсказка" id="209"/>
+											<ChildItems>
+												<Table name="РаспределениеТоваров" id="1">
+													<Footer>true</Footer>
+													<UseAlternationRowColor>true</UseAlternationRowColor>
+													<EnableStartDrag>true</EnableStartDrag>
+													<FileDragMode>AsFile</FileDragMode>
+													<DataPath>РаспределениеТоваров</DataPath>
+													<SearchStringLocation>None</SearchStringLocation>
+													<ViewStatusLocation>None</ViewStatusLocation>
+													<SearchControlLocation>None</SearchControlLocation>
+													<RowFilter xsi:nil="true"/>
+													<ContextMenu name="РаспределениеТоваровКонтекстноеМеню" id="2">
+														<ChildItems>
+															<Button name="РаспределениеТоваровКонтекстноеМенюСортироватьСписокПоВозрастанию" id="34">
+																<Type>CommandBarButton</Type>
+																<CommandName>Form.Item.РаспределениеТоваров.StandardCommand.SortListAsc</CommandName>
+																<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+																<ExtendedTooltip name="РаспределениеТоваровКонтекстноеМенюСортироватьСписокПоВозрастаниюРасширеннаяПодсказка" id="210"/>
+															</Button>
+															<Button name="РаспределениеТоваровКонтекстноеМенюСортироватьСписокПоУбыванию" id="35">
+																<Type>CommandBarButton</Type>
+																<CommandName>Form.Item.РаспределениеТоваров.StandardCommand.SortListDesc</CommandName>
+																<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+																<ExtendedTooltip name="РаспределениеТоваровКонтекстноеМенюСортироватьСписокПоУбываниюРасширеннаяПодсказка" id="211"/>
+															</Button>
+														</ChildItems>
+													</ContextMenu>
+													<AutoCommandBar name="РаспределениеТоваровКоманднаяПанель" id="3">
+														<ChildItems>
+															<Button name="РаспределениеТоваровСортироватьСписокПоВозрастанию" id="32">
+																<Type>CommandBarButton</Type>
+																<CommandName>Form.Item.РаспределениеТоваров.StandardCommand.SortListAsc</CommandName>
+																<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+																<ExtendedTooltip name="РаспределениеТоваровСортироватьСписокПоВозрастаниюРасширеннаяПодсказка" id="212"/>
+															</Button>
+															<Button name="РаспределениеТоваровСортироватьСписокПоУбыванию" id="33">
+																<Type>CommandBarButton</Type>
+																<CommandName>Form.Item.РаспределениеТоваров.StandardCommand.SortListDesc</CommandName>
+																<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+																<ExtendedTooltip name="РаспределениеТоваровСортироватьСписокПоУбываниюРасширеннаяПодсказка" id="213"/>
+															</Button>
+															<Button name="ОбновитьСписок" id="28">
+																<Type>CommandBarButton</Type>
+																<Representation>PictureAndText</Representation>
+																<CommandName>Form.Command.ОбновитьСписок</CommandName>
+																<Picture>
+																	<xr:Ref>StdPicture.AccumulationRegister</xr:Ref>
+																	<xr:LoadTransparent>true</xr:LoadTransparent>
+																</Picture>
+																<Title>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>Показать Остатки на отгрузке</v8:content>
+																	</v8:item>
+																</Title>
+																<ExtendedTooltip name="ОбновитьСписокРасширеннаяПодсказка" id="214"/>
+															</Button>
+															<Button name="РаспределениеТоваровПоказатьДопПанель" id="101">
+																<Type>CommandBarButton</Type>
+																<Visible>false</Visible>
+																<Representation>PictureAndText</Representation>
+																<CommandName>Form.Command.ПоказатьДопПанель</CommandName>
+																<Title>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>Показать/Скрыть ДопПанель</v8:content>
+																	</v8:item>
+																</Title>
+																<ExtendedTooltip name="РаспределениеТоваровПоказатьДопПанельРасширеннаяПодсказка" id="215"/>
+															</Button>
+														</ChildItems>
+													</AutoCommandBar>
+													<ExtendedTooltip name="РаспределениеТоваровРасширеннаяПодсказка" id="216"/>
+													<SearchStringAddition name="РаспределениеТоваровСтрокаПоиска" id="217">
+														<AdditionSource>
+															<Item>РаспределениеТоваров</Item>
+															<Type>SearchStringRepresentation</Type>
+														</AdditionSource>
+														<ContextMenu name="РаспределениеТоваровСтрокаПоискаКонтекстноеМеню" id="218"/>
+														<ExtendedTooltip name="РаспределениеТоваровСтрокаПоискаРасширеннаяПодсказка" id="219"/>
+													</SearchStringAddition>
+													<ViewStatusAddition name="РаспределениеТоваровСостояниеПросмотра" id="220">
+														<AdditionSource>
+															<Item>РаспределениеТоваров</Item>
+															<Type>ViewStatusRepresentation</Type>
+														</AdditionSource>
+														<ContextMenu name="РаспределениеТоваровСостояниеПросмотраКонтекстноеМеню" id="221"/>
+														<ExtendedTooltip name="РаспределениеТоваровСостояниеПросмотраРасширеннаяПодсказка" id="222"/>
+													</ViewStatusAddition>
+													<SearchControlAddition name="РаспределениеТоваровУправлениеПоиском" id="223">
+														<AdditionSource>
+															<Item>РаспределениеТоваров</Item>
+															<Type>SearchControl</Type>
+														</AdditionSource>
+														<ContextMenu name="РаспределениеТоваровУправлениеПоискомКонтекстноеМеню" id="224"/>
+														<ExtendedTooltip name="РаспределениеТоваровУправлениеПоискомРасширеннаяПодсказка" id="225"/>
+													</SearchControlAddition>
+													<Events>
+														<Event name="Selection">РаспределениеТоваровВыбор</Event>
+													</Events>
+													<ChildItems>
+														<LabelField name="РаспределениеТоваровКонтрагент" id="8">
+															<DataPath>РаспределениеТоваров.Контрагент</DataPath>
+															<Width>20</Width>
+															<ContextMenu name="РаспределениеТоваровКонтрагентКонтекстноеМеню" id="9"/>
+															<ExtendedTooltip name="РаспределениеТоваровКонтрагентРасширеннаяПодсказка" id="226"/>
+														</LabelField>
+														<LabelField name="РаспределениеТоваровНомерМестаОтгрузки" id="10">
+															<DataPath>РаспределениеТоваров.МестоОтгрузки</DataPath>
+															<Width>5</Width>
+															<ContextMenu name="РаспределениеТоваровНомерМестаОтгрузкиКонтекстноеМеню" id="11"/>
+															<ExtendedTooltip name="РаспределениеТоваровНомерМестаОтгрузкиРасширеннаяПодсказка" id="227"/>
+														</LabelField>
+														<InputField name="РаспределениеТоваровВодитель" id="16">
+															<DataPath>РаспределениеТоваров.Водитель</DataPath>
+															<ChoiceButton>true</ChoiceButton>
+															<ClearButton>true</ClearButton>
+															<SpinButton>false</SpinButton>
+															<OpenButton>false</OpenButton>
+															<ChoiceListButton>false</ChoiceListButton>
+															<ContextMenu name="РаспределениеТоваровВодительКонтекстноеМеню" id="17"/>
+															<ExtendedTooltip name="РаспределениеТоваровВодительРасширеннаяПодсказка" id="228"/>
+															<Events>
+																<Event name="OnChange">РаспределениеТоваровВодительПриИзменении</Event>
+																<Event name="StartChoice">РаспределениеТоваровВодительНачалоВыбора</Event>
+															</Events>
+														</InputField>
+														<LabelField name="РаспределениеТоваровКоличествоКоробок" id="6">
+															<DataPath>РаспределениеТоваров.КоличествоКоробок</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Коробок</v8:content>
+																</v8:item>
+															</Title>
+															<Width>5</Width>
+															<ContextMenu name="РаспределениеТоваровКоличествоКоробокКонтекстноеМеню" id="7"/>
+															<ExtendedTooltip name="РаспределениеТоваровКоличествоКоробокРасширеннаяПодсказка" id="229"/>
+														</LabelField>
+														<InputField name="РаспределениеТоваровКомментарий" id="26">
+															<DataPath>РаспределениеТоваров.Комментарий</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="РаспределениеТоваровКомментарийКонтекстноеМеню" id="27"/>
+															<ExtendedTooltip name="РаспределениеТоваровКомментарийРасширеннаяПодсказка" id="230"/>
+														</InputField>
+														<InputField name="РаспределениеТоваровДокументПриходаНомераСФ" id="84">
+															<DataPath>РаспределениеТоваров.ДокументПрихода.НомераСФ</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<Width>20</Width>
+															<ContextMenu name="РаспределениеТоваровДокументПриходаНомераСФКонтекстноеМеню" id="85"/>
+															<ExtendedTooltip name="РаспределениеТоваровДокументПриходаНомераСФРасширеннаяПодсказка" id="231"/>
+														</InputField>
+														<InputField name="РаспределениеТоваровПутевойЛист" id="30">
+															<DataPath>РаспределениеТоваров.ПутевойЛист</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="РаспределениеТоваровПутевойЛистКонтекстноеМеню" id="31"/>
+															<ExtendedTooltip name="РаспределениеТоваровПутевойЛистРасширеннаяПодсказка" id="232"/>
+														</InputField>
+														<InputField name="РаспределениеТоваровДокументПриходаНомер" id="162">
+															<DataPath>РаспределениеТоваров.ДокументПрихода.Number</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="РаспределениеТоваровДокументПриходаНомерКонтекстноеМеню" id="163"/>
+															<ExtendedTooltip name="РаспределениеТоваровДокументПриходаНомерРасширеннаяПодсказка" id="233"/>
+														</InputField>
+														<InputField name="РаспределениеТоваровДокументПриходаДата" id="164">
+															<DataPath>РаспределениеТоваров.ДокументПрихода.Date</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="РаспределениеТоваровДокументПриходаДатаКонтекстноеМеню" id="165"/>
+															<ExtendedTooltip name="РаспределениеТоваровДокументПриходаДатаРасширеннаяПодсказка" id="234"/>
+														</InputField>
+														<InputField name="РаспределениеТоваровДокументПрихода" id="18">
+															<DataPath>РаспределениеТоваров.ДокументПрихода</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="РаспределениеТоваровДокументПриходаКонтекстноеМеню" id="19"/>
+															<ExtendedTooltip name="РаспределениеТоваровДокументПриходаРасширеннаяПодсказка" id="235"/>
+														</InputField>
+													</ChildItems>
+												</Table>
+											</ChildItems>
+										</Page>
+										<Page name="Группа13" id="170">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Зона Возврата(Отстойник)</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="Группа13РасширеннаяПодсказка" id="236"/>
+											<ChildItems>
+												<Table name="РаспределениеТоваровОтстойник" id="171">
+													<Representation>List</Representation>
+													<AutoInsertNewRow>true</AutoInsertNewRow>
+													<EnableStartDrag>true</EnableStartDrag>
+													<EnableDrag>true</EnableDrag>
+													<FileDragMode>AsFile</FileDragMode>
+													<DataPath>РаспределениеТоваровОтстойник</DataPath>
+													<SearchStringLocation>None</SearchStringLocation>
+													<ViewStatusLocation>None</ViewStatusLocation>
+													<SearchControlLocation>None</SearchControlLocation>
+													<RowFilter xsi:nil="true"/>
+													<ContextMenu name="РаспределениеТоваровОтстойникКонтекстноеМеню" id="172"/>
+													<AutoCommandBar name="РаспределениеТоваровОтстойникКоманднаяПанель" id="173"/>
+													<ExtendedTooltip name="РаспределениеТоваровОтстойникРасширеннаяПодсказка" id="237"/>
+													<SearchStringAddition name="РаспределениеТоваровОтстойникСтрокаПоиска" id="238">
+														<AdditionSource>
+															<Item>РаспределениеТоваровОтстойник</Item>
+															<Type>SearchStringRepresentation</Type>
+														</AdditionSource>
+														<ContextMenu name="РаспределениеТоваровОтстойникСтрокаПоискаКонтекстноеМеню" id="239"/>
+														<ExtendedTooltip name="РаспределениеТоваровОтстойникСтрокаПоискаРасширеннаяПодсказка" id="240"/>
+													</SearchStringAddition>
+													<ViewStatusAddition name="РаспределениеТоваровОтстойникСостояниеПросмотра" id="241">
+														<AdditionSource>
+															<Item>РаспределениеТоваровОтстойник</Item>
+															<Type>ViewStatusRepresentation</Type>
+														</AdditionSource>
+														<ContextMenu name="РаспределениеТоваровОтстойникСостояниеПросмотраКонтекстноеМеню" id="242"/>
+														<ExtendedTooltip name="РаспределениеТоваровОтстойникСостояниеПросмотраРасширеннаяПодсказка" id="243"/>
+													</ViewStatusAddition>
+													<SearchControlAddition name="РаспределениеТоваровОтстойникУправлениеПоиском" id="244">
+														<AdditionSource>
+															<Item>РаспределениеТоваровОтстойник</Item>
+															<Type>SearchControl</Type>
+														</AdditionSource>
+														<ContextMenu name="РаспределениеТоваровОтстойникУправлениеПоискомКонтекстноеМеню" id="245"/>
+														<ExtendedTooltip name="РаспределениеТоваровОтстойникУправлениеПоискомРасширеннаяПодсказка" id="246"/>
+													</SearchControlAddition>
+													<ChildItems>
+														<InputField name="РаспределениеТоваровОтстойникКонтрагент" id="174">
+															<DataPath>РаспределениеТоваровОтстойник.Контрагент</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="РаспределениеТоваровОтстойникКонтрагентКонтекстноеМеню" id="175"/>
+															<ExtendedTooltip name="РаспределениеТоваровОтстойникКонтрагентРасширеннаяПодсказка" id="247"/>
+														</InputField>
+														<InputField name="РаспределениеТоваровОтстойникМестоОтгрузки" id="176">
+															<DataPath>РаспределениеТоваровОтстойник.МестоОтгрузки</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="РаспределениеТоваровОтстойникМестоОтгрузкиКонтекстноеМеню" id="177"/>
+															<ExtendedTooltip name="РаспределениеТоваровОтстойникМестоОтгрузкиРасширеннаяПодсказка" id="248"/>
+														</InputField>
+														<InputField name="РаспределениеТоваровОтстойникВодитель" id="184">
+															<DataPath>РаспределениеТоваровОтстойник.Водитель</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="РаспределениеТоваровОтстойникВодительКонтекстноеМеню" id="185"/>
+															<ExtendedTooltip name="РаспределениеТоваровОтстойникВодительРасширеннаяПодсказка" id="249"/>
+														</InputField>
+														<InputField name="РаспределениеТоваровОтстойникКоличествоКоробок" id="178">
+															<DataPath>РаспределениеТоваровОтстойник.КоличествоКоробок</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="РаспределениеТоваровОтстойникКоличествоКоробокКонтекстноеМеню" id="179"/>
+															<ExtendedTooltip name="РаспределениеТоваровОтстойникКоличествоКоробокРасширеннаяПодсказка" id="250"/>
+														</InputField>
+														<InputField name="РаспределениеТоваровОтстойникКомментарий" id="188">
+															<DataPath>РаспределениеТоваровОтстойник.Комментарий</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="РаспределениеТоваровОтстойникКомментарийКонтекстноеМеню" id="189"/>
+															<ExtendedTooltip name="РаспределениеТоваровОтстойникКомментарийРасширеннаяПодсказка" id="251"/>
+														</InputField>
+														<InputField name="РаспределениеТоваровОтстойникДокументПриходаНомераСФ" id="192">
+															<DataPath>РаспределениеТоваровОтстойник.ДокументПрихода.НомераСФ</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="РаспределениеТоваровОтстойникДокументПриходаНомераСФКонтекстноеМеню" id="193"/>
+															<ExtendedTooltip name="РаспределениеТоваровОтстойникДокументПриходаНомераСФРасширеннаяПодсказка" id="252"/>
+														</InputField>
+														<InputField name="РаспределениеТоваровОтстойникПутевойЛист" id="190">
+															<DataPath>РаспределениеТоваровОтстойник.ПутевойЛист</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="РаспределениеТоваровОтстойникПутевойЛистКонтекстноеМеню" id="191"/>
+															<ExtendedTooltip name="РаспределениеТоваровОтстойникПутевойЛистРасширеннаяПодсказка" id="253"/>
+														</InputField>
+														<InputField name="РаспределениеТоваровОтстойникДокументПриходаНомер" id="196">
+															<DataPath>РаспределениеТоваровОтстойник.ДокументПрихода.Number</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="РаспределениеТоваровОтстойникДокументПриходаНомерКонтекстноеМеню" id="197"/>
+															<ExtendedTooltip name="РаспределениеТоваровОтстойникДокументПриходаНомерРасширеннаяПодсказка" id="254"/>
+														</InputField>
+														<InputField name="РаспределениеТоваровОтстойникДокументПриходаДата" id="194">
+															<DataPath>РаспределениеТоваровОтстойник.ДокументПрихода.Date</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="РаспределениеТоваровОтстойникДокументПриходаДатаКонтекстноеМеню" id="195"/>
+															<ExtendedTooltip name="РаспределениеТоваровОтстойникДокументПриходаДатаРасширеннаяПодсказка" id="255"/>
+														</InputField>
+														<InputField name="РаспределениеТоваровОтстойникДокументПрихода" id="186">
+															<DataPath>РаспределениеТоваровОтстойник.ДокументПрихода</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="РаспределениеТоваровОтстойникДокументПриходаКонтекстноеМеню" id="187"/>
+															<ExtendedTooltip name="РаспределениеТоваровОтстойникДокументПриходаРасширеннаяПодсказка" id="256"/>
+														</InputField>
+													</ChildItems>
+												</Table>
+											</ChildItems>
+										</Page>
+									</ChildItems>
+								</Pages>
+								<Pages name="ДопПанель" id="102">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Доп панель</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Доп панель</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Width>50</Width>
+									<ExtendedTooltip name="ДопПанельРасширеннаяПодсказка" id="257"/>
+									<ChildItems>
+										<Page name="Группа8" id="103">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Водители</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="Группа8РасширеннаяПодсказка" id="258"/>
+											<ChildItems>
+												<Table name="СписокВодителей" id="87">
+													<Representation>List</Representation>
+													<Width>30</Width>
+													<UseAlternationRowColor>true</UseAlternationRowColor>
+													<EnableStartDrag>true</EnableStartDrag>
+													<EnableDrag>true</EnableDrag>
+													<FileDragMode>AsFile</FileDragMode>
+													<DataPath>СписокВодителей</DataPath>
+													<RowPictureDataPath>СписокВодителей.DefaultPicture</RowPictureDataPath>
+													<SearchStringLocation>None</SearchStringLocation>
+													<ViewStatusLocation>None</ViewStatusLocation>
+													<SearchControlLocation>None</SearchControlLocation>
+													<AutoRefresh>false</AutoRefresh>
+													<AutoRefreshPeriod>60</AutoRefreshPeriod>
+													<Period>
+														<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+														<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+														<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+													</Period>
+													<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+													<RestoreCurrentRow>false</RestoreCurrentRow>
+													<TopLevelParent xsi:nil="true"/>
+													<ShowRoot>true</ShowRoot>
+													<AllowRootChoice>false</AllowRootChoice>
+													<UpdateOnDataChange>Auto</UpdateOnDataChange>
+													<ContextMenu name="СписокВодителейКонтекстноеМеню" id="88"/>
+													<AutoCommandBar name="СписокВодителейКоманднаяПанель" id="89">
+														<Autofill>false</Autofill>
+													</AutoCommandBar>
+													<ExtendedTooltip name="СписокВодителейРасширеннаяПодсказка" id="259"/>
+													<SearchStringAddition name="СписокВодителейСтрокаПоиска" id="260">
+														<AdditionSource>
+															<Item>СписокВодителей</Item>
+															<Type>SearchStringRepresentation</Type>
+														</AdditionSource>
+														<ContextMenu name="СписокВодителейСтрокаПоискаКонтекстноеМеню" id="261"/>
+														<ExtendedTooltip name="СписокВодителейСтрокаПоискаРасширеннаяПодсказка" id="262"/>
+													</SearchStringAddition>
+													<ViewStatusAddition name="СписокВодителейСостояниеПросмотра" id="263">
+														<AdditionSource>
+															<Item>СписокВодителей</Item>
+															<Type>ViewStatusRepresentation</Type>
+														</AdditionSource>
+														<ContextMenu name="СписокВодителейСостояниеПросмотраКонтекстноеМеню" id="264"/>
+														<ExtendedTooltip name="СписокВодителейСостояниеПросмотраРасширеннаяПодсказка" id="265"/>
+													</ViewStatusAddition>
+													<SearchControlAddition name="СписокВодителейУправлениеПоиском" id="266">
+														<AdditionSource>
+															<Item>СписокВодителей</Item>
+															<Type>SearchControl</Type>
+														</AdditionSource>
+														<ContextMenu name="СписокВодителейУправлениеПоискомКонтекстноеМеню" id="267"/>
+														<ExtendedTooltip name="СписокВодителейУправлениеПоискомРасширеннаяПодсказка" id="268"/>
+													</SearchControlAddition>
+													<Events>
+														<Event name="Selection">СписокВодителейВыбор</Event>
+													</Events>
+													<ChildItems>
+														<LabelField name="СписокВодителейНаименование" id="90">
+															<DataPath>СписокВодителей.Description</DataPath>
+															<ContextMenu name="СписокВодителейНаименованиеКонтекстноеМеню" id="91"/>
+															<ExtendedTooltip name="СписокВодителейНаименованиеРасширеннаяПодсказка" id="269"/>
+														</LabelField>
+													</ChildItems>
+												</Table>
+											</ChildItems>
+										</Page>
+										<Page name="Группа9" id="104">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>ПутевыеЛисты</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="Группа9РасширеннаяПодсказка" id="270"/>
+											<ChildItems>
+												<UsualGroup name="Группа10" id="157">
+													<Group>Horizontal</Group>
+													<ExtendedTooltip name="Группа10РасширеннаяПодсказка" id="271"/>
+													<ChildItems>
+														<Button name="ПутевыеЛисты_2ОбновитьПутевыеЛисты" id="154">
+															<Type>UsualButton</Type>
+															<Representation>PictureAndText</Representation>
+															<CommandName>Form.Command.ОбновитьПутевыеЛисты_2</CommandName>
+															<Picture>
+																<xr:Ref>StdPicture.Refresh</xr:Ref>
+																<xr:LoadTransparent>true</xr:LoadTransparent>
+															</Picture>
+															<ExtendedTooltip name="ПутевыеЛисты_2ОбновитьПутевыеЛистыРасширеннаяПодсказка" id="272"/>
+														</Button>
+														<CheckBoxField name="РедактироватьПутевыеЛисты" id="158">
+															<DataPath>РедактироватьПутевыеЛисты</DataPath>
+															<CheckBoxType>Auto</CheckBoxType>
+															<ContextMenu name="РедактироватьПутевыеЛистыКонтекстноеМеню" id="159"/>
+															<ExtendedTooltip name="РедактироватьПутевыеЛистыРасширеннаяПодсказка" id="273"/>
+														</CheckBoxField>
+													</ChildItems>
+												</UsualGroup>
+												<Table name="ПутевыеЛисты_2" id="105">
+													<UseAlternationRowColor>true</UseAlternationRowColor>
+													<EnableStartDrag>true</EnableStartDrag>
+													<FileDragMode>AsFile</FileDragMode>
+													<DataPath>ПутевыеЛисты_2</DataPath>
+													<RowPictureDataPath>ПутевыеЛисты_2.DefaultPicture</RowPictureDataPath>
+													<SearchStringLocation>None</SearchStringLocation>
+													<ViewStatusLocation>None</ViewStatusLocation>
+													<SearchControlLocation>None</SearchControlLocation>
+													<AutoRefresh>false</AutoRefresh>
+													<AutoRefreshPeriod>60</AutoRefreshPeriod>
+													<Period>
+														<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+														<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+														<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+													</Period>
+													<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+													<RestoreCurrentRow>false</RestoreCurrentRow>
+													<TopLevelParent xsi:nil="true"/>
+													<ShowRoot>true</ShowRoot>
+													<AllowRootChoice>false</AllowRootChoice>
+													<UpdateOnDataChange>Auto</UpdateOnDataChange>
+													<ContextMenu name="ПутевыеЛисты_2КонтекстноеМеню" id="106"/>
+													<AutoCommandBar name="ПутевыеЛисты_2КоманднаяПанель" id="107">
+														<Autofill>false</Autofill>
+													</AutoCommandBar>
+													<ExtendedTooltip name="ПутевыеЛисты_2РасширеннаяПодсказка" id="274"/>
+													<SearchStringAddition name="ПутевыеЛисты_2СтрокаПоиска" id="275">
+														<AdditionSource>
+															<Item>ПутевыеЛисты_2</Item>
+															<Type>SearchStringRepresentation</Type>
+														</AdditionSource>
+														<ContextMenu name="ПутевыеЛисты_2СтрокаПоискаКонтекстноеМеню" id="276"/>
+														<ExtendedTooltip name="ПутевыеЛисты_2СтрокаПоискаРасширеннаяПодсказка" id="277"/>
+													</SearchStringAddition>
+													<ViewStatusAddition name="ПутевыеЛисты_2СостояниеПросмотра" id="278">
+														<AdditionSource>
+															<Item>ПутевыеЛисты_2</Item>
+															<Type>ViewStatusRepresentation</Type>
+														</AdditionSource>
+														<ContextMenu name="ПутевыеЛисты_2СостояниеПросмотраКонтекстноеМеню" id="279"/>
+														<ExtendedTooltip name="ПутевыеЛисты_2СостояниеПросмотраРасширеннаяПодсказка" id="280"/>
+													</ViewStatusAddition>
+													<SearchControlAddition name="ПутевыеЛисты_2УправлениеПоиском" id="281">
+														<AdditionSource>
+															<Item>ПутевыеЛисты_2</Item>
+															<Type>SearchControl</Type>
+														</AdditionSource>
+														<ContextMenu name="ПутевыеЛисты_2УправлениеПоискомКонтекстноеМеню" id="282"/>
+														<ExtendedTooltip name="ПутевыеЛисты_2УправлениеПоискомРасширеннаяПодсказка" id="283"/>
+													</SearchControlAddition>
+													<ChildItems>
+														<LabelField name="ПутевыеЛисты_2Дата" id="110">
+															<DataPath>~ПутевыеЛисты_2.Date</DataPath>
+															<Width>6</Width>
+															<Format>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>ДФ=dd.MM.yyyy</v8:content>
+																</v8:item>
+															</Format>
+															<ContextMenu name="ПутевыеЛисты_2ДатаКонтекстноеМеню" id="111"/>
+															<ExtendedTooltip name="ПутевыеЛисты_2ДатаРасширеннаяПодсказка" id="284"/>
+														</LabelField>
+														<LabelField name="ПутевыеЛисты_2Номер" id="114">
+															<DataPath>~ПутевыеЛисты_2.Number</DataPath>
+															<Width>9</Width>
+															<ContextMenu name="ПутевыеЛисты_2НомерКонтекстноеМеню" id="115"/>
+															<ExtendedTooltip name="ПутевыеЛисты_2НомерРасширеннаяПодсказка" id="285"/>
+														</LabelField>
+														<LabelField name="ПутевыеЛисты_2Водитель" id="122">
+															<DataPath>~ПутевыеЛисты_2.Водитель</DataPath>
+															<Width>10</Width>
+															<ContextMenu name="ПутевыеЛисты_2ВодительКонтекстноеМеню" id="123"/>
+															<ExtendedTooltip name="ПутевыеЛисты_2ВодительРасширеннаяПодсказка" id="286"/>
+														</LabelField>
+													</ChildItems>
+												</Table>
+												<Table name="ПутевыеЛисты_2Данные" id="135">
+													<Representation>List</Representation>
+													<AutoInsertNewRow>true</AutoInsertNewRow>
+													<EnableStartDrag>true</EnableStartDrag>
+													<EnableDrag>true</EnableDrag>
+													<FileDragMode>AsFile</FileDragMode>
+													<DataPath>~Items.ПутевыеЛисты_2.CurrentData.Данные</DataPath>
+													<SearchStringLocation>None</SearchStringLocation>
+													<ViewStatusLocation>None</ViewStatusLocation>
+													<SearchControlLocation>None</SearchControlLocation>
+													<RowFilter xsi:nil="true"/>
+													<ContextMenu name="ПутевыеЛисты_2ДанныеКонтекстноеМеню" id="136"/>
+													<AutoCommandBar name="ПутевыеЛисты_2ДанныеКоманднаяПанель" id="137">
+														<Autofill>false</Autofill>
+													</AutoCommandBar>
+													<ExtendedTooltip name="ПутевыеЛисты_2ДанныеРасширеннаяПодсказка" id="287"/>
+													<SearchStringAddition name="ПутевыеЛисты_2ДанныеСтрокаПоиска" id="288">
+														<AdditionSource>
+															<Item>ПутевыеЛисты_2Данные</Item>
+															<Type>SearchStringRepresentation</Type>
+														</AdditionSource>
+														<ContextMenu name="ПутевыеЛисты_2ДанныеСтрокаПоискаКонтекстноеМеню" id="289"/>
+														<ExtendedTooltip name="ПутевыеЛисты_2ДанныеСтрокаПоискаРасширеннаяПодсказка" id="290"/>
+													</SearchStringAddition>
+													<ViewStatusAddition name="ПутевыеЛисты_2ДанныеСостояниеПросмотра" id="291">
+														<AdditionSource>
+															<Item>ПутевыеЛисты_2Данные</Item>
+															<Type>ViewStatusRepresentation</Type>
+														</AdditionSource>
+														<ContextMenu name="ПутевыеЛисты_2ДанныеСостояниеПросмотраКонтекстноеМеню" id="292"/>
+														<ExtendedTooltip name="ПутевыеЛисты_2ДанныеСостояниеПросмотраРасширеннаяПодсказка" id="293"/>
+													</ViewStatusAddition>
+													<SearchControlAddition name="ПутевыеЛисты_2ДанныеУправлениеПоиском" id="294">
+														<AdditionSource>
+															<Item>ПутевыеЛисты_2Данные</Item>
+															<Type>SearchControl</Type>
+														</AdditionSource>
+														<ContextMenu name="ПутевыеЛисты_2ДанныеУправлениеПоискомКонтекстноеМеню" id="295"/>
+														<ExtendedTooltip name="ПутевыеЛисты_2ДанныеУправлениеПоискомРасширеннаяПодсказка" id="296"/>
+													</SearchControlAddition>
+													<Events>
+														<Event name="1282f000-23b6-4887-87f4-9e8e79db3d32">ПутевыеЛисты_2ДанныеВыбор</Event>
+													</Events>
+													<ChildItems>
+														<InputField name="ПутевыеЛисты_2ДанныеНомерСтроки" id="138">
+															<DataPath>~Items.ПутевыеЛисты_2.CurrentData.Данные.LineNumber</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>№</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<Width>3</Width>
+															<ContextMenu name="ПутевыеЛисты_2ДанныеНомерСтрокиКонтекстноеМеню" id="139"/>
+															<ExtendedTooltip name="ПутевыеЛисты_2ДанныеНомерСтрокиРасширеннаяПодсказка" id="297"/>
+														</InputField>
+														<InputField name="ПутевыеЛисты_2ДанныеКонтрагент" id="148">
+															<DataPath>~Items.ПутевыеЛисты_2.CurrentData.Данные.Контрагент</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<Width>10</Width>
+															<ContextMenu name="ПутевыеЛисты_2ДанныеКонтрагентКонтекстноеМеню" id="149"/>
+															<ExtendedTooltip name="ПутевыеЛисты_2ДанныеКонтрагентРасширеннаяПодсказка" id="298"/>
+														</InputField>
+														<InputField name="ПутевыеЛисты_2ДанныеМестоОтгрузки" id="150">
+															<DataPath>~Items.ПутевыеЛисты_2.CurrentData.Данные.МестоОтгрузки</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>МестОтгр</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<Width>4</Width>
+															<ContextMenu name="ПутевыеЛисты_2ДанныеМестоОтгрузкиКонтекстноеМеню" id="151"/>
+															<ExtendedTooltip name="ПутевыеЛисты_2ДанныеМестоОтгрузкиРасширеннаяПодсказка" id="299"/>
+														</InputField>
+														<InputField name="ПутевыеЛисты_2ДанныеКоличествоКоробок" id="155">
+															<DataPath>~Items.ПутевыеЛисты_2.CurrentData.Данные.КоличествоКоробок</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Коробки</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<Width>3</Width>
+															<ContextMenu name="ПутевыеЛисты_2ДанныеКоличествоКоробокКонтекстноеМеню" id="156"/>
+															<ExtendedTooltip name="ПутевыеЛисты_2ДанныеКоличествоКоробокРасширеннаяПодсказка" id="300"/>
+														</InputField>
+														<InputField name="ПутевыеЛисты_2ДанныеДокументПриходаНомераСФ" id="152">
+															<DataPath>~Items.ПутевыеЛисты_2.CurrentData.Данные.ДокументПрихода.НомераСФ</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ПутевыеЛисты_2ДанныеДокументПриходаНомераСФКонтекстноеМеню" id="153"/>
+															<ExtendedTooltip name="ПутевыеЛисты_2ДанныеДокументПриходаНомераСФРасширеннаяПодсказка" id="301"/>
+														</InputField>
+														<InputField name="ПутевыеЛисты_2ДанныеДокументПрихода" id="160">
+															<DataPath>~Items.ПутевыеЛисты_2.CurrentData.Данные.ДокументПрихода</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ПутевыеЛисты_2ДанныеДокументПриходаКонтекстноеМеню" id="161"/>
+															<ExtendedTooltip name="ПутевыеЛисты_2ДанныеДокументПриходаРасширеннаяПодсказка" id="302"/>
+														</InputField>
+													</ChildItems>
+												</Table>
+											</ChildItems>
+										</Page>
+									</ChildItems>
+								</Pages>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="Группа5" id="39">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПутевыеЛисты</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="303"/>
+					<ChildItems>
+						<UsualGroup name="Группа6" id="83">
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="304"/>
+							<ChildItems>
+								<InputField name="ДатаПутевогоЛиста" id="80">
+									<DataPath>ДатаПутевогоЛиста</DataPath>
+									<ContextMenu name="ДатаПутевогоЛистаКонтекстноеМеню" id="81"/>
+									<ExtendedTooltip name="ДатаПутевогоЛистаРасширеннаяПодсказка" id="305"/>
+								</InputField>
+								<Button name="ПоказатьПутевыеЛисты" id="82">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ПоказатьПутевыеЛисты</CommandName>
+									<ExtendedTooltip name="ПоказатьПутевыеЛистыРасширеннаяПодсказка" id="306"/>
+								</Button>
+								<Button name="ПечататьВыделенные" id="86">
+									<Type>UsualButton</Type>
+									<Representation>PictureAndText</Representation>
+									<CommandName>Form.Command.ПечататьВыделенныеПутевыеЛисты</CommandName>
+									<Picture>
+										<xr:Ref>StdPicture.Print</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ПечататьВыделенные</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ПечататьВыделенныеРасширеннаяПодсказка" id="307"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<Table name="ПутевыеЛисты" id="40">
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>ПутевыеЛисты</DataPath>
+							<RowPictureDataPath>ПутевыеЛисты.DefaultPicture</RowPictureDataPath>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<ContextMenu name="ПутевыеЛистыКонтекстноеМеню" id="41"/>
+							<AutoCommandBar name="ПутевыеЛистыКоманднаяПанель" id="42"/>
+							<ExtendedTooltip name="ПутевыеЛистыРасширеннаяПодсказка" id="308"/>
+							<SearchStringAddition name="ПутевыеЛистыСтрокаПоиска" id="309">
+								<AdditionSource>
+									<Item>ПутевыеЛисты</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПутевыеЛистыСтрокаПоискаКонтекстноеМеню" id="310"/>
+								<ExtendedTooltip name="ПутевыеЛистыСтрокаПоискаРасширеннаяПодсказка" id="311"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ПутевыеЛистыСостояниеПросмотра" id="312">
+								<AdditionSource>
+									<Item>ПутевыеЛисты</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПутевыеЛистыСостояниеПросмотраКонтекстноеМеню" id="313"/>
+								<ExtendedTooltip name="ПутевыеЛистыСостояниеПросмотраРасширеннаяПодсказка" id="314"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ПутевыеЛистыУправлениеПоиском" id="315">
+								<AdditionSource>
+									<Item>ПутевыеЛисты</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ПутевыеЛистыУправлениеПоискомКонтекстноеМеню" id="316"/>
+								<ExtendedTooltip name="ПутевыеЛистыУправлениеПоискомРасширеннаяПодсказка" id="317"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ПутевыеЛистыДата" id="43">
+									<DataPath>~ПутевыеЛисты.Date</DataPath>
+									<ContextMenu name="ПутевыеЛистыДатаКонтекстноеМеню" id="44"/>
+									<ExtendedTooltip name="ПутевыеЛистыДатаРасширеннаяПодсказка" id="318"/>
+								</LabelField>
+								<LabelField name="ПутевыеЛистыНомер" id="45">
+									<DataPath>~ПутевыеЛисты.Number</DataPath>
+									<ContextMenu name="ПутевыеЛистыНомерКонтекстноеМеню" id="46"/>
+									<ExtendedTooltip name="ПутевыеЛистыНомерРасширеннаяПодсказка" id="319"/>
+								</LabelField>
+								<LabelField name="ПутевыеЛистыВодитель" id="47">
+									<DataPath>~ПутевыеЛисты.Водитель</DataPath>
+									<ContextMenu name="ПутевыеЛистыВодительКонтекстноеМеню" id="48"/>
+									<ExtendedTooltip name="ПутевыеЛистыВодительРасширеннаяПодсказка" id="320"/>
+								</LabelField>
+								<LabelField name="ПутевыеЛистыАвтомобиль" id="49">
+									<DataPath>~ПутевыеЛисты.Автомобиль</DataPath>
+									<ContextMenu name="ПутевыеЛистыАвтомобильКонтекстноеМеню" id="50"/>
+									<ExtendedTooltip name="ПутевыеЛистыАвтомобильРасширеннаяПодсказка" id="321"/>
+								</LabelField>
+								<LabelField name="ПутевыеЛистыДВСоздания" id="55">
+									<DataPath>~ПутевыеЛисты.ДВСоздания</DataPath>
+									<ContextMenu name="ПутевыеЛистыДВСозданияКонтекстноеМеню" id="56"/>
+									<ExtendedTooltip name="ПутевыеЛистыДВСозданияРасширеннаяПодсказка" id="322"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+						<Table name="ПутевыеЛистыДанные" id="61">
+							<Representation>List</Representation>
+							<ReadOnly>true</ReadOnly>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>~Items.ПутевыеЛисты.CurrentData.Данные</DataPath>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ПутевыеЛистыДанныеКонтекстноеМеню" id="62"/>
+							<AutoCommandBar name="ПутевыеЛистыДанныеКоманднаяПанель" id="63"/>
+							<ExtendedTooltip name="ПутевыеЛистыДанныеРасширеннаяПодсказка" id="323"/>
+							<SearchStringAddition name="ПутевыеЛистыДанныеСтрокаПоиска" id="324">
+								<AdditionSource>
+									<Item>ПутевыеЛистыДанные</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПутевыеЛистыДанныеСтрокаПоискаКонтекстноеМеню" id="325"/>
+								<ExtendedTooltip name="ПутевыеЛистыДанныеСтрокаПоискаРасширеннаяПодсказка" id="326"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ПутевыеЛистыДанныеСостояниеПросмотра" id="327">
+								<AdditionSource>
+									<Item>ПутевыеЛистыДанные</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПутевыеЛистыДанныеСостояниеПросмотраКонтекстноеМеню" id="328"/>
+								<ExtendedTooltip name="ПутевыеЛистыДанныеСостояниеПросмотраРасширеннаяПодсказка" id="329"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ПутевыеЛистыДанныеУправлениеПоиском" id="330">
+								<AdditionSource>
+									<Item>ПутевыеЛистыДанные</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ПутевыеЛистыДанныеУправлениеПоискомКонтекстноеМеню" id="331"/>
+								<ExtendedTooltip name="ПутевыеЛистыДанныеУправлениеПоискомРасширеннаяПодсказка" id="332"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="ПутевыеЛистыДанныеНомерСтроки" id="166">
+									<DataPath>~Items.ПутевыеЛисты.CurrentData.Данные.LineNumber</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>№</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>2</Width>
+									<ContextMenu name="ПутевыеЛистыДанныеНомерСтрокиКонтекстноеМеню" id="167"/>
+									<ExtendedTooltip name="ПутевыеЛистыДанныеНомерСтрокиРасширеннаяПодсказка" id="333"/>
+								</InputField>
+								<InputField name="ПутевыеЛистыДанныеКонтрагент" id="74">
+									<DataPath>~Items.ПутевыеЛисты.CurrentData.Данные.Контрагент</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПутевыеЛистыДанныеКонтрагентКонтекстноеМеню" id="75"/>
+									<ExtendedTooltip name="ПутевыеЛистыДанныеКонтрагентРасширеннаяПодсказка" id="334"/>
+								</InputField>
+								<InputField name="ПутевыеЛистыДанныеДокументПриходаНомераСФ" id="78">
+									<DataPath>~Items.ПутевыеЛисты.CurrentData.Данные.ДокументПрихода.НомераСФ</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПутевыеЛистыДанныеДокументПриходаНомераСФКонтекстноеМеню" id="79"/>
+									<ExtendedTooltip name="ПутевыеЛистыДанныеДокументПриходаНомераСФРасширеннаяПодсказка" id="335"/>
+								</InputField>
+								<InputField name="ПутевыеЛистыДанныеМестоОтгрузки" id="76">
+									<DataPath>~Items.ПутевыеЛисты.CurrentData.Данные.МестоОтгрузки</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПутевыеЛистыДанныеМестоОтгрузкиКонтекстноеМеню" id="77"/>
+									<ExtendedTooltip name="ПутевыеЛистыДанныеМестоОтгрузкиРасширеннаяПодсказка" id="336"/>
+								</InputField>
+								<InputField name="ПутевыеЛистыДанныеКоличествоКоробок" id="72">
+									<DataPath>~Items.ПутевыеЛисты.CurrentData.Данные.КоличествоКоробок</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПутевыеЛистыДанныеКоличествоКоробокКонтекстноеМеню" id="73"/>
+									<ExtendedTooltip name="ПутевыеЛистыДанныеКоличествоКоробокРасширеннаяПодсказка" id="337"/>
+								</InputField>
+								<InputField name="ПутевыеЛистыДанныеДокументПрихода" id="70">
+									<DataPath>~Items.ПутевыеЛисты.CurrentData.Данные.ДокументПрихода</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПутевыеЛистыДанныеДокументПриходаКонтекстноеМеню" id="71"/>
+									<ExtendedTooltip name="ПутевыеЛистыДанныеДокументПриходаРасширеннаяПодсказка" id="338"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.АРМСтаршийВодитель_Старый</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="РаспределениеТоваров" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Распределение товаров</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Контрагент" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Контрагент</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Контрагенты</v8:Type>
+					</Type>
+				</Column>
+				<Column name="МестоОтгрузки" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Место отгрузки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.МестаХранения</v8:Type>
+					</Type>
+				</Column>
+				<Column name="КоличествоКоробок" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество коробок</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Объем" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Объем</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Вес" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вес</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Водитель" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Водитель</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ФизическиеЛица</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ДокументПрихода" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Документ прихода</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:DocumentRef.БольшаяЯчеистаяСборка</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Комментарий" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Комментарий</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПутевойЛист" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Путевой лист</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeId>e916bc1f-7162-44fa-8b5e-3b4324bee724</v8:TypeId>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="Дата" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПутевыеЛисты" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Путевые листы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<UseAlways>
+				<Field>~ПутевыеЛисты.DataVersion</Field>
+				<Field>~ПутевыеЛисты.Date</Field>
+				<Field>~ПутевыеЛисты.DeletionMark</Field>
+				<Field>~ПутевыеЛисты.Number</Field>
+				<Field>~ПутевыеЛисты.PointInTime</Field>
+				<Field>~ПутевыеЛисты.Posted</Field>
+				<Field>~ПутевыеЛисты.Ref</Field>
+				<Field>~ПутевыеЛисты.Автомобиль</Field>
+				<Field>~ПутевыеЛисты.Водитель</Field>
+				<Field>~ПутевыеЛисты.ДВИзменения</Field>
+				<Field>~ПутевыеЛисты.ДВСоздания</Field>
+				<Field>~ПутевыеЛисты.Данные</Field>
+				<Field>~ПутевыеЛисты.Изменил</Field>
+				<Field>~ПутевыеЛисты.СИ</Field>
+				<Field>~ПутевыеЛисты.Создал</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	ДокументПутевойЛист.Ссылка,
+	ДокументПутевойЛист.ВерсияДанных,
+	ДокументПутевойЛист.ПометкаУдаления,
+	ДокументПутевойЛист.Номер,
+	ДокументПутевойЛист.Дата,
+	ДокументПутевойЛист.Проведен,
+	ДокументПутевойЛист.Водитель,
+	ДокументПутевойЛист.Автомобиль,
+	ДокументПутевойЛист.Создал,
+	ДокументПутевойЛист.Изменил,
+	ДокументПутевойЛист.ДВСоздания,
+	ДокументПутевойЛист.ДВИзменения,
+	ДокументПутевойЛист.СИ,
+	ДокументПутевойЛист.Данные.(
+		Ссылка,
+		НомерСтроки,
+		Контрагент,
+		МестоОтгрузки,
+		КоличествоКоробок,
+		Вес,
+		Объем,
+		ДокументПрихода
+	),
+	ДокументПутевойЛист.МоментВремени
+ИЗ
+	Документ.ПутевойЛист КАК ДокументПутевойЛист
+ГДЕ
+	ДокументПутевойЛист.Дата = &amp;Дата</QueryText>
+				<MainTable>1:d5f60ec4-0c96-4eb0-abc6-88cd0ec3f19b</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ДатаПутевогоЛиста" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата путевого листа</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СписокВодителей" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список водителей</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<UseAlways>
+				<Field>~СписокВодителей.DataVersion</Field>
+				<Field>СписокВодителей.Code</Field>
+				<Field>СписокВодителей.DeletionMark</Field>
+				<Field>СписокВодителей.Description</Field>
+				<Field>СписокВодителей.IsFolder</Field>
+				<Field>СписокВодителей.Parent</Field>
+				<Field>СписокВодителей.Predefined</Field>
+				<Field>СписокВодителей.Ref</Field>
+				<Field>СписокВодителей.Автомобиль</Field>
+				<Field>СписокВодителей.Должность</Field>
+				<Field>СписокВодителей.Штрихкод</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>Catalog.ФизическиеЛица</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Должность</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="dcscor:DesignTimeValue">Справочник.Должности.Водитель</dcsset:right>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ЭтоГруппа</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ПометкаУдаления</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ПутевыеЛисты_2" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Путевые листы 2</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<UseAlways>
+				<Field>~ПутевыеЛисты_2.DataVersion</Field>
+				<Field>~ПутевыеЛисты_2.Ref</Field>
+				<Field>~ПутевыеЛисты_2.Данные</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>                  ВЫБРАТЬ
+	ДокументПутевойЛист.Ссылка,
+	ДокументПутевойЛист.ВерсияДанных,
+	ДокументПутевойЛист.ПометкаУдаления,
+	ДокументПутевойЛист.Номер,
+	ДокументПутевойЛист.Дата,
+	ДокументПутевойЛист.Проведен,
+	ДокументПутевойЛист.Водитель,
+	ДокументПутевойЛист.Автомобиль,
+	ДокументПутевойЛист.Создал,
+	ДокументПутевойЛист.Изменил,
+	ДокументПутевойЛист.ДВСоздания,
+	ДокументПутевойЛист.ДВИзменения,
+	ДокументПутевойЛист.СИ,
+	ДокументПутевойЛист.Данные.(
+		Ссылка,
+		НомерСтроки,
+		Контрагент,
+		МестоОтгрузки,
+		КоличествоКоробок,
+		Вес,
+		Объем,
+		ДокументПрихода
+	),
+	ДокументПутевойЛист.МоментВремени
+ИЗ
+	Документ.ПутевойЛист КАК ДокументПутевойЛист
+ГДЕ
+	ДокументПутевойЛист.Дата = &amp;Дата</QueryText>
+				<MainTable>1:d5f60ec4-0c96-4eb0-abc6-88cd0ec3f19b</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="РедактироватьПутевыеЛисты" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Редактировать путевые листы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="РаспределениеТоваровОтстойник" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Распределение товаров Отстойник</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Контрагент" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Контрагент</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Контрагенты</v8:Type>
+					</Type>
+				</Column>
+				<Column name="МестоОтгрузки" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Место отгрузки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.МестаХранения</v8:Type>
+					</Type>
+				</Column>
+				<Column name="КоличествоКоробок" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество коробок</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Объем" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Объем</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Вес" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вес</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Водитель" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Водитель</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ФизическиеЛица</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ДокументПрихода" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Документ прихода</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:DocumentRef.БольшаяЯчеистаяСборка</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Комментарий" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Комментарий</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПутевойЛист" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Путевой лист</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeId>e916bc1f-7162-44fa-8b5e-3b4324bee724</v8:TypeId>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СоздатьПутевыеЛисты" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать путевые листы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать путевые листы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьПутевыеЛисты</Action>
+		</Command>
+		<Command name="ЗагрузитьПутевыеЛисты" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить путевые листы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить путевые листы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьПутевыеЛисты</Action>
+		</Command>
+		<Command name="ОтредактироватьПутевыеЛисты" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отредактировать путевые листы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отредактировать путевые листы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтредактироватьПутевыеЛисты</Action>
+		</Command>
+		<Command name="Печать" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Печать</Action>
+		</Command>
+		<Command name="ОбновитьСписок" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить список</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить список</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьСписок</Action>
+		</Command>
+		<Command name="ПоказатьПутевыеЛисты" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать путевые листы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать путевые листы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПоказатьПутевыеЛисты</Action>
+		</Command>
+		<Command name="ПечататьВыделенныеПутевыеЛисты" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печатать выделенные путевые листы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печатать выделенные путевые листы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПечататьВыделенныеПутевыеЛисты</Action>
+		</Command>
+		<Command name="ПоказатьДопПанель" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать доп панель</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать доп панель</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПоказатьДопПанель</Action>
+		</Command>
+		<Command name="ОбновитьПутевыеЛисты_2" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить путевые листы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить путевые листы 2</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьПутевыеЛисты_2</Action>
+		</Command>
+	</Commands>
+</Form>

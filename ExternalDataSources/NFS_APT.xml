@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<ExternalDataSource uuid="4836a4cf-26d3-4ba9-9a0a-07cc810c201a">
+		<InternalInfo>
+			<xr:GeneratedType name="ExternalDataSourceManager.NFS_APT" category="Manager">
+				<xr:TypeId>17fc05b9-8158-44b0-9b3c-4fb6f3b956cc</xr:TypeId>
+				<xr:ValueId>bea8573a-6d4b-430e-9343-30cfb4c0a8f3</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ExternalDataSourceTablesManager.NFS_APT" category="TablesManager">
+				<xr:TypeId>f321aaee-eb7a-4723-a502-85156b8ad6f6</xr:TypeId>
+				<xr:ValueId>2a715612-541f-4ab9-9fdf-df2273b8e39f</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ExternalDataSourceCubesManager.NFS_APT" category="CubesManager">
+				<xr:TypeId>6ece34a2-b712-49e1-a8ef-88c18d2ed6bc</xr:TypeId>
+				<xr:ValueId>781b2036-69e1-4214-8a2f-bc6437fd258d</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>NFS_APT</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>NFS APT</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment>nfsserver nfssklad07 nfsabc !QAZ2wsx</Comment>
+			<DataLockControlMode>Automatic</DataLockControlMode>
+		</Properties>
+		<ChildObjects>
+			<Table>dbo_INVOICE</Table>
+		</ChildObjects>
+	</ExternalDataSource>
+</MetaDataObject>

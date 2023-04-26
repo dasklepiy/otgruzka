@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<DataProcessor uuid="f26b88f6-4118-401a-966f-5efdfad962bf">
+		<InternalInfo>
+			<xr:GeneratedType name="DataProcessorObject.КонсольЗапросов_82" category="Object">
+				<xr:TypeId>72d2e113-a753-4785-9e79-9d791bf8e1ff</xr:TypeId>
+				<xr:ValueId>a4af6fea-b8d9-4fe1-980f-38bc8568192b</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DataProcessorManager.КонсольЗапросов_82" category="Manager">
+				<xr:TypeId>b7eb5d97-96f6-43c4-8cb0-bff93d677067</xr:TypeId>
+				<xr:ValueId>c9e6bf93-8ec9-4b88-a5d8-8a8c4495c13e</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>КонсольЗапросов_82</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Консоль запросов 8.2</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment>Консоль повторяет интерфейс и основные возможности Консоли запросов 8.1, а также позволяет получать результаты пакетных запросов и временных таблиц</Comment>
+			<UseStandardCommands>true</UseStandardCommands>
+			<DefaultForm>DataProcessor.КонсольЗапросов_82.Form.Форма</DefaultForm>
+			<AuxiliaryForm>DataProcessor.КонсольЗапросов_82.Form.Форма</AuxiliaryForm>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<ExtendedPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Form>Форма</Form>
+			<Form>ФормаВложеннойТаблицы</Form>
+			<Form>ФормаОсобогоТипа</Form>
+			<Template>МакетРезультата</Template>
+		</ChildObjects>
+	</DataProcessor>
+</MetaDataObject>

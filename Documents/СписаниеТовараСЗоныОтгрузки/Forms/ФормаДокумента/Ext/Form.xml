@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Номер" id="1">
+			<DataPath>Объект.Number</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НомерExtendedTooltip" id="24"/>
+		</InputField>
+		<InputField name="Дата" id="3">
+			<DataPath>Объект.Date</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ДатаКонтекстноеМеню" id="4"/>
+			<ExtendedTooltip name="ДатаExtendedTooltip" id="25"/>
+		</InputField>
+		<InputField name="ДокументБЯС" id="5">
+			<DataPath>Объект.ДокументБЯС</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ДокументБЯСКонтекстноеМеню" id="6"/>
+			<ExtendedTooltip name="ДокументБЯСExtendedTooltip" id="26"/>
+		</InputField>
+		<UsualGroup name="Группа1" id="23">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Если не заполнены то списывается вся сборка</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Horizontal</Group>
+			<Representation>StrongSeparation</Representation>
+			<ExtendedTooltip name="Группа1ExtendedTooltip" id="27"/>
+			<ChildItems>
+				<InputField name="МестоОтгрузки" id="21">
+					<DataPath>Объект.МестоОтгрузки</DataPath>
+					<ContextMenu name="МестоОтгрузкиКонтекстноеМеню" id="22"/>
+					<ExtendedTooltip name="МестоОтгрузкиExtendedTooltip" id="28"/>
+				</InputField>
+				<InputField name="КолКоробок" id="19">
+					<DataPath>Объект.КолКоробок</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Списано Коробок  </v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="КолКоробокКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="КолКоробокExtendedTooltip" id="29"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Комментарий" id="7">
+			<DataPath>Объект.Комментарий</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="КомментарийExtendedTooltip" id="30"/>
+		</InputField>
+		<InputField name="Создал" id="9">
+			<DataPath>Объект.Создал</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="СоздалКонтекстноеМеню" id="10"/>
+			<ExtendedTooltip name="СоздалExtendedTooltip" id="31"/>
+		</InputField>
+		<InputField name="Изменил" id="11">
+			<DataPath>Объект.Изменил</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ИзменилКонтекстноеМеню" id="12"/>
+			<ExtendedTooltip name="ИзменилExtendedTooltip" id="32"/>
+		</InputField>
+		<InputField name="ДВСоздания" id="13">
+			<DataPath>Объект.ДВСоздания</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ДВСозданияКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ДВСозданияExtendedTooltip" id="33"/>
+		</InputField>
+		<InputField name="ДВИзменения" id="15">
+			<DataPath>Объект.ДВИзменения</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ДВИзмененияКонтекстноеМеню" id="16"/>
+			<ExtendedTooltip name="ДВИзмененияExtendedTooltip" id="34"/>
+		</InputField>
+		<InputField name="СИ" id="17">
+			<DataPath>Объект.СИ</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="СИКонтекстноеМеню" id="18"/>
+			<ExtendedTooltip name="СИExtendedTooltip" id="35"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.СписаниеТовараСЗоныОтгрузки</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+</Form>

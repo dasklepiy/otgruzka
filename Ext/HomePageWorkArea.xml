@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<HomePageWorkArea xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<WorkingAreaTemplate>TwoColumnsEqualWidth</WorkingAreaTemplate>
+	<LeftColumn>
+		<Item>
+			<Form>DataProcessor.АРМДиспетчерСклад.Form.ФормаДиспетчера</Form>
+			<Height>10</Height>
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.Администрирование">false</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">false</xr:Value>
+				<xr:Value name="Role.РольСтаршийВодитель">false</xr:Value>
+				<xr:Value name="Role.РольВодитель">false</xr:Value>
+				<xr:Value name="Role.РольПриемщик">false</xr:Value>
+				<xr:Value name="Role.РольОхранаПост2">false</xr:Value>
+				<xr:Value name="Role.Разработчик">false</xr:Value>
+				<xr:Value name="Role.РольОхранаПост1">false</xr:Value>
+				<xr:Value name="Role.РольПриемщикНФС">false</xr:Value>
+			</Visibility>
+		</Item>
+		<Item>
+			<Form>DataProcessor.АРМРаботникОхраны_2.Form.Форма</Form>
+			<Height>10</Height>
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.Администрирование">false</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">false</xr:Value>
+				<xr:Value name="Role.РольСтаршийВодитель">false</xr:Value>
+				<xr:Value name="Role.РольВодитель">false</xr:Value>
+				<xr:Value name="Role.РольПриемщик">false</xr:Value>
+				<xr:Value name="Role.РольОхранаПост2">true</xr:Value>
+				<xr:Value name="Role.Разработчик">false</xr:Value>
+				<xr:Value name="Role.РольОхранаПост1">false</xr:Value>
+				<xr:Value name="Role.РольПриемщикНФС">false</xr:Value>
+			</Visibility>
+		</Item>
+		<Item>
+			<Form>DataProcessor.АРМРаботникОхраны_1.Form.Форма</Form>
+			<Height>10</Height>
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.Администрирование">false</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">false</xr:Value>
+				<xr:Value name="Role.РольСтаршийВодитель">false</xr:Value>
+				<xr:Value name="Role.РольВодитель">false</xr:Value>
+				<xr:Value name="Role.РольПриемщик">false</xr:Value>
+				<xr:Value name="Role.РольОхранаПост2">false</xr:Value>
+				<xr:Value name="Role.Разработчик">false</xr:Value>
+				<xr:Value name="Role.РольОхранаПост1">true</xr:Value>
+				<xr:Value name="Role.РольПриемщикНФС">false</xr:Value>
+			</Visibility>
+		</Item>
+		<Item>
+			<Form>DataProcessor.АРМВодитель.Form.ФормаСозданиеПутевогоЛиста</Form>
+			<Height>10</Height>
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.Администрирование">false</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">false</xr:Value>
+				<xr:Value name="Role.РольСтаршийВодитель">false</xr:Value>
+				<xr:Value name="Role.РольВодитель">true</xr:Value>
+				<xr:Value name="Role.РольПриемщик">false</xr:Value>
+				<xr:Value name="Role.РольОхранаПост2">false</xr:Value>
+				<xr:Value name="Role.Разработчик">false</xr:Value>
+				<xr:Value name="Role.РольОхранаПост1">false</xr:Value>
+				<xr:Value name="Role.РольПриемщикНФС">false</xr:Value>
+			</Visibility>
+		</Item>
+		<Item>
+			<Form>DataProcessor.ЗонаОтгрузкиТаксист.Form.Форма</Form>
+			<Height>10</Height>
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Администрирование">false</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">false</xr:Value>
+				<xr:Value name="Role.РольСтаршийВодитель">false</xr:Value>
+				<xr:Value name="Role.РольВодитель">false</xr:Value>
+				<xr:Value name="Role.РольПриемщик">false</xr:Value>
+				<xr:Value name="Role.РольОхранаПост2">false</xr:Value>
+				<xr:Value name="Role.Разработчик">false</xr:Value>
+				<xr:Value name="Role.РольОхранаПост1">false</xr:Value>
+				<xr:Value name="Role.РольПриемщикНФС">false</xr:Value>
+				<xr:Value name="Role.РольСтаршийСменыНФС">false</xr:Value>
+				<xr:Value name="Role.Салар">false</xr:Value>
+				<xr:Value name="Role.Планшет">true</xr:Value>
+			</Visibility>
+		</Item>
+		<Item>
+			<Form>DataProcessor.ЗонаОтгрузкиТаксист1.Form.Форма</Form>
+			<Height>10</Height>
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Item>
+	</LeftColumn>
+	<RightColumn>
+		<Item>
+			<Form>DataProcessor.АРМПриемВозвратныхСчетФактурДИСПЕТЧЕРОМ.Form.Форма</Form>
+			<Height>10</Height>
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Администрирование">false</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">false</xr:Value>
+				<xr:Value name="Role.РольСтаршийВодитель">false</xr:Value>
+				<xr:Value name="Role.РольВодитель">false</xr:Value>
+				<xr:Value name="Role.РольПриемщик">false</xr:Value>
+				<xr:Value name="Role.РольОхранаПост2">false</xr:Value>
+				<xr:Value name="Role.Разработчик">false</xr:Value>
+				<xr:Value name="Role.РольОхранаПост1">false</xr:Value>
+				<xr:Value name="Role.РольПриемщикНФС">false</xr:Value>
+				<xr:Value name="Role.РольСтаршийСменыНФС">false</xr:Value>
+			</Visibility>
+		</Item>
+		<Item>
+			<Form>DataProcessor.МативацияПогрузка.Form.Форма</Form>
+			<Height>10</Height>
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Item>
+	</RightColumn>
+</HomePageWorkArea>

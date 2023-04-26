@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<Pages name="Группа1" id="15">
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="32"/>
+			<ChildItems>
+				<Page name="Главная" id="16">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Главная</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Главная</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГлавнаяРасширеннаяПодсказка" id="33"/>
+					<ChildItems>
+						<InputField name="КоличествоПоддонов" id="1">
+							<DataPath>НаборКонстант.КоличествоПоддонов</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="КоличествоПоддоновКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="КоличествоПоддоновРасширеннаяПодсказка" id="34"/>
+						</InputField>
+						<InputField name="СчетчикЖурналаИзмененийДокументов" id="3">
+							<DataPath>НаборКонстант.СчетчикЖурналаИзмененийДокументов</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="СчетчикЖурналаИзмененийДокументовКонтекстноеМеню" id="4"/>
+							<ExtendedTooltip name="СчетчикЖурналаИзмененийДокументовРасширеннаяПодсказка" id="35"/>
+						</InputField>
+						<InputField name="СтрокаСоединения_TRANSRAS" id="5">
+							<DataPath>НаборКонстант.СтрокаСоединения_TRANSRAS</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<MultiLine>true</MultiLine>
+							<ContextMenu name="СтрокаСоединения_TRANSRASКонтекстноеМеню" id="6"/>
+							<ExtendedTooltip name="СтрокаСоединения_TRANSRASРасширеннаяПодсказка" id="36"/>
+						</InputField>
+						<InputField name="СтрокаСоединения_SRVGLOB" id="7">
+							<DataPath>НаборКонстант.СтрокаСоединения_SRVGLOB</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Строка Соединения АСКЛЕПИЙ</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<MultiLine>true</MultiLine>
+							<ContextMenu name="СтрокаСоединения_SRVGLOBКонтекстноеМеню" id="8"/>
+							<ExtendedTooltip name="СтрокаСоединения_SRVGLOBРасширеннаяПодсказка" id="37"/>
+						</InputField>
+						<InputField name="СтрокаСоединения_АСК_СОМ" id="30">
+							<DataPath>НаборКонстант.СтрокаСоединения_АСК_СОМ</DataPath>
+							<MultiLine>true</MultiLine>
+							<ContextMenu name="СтрокаСоединения_АСК_СОМКонтекстноеМеню" id="31"/>
+							<ExtendedTooltip name="СтрокаСоединения_АСК_СОМРасширеннаяПодсказка" id="38"/>
+						</InputField>
+						<InputField name="СтрокаСоединения_НФС_ОПТ" id="9">
+							<DataPath>НаборКонстант.СтрокаСоединения_НФС_ОПТ</DataPath>
+							<MultiLine>true</MultiLine>
+							<ContextMenu name="СтрокаСоединения_НФС_ОПТКонтекстноеМеню" id="10"/>
+							<ExtendedTooltip name="СтрокаСоединения_НФС_ОПТРасширеннаяПодсказка" id="39"/>
+						</InputField>
+						<InputField name="СтрокаСоединения_НФС_ОПТ_СОМ" id="26">
+							<DataPath>НаборКонстант.СтрокаСоединения_НФС_ОПТ_СОМ</DataPath>
+							<MultiLine>true</MultiLine>
+							<ContextMenu name="СтрокаСоединения_НФС_ОПТ_СОМКонтекстноеМеню" id="27"/>
+							<ExtendedTooltip name="СтрокаСоединения_НФС_ОПТ_СОМРасширеннаяПодсказка" id="40"/>
+						</InputField>
+						<InputField name="СтрокаСоединения_НФС_АПТ" id="11">
+							<DataPath>НаборКонстант.СтрокаСоединения_НФС_АПТ</DataPath>
+							<MultiLine>true</MultiLine>
+							<ContextMenu name="СтрокаСоединения_НФС_АПТКонтекстноеМеню" id="12"/>
+							<ExtendedTooltip name="СтрокаСоединения_НФС_АПТРасширеннаяПодсказка" id="41"/>
+						</InputField>
+						<InputField name="СтрокаСоединения_НФС_АПТ_СОМ" id="28">
+							<DataPath>НаборКонстант.СтрокаСоединения_НФС_АПТ_СОМ</DataPath>
+							<MultiLine>true</MultiLine>
+							<ContextMenu name="СтрокаСоединения_НФС_АПТ_СОМКонтекстноеМеню" id="29"/>
+							<ExtendedTooltip name="СтрокаСоединения_НФС_АПТ_СОМРасширеннаяПодсказка" id="42"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="Выгрузка" id="17">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выгрузка</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выгрузка</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ВыгрузкаРасширеннаяПодсказка" id="43"/>
+					<ChildItems>
+						<InputField name="ЛокальныйКаталогФайловВыгрузки" id="24">
+							<DataPath>НаборКонстант.ЛокальныйКаталогФайловВыгрузки</DataPath>
+							<ContextMenu name="ЛокальныйКаталогФайловВыгрузкиКонтекстноеМеню" id="25"/>
+							<ExtendedTooltip name="ЛокальныйКаталогФайловВыгрузкиРасширеннаяПодсказка" id="44"/>
+						</InputField>
+						<InputField name="КаталогФайловВыгрузки" id="13">
+							<DataPath>НаборКонстант.СетевойКаталогФайловВыгрузки</DataPath>
+							<ContextMenu name="КаталогФайловВыгрузкиКонтекстноеМеню" id="14"/>
+							<ExtendedTooltip name="КаталогФайловВыгрузкиРасширеннаяПодсказка" id="45"/>
+						</InputField>
+						<InputField name="ИмяФайлаВыгрузки_DOCS" id="18">
+							<DataPath>НаборКонстант.ИмяФайлаВыгрузки_DOCS</DataPath>
+							<ContextMenu name="ИмяФайлаВыгрузки_DOCSКонтекстноеМеню" id="19"/>
+							<ExtendedTooltip name="ИмяФайлаВыгрузки_DOCSРасширеннаяПодсказка" id="46"/>
+						</InputField>
+						<InputField name="ИмяФайлаВыгрузки_PEOPLE" id="20">
+							<DataPath>НаборКонстант.ИмяФайлаВыгрузки_PEOPLE</DataPath>
+							<ContextMenu name="ИмяФайлаВыгрузки_PEOPLEКонтекстноеМеню" id="21"/>
+							<ExtendedTooltip name="ИмяФайлаВыгрузки_PEOPLEРасширеннаяПодсказка" id="47"/>
+						</InputField>
+						<InputField name="ИмяФайлаВыгрузки_CARS" id="22">
+							<DataPath>НаборКонстант.ИмяФайлаВыгрузки_CARS</DataPath>
+							<ContextMenu name="ИмяФайлаВыгрузки_CARSКонтекстноеМеню" id="23"/>
+							<ExtendedTooltip name="ИмяФайлаВыгрузки_CARSРасширеннаяПодсказка" id="48"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="НаборКонстант" id="1">
+			<Type>
+				<v8:Type>cfg:ConstantsSet</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>
