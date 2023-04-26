@@ -66,14 +66,14 @@
 		<Metadata name="Catalog.Автомобили.Form.ФормаЭлемента.Form" id="3a0446fe-37b7-4bb6-8da3-5b13e73c2b5a.0" configVersion="911ae622a4ebb1409cbbdddd4c611dc400000000"/>
 		<Metadata name="Catalog.Автомобили.Form.ФормаЭлемента1" id="f78311d7-e541-429f-987e-7a18ff5bbae4" configVersion="56c67ab26b60974e8a81de2aa2a1186500000000"/>
 		<Metadata name="Catalog.Автомобили.Form.ФормаЭлемента1.Form" id="f78311d7-e541-429f-987e-7a18ff5bbae4.0" configVersion="b6f94d87c461db4e8796f0494b51b8ab00000000"/>
-		<Metadata name="Catalog.АдресаДоставки" id="e364b156-7ccc-4eee-859e-e9a6eac71f37" configVersion="f661b3908ac9044b9f72b4735bc8339900000000">
+		<Metadata name="Catalog.АдресаДоставки" id="e364b156-7ccc-4eee-859e-e9a6eac71f37" configVersion="d16cc21f550d7048a8aa6acb2414904600000000">
 			<Metadata name="Catalog.АдресаДоставки.Attribute.Орган" id="0b626f4a-38b6-4bf4-9dab-5b955bd80e94"/>
 			<Metadata name="Catalog.АдресаДоставки.Attribute.GPSX" id="2ad7dd2c-c0e0-4f8b-ab77-3e58e65499f0"/>
 			<Metadata name="Catalog.АдресаДоставки.Attribute.GPSY" id="5466e4eb-0242-4230-b28e-8b7595dbf1d7"/>
 			<Metadata name="Catalog.АдресаДоставки.Attribute.ClientId" id="899a2e66-3ad1-4fc4-8c8f-2f00fd1f07d1"/>
 			<Metadata name="Catalog.АдресаДоставки.Attribute.ClientGPSId" id="97945422-bec0-4504-aeb1-0aa881895aaa"/>
 		</Metadata>
-		<Metadata name="Catalog.АдресаДоставки.ManagerModule" id="e364b156-7ccc-4eee-859e-e9a6eac71f37.3" configVersion="37beec17dbb96c4495f79767163d84de00000000"/>
+		<Metadata name="Catalog.АдресаДоставки.ManagerModule" id="e364b156-7ccc-4eee-859e-e9a6eac71f37.3" configVersion="a968e01028211f468f85897ea4305be800000000"/>
 		<Metadata name="Catalog.АдресаДоставки.ObjectModule" id="e364b156-7ccc-4eee-859e-e9a6eac71f37.0" configVersion="bd9456ae9f201b4e892934b7bf0046d800000000"/>
 		<Metadata name="Catalog.Города" id="48635035-8aa3-4929-b403-a671917e7bb8" configVersion="72e2e95a0e257646b8730994274c218e00000000"/>
 		<Metadata name="Catalog.Должности" id="9914ea35-b331-4efe-960e-f8b66496170a" configVersion="3740f66d61940a4586e2611173aa5a5d00000000"/>
